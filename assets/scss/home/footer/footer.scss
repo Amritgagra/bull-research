@@ -1,0 +1,21 @@
+@import '../../variables';
+@import '../../mixins';
+
+
+.footer {
+    padding-block: 46px;
+    @include mq(sm) {
+        padding-block: 83px 35px;
+    }
+      .copyright__text {
+        font-size: 16px;
+        line-height: 21px;
+        color: #272727;
+    }
+
+    &__list {
+        .list-link {
+            color: $clr-accent;
+        }
+    }
+}

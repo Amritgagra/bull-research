@@ -1,0 +1,38 @@
+.banner {
+  min-height: 933px;
+  background: url(../images/banner-bg.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), color-stop(64.69%, rgba(0, 0, 0, 0.75)), color-stop(89.53%, #0c0c0c), to(#0c0c0c));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 64.69%, #0c0c0c 89.53%, #0c0c0c 100%);
+}
+@media screen and (max-width: 992px) {
+  .banner {
+    min-height: 100vh;
+  }
+}
+.banner__content {
+  position: relative;
+  z-index: 2;
+}
+.banner__content {
+  padding-bottom: 80px;
+}
+.banner .scroll-container {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}/*# sourceMappingURL=banner.css.map */
