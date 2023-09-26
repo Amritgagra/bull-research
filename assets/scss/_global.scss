@@ -1,9 +1,9 @@
 @import './variables';
 @import './mixins';
 
-@media screen and (min-width:1700px) {
+@media screen and (min-width:1850px) {
     .container {
-        max-width: 1640px;
+        max-width: 1820px;
     }
 }
 
@@ -86,20 +86,17 @@ ul {
 //     width: 100%;
 // }
 // }
-.bg__black {
-    background: $clr-black-bg;
+.bg__dark {
+    background: $clr-dark;
 }
-.bg__gray {
-    background: $clr-gray-300;
+.bg__light {
+    background: $clr-light;
 }
 .bg__accent {
     background: $clr-accent;
 }
-.text__gray {
-    color: $clr-gray;
-}
 .text__accent {
-    color: $clr-accent;
+    color: $clr-accent !important;
 }
 
 .min-h-inherit {

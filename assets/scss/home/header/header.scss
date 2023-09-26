@@ -2,8 +2,11 @@
 @import "../../mixins";
 
 .header{
-        background: $clr-white;
-        padding: 14px 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 27px 0;
 
         &.active {
             background: rgba($color: #fff, $alpha: .4);
@@ -27,8 +30,8 @@
         .nav-link {
             padding: 0 !important;
             position: relative;
-            color: $clr-gray;
-            font-weight: 600;
+            color: $clr-light;
+            font-weight: 500;
 
             @include mq(lg) {
                 color: $clr-white !important;  
@@ -39,11 +42,11 @@
             &:before {
                 content: '';
                 position: absolute;
-                bottom: -4px;
+                bottom: 0px;
                 left: 50%;
                 transform: translateX(-50%);
                 height: 1px;
-                width:100px;
+                width:22px;
                 display: block;
                 background: $clr-accent;
                 transition: opacity .3s ease-in-out;
@@ -60,8 +63,7 @@
 
             &:hover,
             &:focus {
-                color: $clr-black;
-                font-weight: 600;
+                color: $clr-light;
             }
 
             &.active::before {
@@ -108,7 +110,7 @@
     }
 }
 .offcanvas {
-    background: $clr-black-bg;
+    background: $clr-dark;
     width: 100%;
     @include mq(lg) {
         min-height: 100vh;

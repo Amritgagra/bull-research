@@ -1,16 +1,16 @@
 @import './variables';
 
 .btn__outline-accent {
-    border:1px solid $clr-accent;
+    border:2px solid $clr-accent;
     color: $clr-white;
     background: transparent;
-    border-radius: 9px;
+    border-radius: 5px;
     padding: 7px 22px;
     font-weight: 600 !important;
     &:hover,
     &:focus {
         background: $clr-accent !important;
         color: $clr-black !important;
-        border:1px solid $clr-accent !important;
+        border:2px solid $clr-accent !important;
     }
 }
