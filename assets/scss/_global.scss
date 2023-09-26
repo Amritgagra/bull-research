@@ -48,44 +48,23 @@ ul {
 .object-cover {
     object-fit: cover;
 }
-// .overlay-dark {
-//     position: relative;
-//     &::after {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         background-color: rgba($color: #000000, $alpha: .7);
-//         mix-blend-mode: overlay;
-//     }
-// }
+.overlay-dark {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #161616, $alpha: .45);
+    }
+}
 
-// .overlay-bg {
-//     position: absolute;
-//     top: 0;
-//     left: 50%;
-//     right: 0;
-//     bottom: 0;
-//     display: block;
-//     width: 50%;
-//     height: 100%;
-//     background: rgba(0,0,0,0 );
-//     background: linear-gradient(145deg, 
-//   rgba(0,0,0,0 ) 0.00%, 
-//   rgba(0,0,0,0.45 ) 40.16%, 
-//   rgba(12,12,12,0.73 ) 72.80%, 
-//   rgba(12,12,12,0.87 ) 100.00%);
-//   z-index: 1;
-//   @include mq(md) {
-//     left: 0;
-//     width: 100%;
-// }
-// }
+
 .bg__dark {
     background: $clr-dark;
 }
@@ -97,6 +76,9 @@ ul {
 }
 .text__accent {
     color: $clr-accent !important;
+}
+.text__light {
+    color: $clr-light !important;
 }
 
 .min-h-inherit {
@@ -112,6 +94,12 @@ ul {
 
 .mb-30 {
     margin-bottom: 30px;
+}
+.mb-130 {
+    margin-bottom: 130px;
+}
+.mb-75 {
+    margin-bottom: 75px;
 }
 
 
@@ -166,3 +154,87 @@ ul {
 //  {
 //     height: inherit !important;
 // }
+
+.section__content {
+    max-width: 823px;
+    margin: 0 auto;
+    &-wrapper {
+        max-width: 1470px;
+        margin: 0 auto;
+        padding-top: 341px;
+        padding-bottom: 174px   ;
+    }
+}
+
+
+// job
+.job {
+    padding-block: 280px ;
+    &__item-title {
+        font-size: 200px;
+        line-height: 150px;
+        color: $clr-accent;
+        margin-bottom: 0;
+    }
+    &__item-subtitle {
+        opacity: .8;
+        color: $clr-light;
+    }
+    &__item-text {
+     color: $clr-light;
+     padding-top: 134px;
+     opacity: 0;
+     transition: opacity .3s ease .2s;
+     max-width: 504px;
+    }
+   
+    &__content {
+        min-height: 600px;
+        position: relative;
+        z-index: 1;
+        &-wrapper {
+            background: url(../images/job-bg.png) no-repeat center/cover;
+        }
+    }
+
+    &__item {
+        background: none;
+        background-size: cover;
+        padding-inline: 60px 30px;
+        position: relative;
+        transition: background .3s ease-in-out , flex .3s ease-in-out;
+        &:nth-child(odd) {
+            background:linear-gradient(45deg, rgba($color: #161616, $alpha: .12) , rgba($color: #161616, $alpha: .12));
+        }
+        @include mq(lg) {
+            flex-basis: 50%;
+            border-bottom: 1px solid $clr-light;
+            border-top:1px solid $clr-light;
+            & + .reference__item {
+                border-top: 0;
+            }
+        }
+        &:hover,
+        &:focus {
+            flex:2.4;
+            @include mq(lg) {
+                flex:1 1 50%;  
+            }
+        }
+        &:hover   .job__item-text ,
+        &:focus  .job__item-text {
+            opacity: 1;
+        }
+        & > div {
+            position: absolute;
+            bottom: 30px;
+            @include mq(lg) {
+                bottom:30px;
+            }
+        }
+    }
+
+    
+}
+
+

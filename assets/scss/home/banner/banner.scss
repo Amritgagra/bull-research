@@ -22,16 +22,6 @@
     @include mq(lg) {
         min-height: 100vh;
     }
-    &__content {
-        max-width: 823px;
-        margin: 0 auto;
-        &-wrapper {
-            max-width: 1470px;
-            margin: 0 auto;
-            padding-top: 341px;
-            padding-bottom: 174px;
-        }
-    }
     .scroll-container {
         margin-bottom: 80px;
         position: relative;
