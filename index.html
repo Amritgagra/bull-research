@@ -34,17 +34,17 @@
   </head>
 
   <body>
-    <header class="fixed-top header">
+    <header class="header">
       <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center gap-lg-5 gap-4" href="index.html">
             <lottie-player src="assets/images/Logo-animation_bull.json" background="transparent" speed="1" autoplay
             class="header-logo"></lottie-player>
-            <span class="header-logo-text">über 10 jahre erfahrung</span>
+            <span class="header-logo-text d-lg-block d-none">über 10 jahre erfahrung</span>
             <img
-              src="assets/images/logo--scroll.svg"
+              src="assets/images/footer-logo.svg"
               alt=""
-              class="header-logo--scroll"
+              class="header-logo--mobile"
             />
           </a>
           <button
@@ -63,6 +63,7 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
+              <img src="assets/images/footer-logo.svg" alt="" class="header-logo--mobile">
               <button
                 type="button"
                 class="btn-close text-reset"
@@ -108,7 +109,7 @@
           <div class="row ">
             <div class="col-12">
               <div class="section__content-wrapper">
-                <div class="section__content">
+                <div class="section__content banner__content">
                   <h1 class="banner__title text__light">
                     <span class="text__accent">next level recruiting:</span> wo andere aufhören zu suchen, fangen wir erst richtig an.
                   </h1>
@@ -127,6 +128,12 @@
             </div>
           </div>
         </div>
+        <div class="banner-video-wrapper">
+          <video autoplay loop muted>
+            <source src="assets/images/banner-video.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
       <!-- banner section end -->
 
@@ -135,7 +142,7 @@
         <div class="container mb-130">
           <div class="row">
             <div class="col-12 mb-130">
-              <div class="section__centent-wrapper">
+              <div class="section__content-wrapper p-0">
                 <div class="section__content">
                   <h2 class="section__title text__light">
                     mit uns, für jeden job das <span class="text__accent">perfect match</span> finden
@@ -154,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="job__content-wrapper overlay-dark">
+        <div class="job__content-wrapper overlay-dark d-lg-block d-none">
           <div class="job__content d-flex flex-wrap">
             <div class="job__item border-left col">
               <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam.</p>
@@ -200,254 +207,263 @@
 
   
 
-      <!-- section start -->
-      <section>
+      <!-- reference section start -->
+      <section class="reference bg__dark">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
+          <div class="row border-top reference-padding">
+            <div class="col-lg-6 d-flex flex-column align-items-start justify-content-between">
               <div>
-                <h2 class="section__title">
-                  Lorem ipsum dolor
-                  <div class="text__accent">sit amet.</div>
+                <h2 class="section__title section__content-md text__light">
+                  wir - ganz einfach auf den <span class="text__accent">punkt</span> gebracht<span class="text__accent">.</span>
                 </h2>
-                <a href="#"
-                  >link
+                <a href="#" class="btn-arrow"
+                  >zu unseren referenzen
                   <span>
-                    <!-- svg -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                      <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(-7.875 -11.252)" fill="#f2f2f2"/>
+                    </svg>                    
                   </span></a
                 >
               </div>
-              <a href="#" class="btn btn__accent"></a>
+              <a href="#" class="btn btn__outline-accent">jetzt anfragen</a>
             </div>
             <div class="col-lg-6">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                blanditiis nobis neque sit sapiente quam quod, veniam porro
-                quasi reprehenderit! Molestias dolorum ullam odio qui soluta
-                similique saepe exercitationem accusantium?
+              <p class="mb-130 text__light">
+                Sie bekommen die beste Rundum-Versorgung in Sachen Headhunting. Neben den neuen technologischen Such-Möglichkeiten über KI und Social Media, beherrschen wir auch die klassischen Methoden. Auch in Zeiten der zunehmenden Digitalisierung kann ein einfacher Telefonanruf bei einem ausgesprochen guten Kandidaten noch wahre Wunder bewirken. Wir haben das Gespür für die richtige Methode zur richtigen Zeit und sind fest davon überzeugt, dass man sich in einem immer mehr zuspitzendem Markt nur mit dem idealen Methoden-Mix von der Konkurrenz abheben kann. Mit uns kommen Sie so schnell und unkompliziert an ihr Perfect-Match.
               </p>
-              <ul class="list--arrow">
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
+              <ul class="list--arrow mb-0">
+                <li class="list__item">schnelle unkomplizierte projektabwicklung</li>
+                <li class="list__item">breite branchenkenntnisse</li>
+                <li class="list__item">über 10 jahre erfahrung</li>
+                <li class="list__item">methoden-mix (digital & klassisch)</li>
+                <li class="list__item">telefon-ident und telefonische direktansprache</li>
+                <li class="list__item mb-0">hohe erfolgsquote durch eigene projekt- methode (stier-formel)</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <!-- section end -->
+      <!-- reference section end -->
 
-      <!-- section start -->
-      <section>
+      <!-- feature section start -->
+      <section class="feature">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <img src="" alt="" />
-              <div>
-                <h3>10</h3>
-                <p>Lorem, ipsum.</p>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
+              <img src="assets/images/feature__img-1.png" alt="" class="img-fluid mb-50" />
+              <div class="feature__content">
+                <h3 class="feature__content-title">10</h3>
+                <h3 class="feature__content-text">jahre erfahrung</h3>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <img src="" alt="" />
-              <div>
-                <h3>10</h3>
-                <p>Lorem, ipsum.</p>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
+              <img src="assets/images/feature__img-2.png" alt="" class="img-fluid mb-50" />
+              <div class="feature__content">
+                <h3 class="feature__content-title">100</h3>
+                <h4 class="feature__content-text">schulungen</h4>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-              <img src="" alt="" />
-              <div>
-                <h3>10</h3>
-                <p>Lorem, ipsum.</p>
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
+              <img src="assets/images/feature__img-3.png" alt="" class="img-fluid mb-50" />
+              <div class="feature__content">
+                <h3 class="feature__content-title">500</h3>
+                <h4 class="feature__content-text">kandidaten vermittelt</h4>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- section end -->
+      <!-- feature section end -->
 
-      <!-- section start -->
-      <section>
+      <!--services section start -->
+      <section class="services bg__dark">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
+              <div class="overlay-dark img-container">
+                <img src="assets/images/services__img.png" alt="" class="img-fluid services__img">
+              </div>
               <div>
-                <h2 class="section__title">
-                  Lorem ipsum dolor
-                  <div class="text__accent">sit amet.</div>
-                </h2>
-                <a href="#"
-                  >link
-                  <span>
-                    <!-- svg -->
-                  </span></a
-                >
+                <h3 class="mb-0">leistungen</h3>
+                <a href="#" class="btn-arrow"
+                >mehr erfahren
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(-7.875 -11.252)" fill="#f2f2f2"/>
+                  </svg>                    
+                </span></a
+              >
               </div>
             </div>
             <div class="col-lg-6">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                blanditiis nobis neque sit sapiente quam quod, veniam porro
-                quasi reprehenderit! Molestias dolorum ullam odio qui soluta
-                similique saepe exercitationem accusantium?
-              </p>
-              <ul class="list--arrow">
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
-                <li class="list__item"></li>
+              <div class="section__content-md">
+                <h2 class="section__title">
+                  wie unsere <span class="text__accent">leistungen</span> ihr recruiting auf ein neues level heben.
+                </h2>
+                <p class="mb-50">
+                  Neben der Übernahme des gesamten Suchmandats bietet Bull Research Ihnen auch eine Vielzahl an anderen und flexibel zu beauftragende Teil-Leistungen an.
+                </p>
+              </div>
+              <ul class="list--arrow mb-50">
+                <li class="list__item">zielfirmenanalyse</li>
+                <li class="list__item">telefon-ident</li>
+                <li class="list__item">gezielte telefonische direktansprache</li>
+                <li class="list__item">rufnummernrecherche</li>
+                <li class="list__item">social media recruiting</li>
+                <li class="list__item">stellenanzeigen-beratung</li>
+                <li class="list__item">recruiting-schulungen</li>
               </ul>
-              <a href="#" class="btn btn__accent"></a>
+              <a href="#" class="btn btn__outline-accent">jetzt anfragen</a>
             </div>
           </div>
         </div>
       </section>
-      <!-- section end -->
+      <!-- services section end -->
 
-      <!-- section start -->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5">
-              <div>
+      <!-- blog section start -->
+      <section class="blog bg__dark  text__light">
+        <div class="container-fluid">
+          <div class="row border__top block-padding">
+            <div class="col-lg-6 ps-lg-5">
+              <div class="section__content-md">
                 <h2 class="section__title">
-                  Lorem ipsum dolor
-                  <div class="text__accent">sit amet.</div>
+                  immer auf dem neusten stand mit unserem <span class="text__accent">blog</span>.
                 </h2>
-                <a href="#" class="btn btn__accent"></a>
+                <a href="#" class="btn btn__outline-accent">mehr erfahren</a>
               </div>
             </div>
-            <div class="col-lg-7">
-              <div class="swiper">
+            <div class="col-lg-6 pe-lg-0">
+              <div class="swiper blog-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="" alt="" class="img-fluid" />
+                    <div class="img-container mb-50"><img src="assets/images/blog-img-1.png" alt="" class="img-fluid" /></div>
                     <div>
-                      <h3></h3>
-                      <a href="#" class="link"
-                        >link
+                      <h3>recruiting thema</h3>
+                      <a href="#" class="btn-arrow"
+                       >blogbeitrag lesen
                         <span>
-                          <!-- svg -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                            <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(-7.875 -11.252)" fill="#f2f2f2"/>
+                          </svg>                    
                         </span></a
                       >
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="" alt="" class="img-fluid" />
+                    <div class="img-container mb-50"><img src="assets/images/blog-img-2.png" alt="" class="img-fluid" /></div>
                     <div>
-                      <h3></h3>
-                      <a href="#" class="link"
-                        >link
-                        <span>
-                          <!-- svg -->
-                        </span></a
-                      >
+                      <h3>blogbeitrag lesen</h3>
+                      <a href="#" class="btn-arrow"
+                      >blogbeitrag lesen
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                          <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(-7.875 -11.252)" fill="#f2f2f2"/>
+                        </svg>                    
+                      </span></a
+                    >
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="" alt="" class="img-fluid" />
+                    <div class="img-container mb-50"><img src="assets/images/blog-img-3.png" alt="" class="img-fluid" /></div>
                     <div>
-                      <h3></h3>
-                      <a href="#" class="link"
-                        >link
-                        <span>
-                          <!-- svg -->
-                        </span></a
-                      >
+                      <h3>neue website uns firmenauftritt</h3>
+                      <a href="#" class="btn-arrow"
+                      >blogbeitrag lesen
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
+                          <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282H8.782a.914.914,0,0,0,0,1.828H25.045L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(-7.875 -11.252)" fill="#f2f2f2"/>
+                        </svg>                    
+                      </span></a
+                    >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- section end -->
-
-      <!-- section start -->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <blockquote class="blockquote">
-                      <p class="mb-0"></p>
-                    </blockquote>
+          <div class="d-grid grid-col-2 block-padding pt-0">
+            <div class="left border-block">
+              <div class="blog__content h-100">
+                <div class="swiper review-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <blockquote class="blockquote">
+                        <h3 class="mb-0">„viele ähnliche dienstleister wollten immer das schnelle geld mit uns machen und ihre ersten beiden raten abrechnen. bei bull research hatte ich erstmals das gefühl, dass es wirklich darum geht, den für uns besten kandidaten zu finden.“</h3>
+                      </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                      <blockquote class="blockquote">
+                        <h3 class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloremque, quidem officia optio incidunt accusantium delectus voluptate accusamus, eaque laboriosam ad expedita tempora, et fugit a quisquam quibusdam dolor fuga!</h3>
+                      </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                      <blockquote class="blockquote">
+                        <h3 class="mb-0">„viele ähnliche dienstleister wollten immer das schnelle geld mit uns machen und ihre ersten beiden raten abrechnen. bei bull research hatte ich erstmals das gefühl, dass es wirklich darum geht, den für uns besten kandidaten zu finden.“</h3>
+                      </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                      <blockquote class="blockquote">
+                        <h3 class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloremque, quidem officia optio incidunt accusantium delectus voluptate accusamus, eaque laboriosam ad expedita tempora, et fugit a quisquam quibusdam dolor fuga!</h3>
+                      </blockquote>
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <p></p>
-                  </div>
-                  <div class="swiper-slide">
-                    <p></p>
-                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
-              <div>
-                <img src="" alt="" />
-                <h2 class="section__title">
-                  Lorem ipsum dolor
-                  <div class="text__accent">sit amet.</div>
-                </h2>
+            <div class="right border-block">
+              <div class="blog-bg">
+                <h2 class="blog__title">unsere <span class="text__accent">kunden</span> berichten von ihren bull-erfahrungen.</h2>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- section end -->
+
 
       <!-- contact section start -->
-      <section class="contact bg__black block-padding mt-5 mt-lg-0">
+      <section class="contact bg__dark">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-                <h2>Lorem ipsum <span class="text__accent">dolor</span> sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quam.</p>
+          <div class="row border__top contact-padding">
+            <div class="col-lg-6 d-flex justify-content-center">
+            
+                  <div class="contact-content">
+                    <div class="d-flex align-items-baseline gap-lg-5">
+                      <h2>nur einen <span class="text__accent position-relative d-inline-block"><span class="arrow-icon">  <svg  xmlns="http://www.w3.org/2000/svg" width="60.193" height="13.501" viewBox="0 0 60.193 13.501">
+                        <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282-56.22.007a.911.911,0,0,0-.907.914.911.911,0,0,0,.907.914l56.213-.007L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(32.075 -11.252)" fill="#f2f2f2"/>
+                      </svg></span> klick</span> entfernt.</h2>
+                    </div>
+                    <p class="mb-0">Hier geht es zu den passenden Kandidaten. Nehmen sie Kontakt mit uns auf.</p>
+                  </div>
             </div>
             <div class="col-lg-6">
               <form class="contact__form">
                 <div class="mb-30">
-                  <input type="text" class="form-control" placeholder="Name" />
-                </div>
-                <div class="mb-30">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
+                  <input type="text" class="form-control" placeholder="name" />
                 </div>
                 <div class="mb-30">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Company"
+                    placeholder="firma"
+                  />
+                </div>
+                <div class="mb-30">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="e-mail"
                   />
                 </div>
                 <div class="mb-20">
                   <textarea
                     class="form-control"
-                    placeholder="Beschreiben Sie ihr Projekt"
-                    rows="1"
+                    placeholder="nachricht"
+                    rows="3"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn__submit">
-                  <span
-                    ><img
-                      src="assets/images/arrow-btn.svg"
-                      alt=""
-                      class="arrow-sm"
-                  /></span>
-                  senden
-                </button>
+                <button type="submit" class="btn btn__outline-accent mt-5"> jetzt senden</button>
               </form>
             </div>
           </div>
@@ -456,130 +472,63 @@
       <!-- contact section end -->
     </main>
        <!-- footer section start -->
-       <footer class="footer">
+       <footer class="footer bg__dark text__light">
         <div class="container">
-            <div class="row footer__content">
+            <div class="row footer-content ">
                 <div class="col-lg-3 mb-5 mb-lg-0 text-center text-lg-start">
-                    <img src="assets/images/black-logo.svg" alt="footer logo" class="img-fluid footer__logo">
+                    <img src="assets/images/footer-logo.svg" alt="footer logo" class="img-fluid footer__logo">
                 </div>
-                <div class="col-lg-3 col-sm-6 text-center text-sm-start">
-                    <h3 class="footer__title">ADRESSE</h3>
+                <div class="col-lg-2 col-sm-6 text-center text-sm-start">
+                    <h3 class="footer__title">kontakt.</h3>
                    <address>
-                    <p class="mb-0">ITST INDIVIDUALREISEN GMBH & CO. KG</p>
-                    <p class="mb-0">TANZANIA SPECIAL TOURS</p>
-                    <p class="mb-0">MÜHLBACHSTRAßE 25</p>
-                    <p class="mb-0">70794 FILDERSTADT/GERMANY</p>
+                    <p class="mb-0">bull research consulting</p>
+                    <p class="mb-0">pioneer park</p>
+                    <p class="mb-0">elly-heuss-knapp-straße 1</p>
+                    <p class="mb-0">63457 hanau</p>
                    </address>
+                   <ul class="footer__list">
+                    <li class="list__item"><a href="tel:06181 982053-0" class="list__link">06181 / 982053-0</a></li>
+                    <li class="list__item"><a href="mailto:info@bull-research.com"  class="list__link text__accent">info@bull-research.com</a></li>
+                </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 text-center text-sm-start">
-                    <h3 class="footer__title">KONTAKT</h3>
-                    <ul class="list">
-                        <li class="list__item"><a href="#" class="list__link">TEL: +49 711 7778712</a></li>
-                        <li class="list__item"><a href="#" class="list__link">FAX: +49 711 7787150</a></li>
-                        <li class="list__item"><a href="#" class="list__link">EMAIL: ITST@TANZANIA-TOURS.DE</a></li>
+                    <h3 class="footer__title">sitemap.</h3>
+                    <ul class="footer__list list--hover">
+                        <li class="list__item"><a href="#" class="list__link">leistungen</a></li>
+                        <li class="list__item"><a href="#" class="list__link">über uns</a></li>
+                        <li class="list__item"><a href="#" class="list__link">referenzen</a></li>
+                        <li class="list__item"><a href="#" class="list__link">schulungen</a></li>
+                        <li class="list__item"><a href="#" class="list__link">news</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h3 class="footer__title text-center text-sm-start text-uppercase">Partner</h3>
-                    <ul class="list d-flex justify-content-sm-between justify-content-evenly">
+                <div class="col-lg-2 col-sm-6 text-center text-sm-start">
+                    <h3 class="footer__title">rechtliche hinweise.</h3>
+                    <ul class="footer__list list--hover">
+                        <li class="list__item"><a href="#" class="list__link">impressum</a></li>
+                        <li class="list__item"><a href="#" class="list__link">datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 pe-lg-0">
+                    <ul class="footer__list d-flex flex-column align-items-lg-end gap-3 list--social">
                         <li class="list__item"><a href="#" class="list__link">
-                          <svg id="Component_25_36" data-name="Component 25 – 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.641" height="32.165" viewBox="0 0 61.641 32.165">
-                            <defs>
-                              <clipPath id="clip-path">
-                                <rect id="Rectangle_881" data-name="Rectangle 881" width="61.641" height="32.165" fill="none"/>
-                              </clipPath>
-                            </defs>
-                            <g id="Group_290" data-name="Group 290" clip-path="url(#clip-path)">
-                              <path id="Path_10926" data-name="Path 10926" d="M0,32.165H32.165V0H0ZM7.727,30.8a2.7,2.7,0,0,1-2.092-.436,2.229,2.229,0,0,1-.675-1.411V24.175H3.886V22.818h1.16V19.834H6.9v2.983H8.659v1.358H6.9v4.389a1.43,1.43,0,0,0,.129.6c.08.076.156.212.575.22a1.9,1.9,0,0,0,.46-.085,2.046,2.046,0,0,0,.385-.219l.571,1.154a4.136,4.136,0,0,1-1.29.571m5.331.159c-2.287,0-3.778-1.768-3.778-4.222,0-1.954,1.3-4.315,3.815-4.315,2.491,0,3.874,1.972,3.881,4.21.008,2.3-1.371,4.327-3.918,4.327m10.176-.287V29.614c-.019.024-.342.405-.446.495a2.8,2.8,0,0,1-.919.58,3.239,3.239,0,0,1-1.063.193,2.167,2.167,0,0,1-2.164-1.12,6.433,6.433,0,0,1-.23-2.408V22.707h1.933v4.647a5,5,0,0,0,.108,1.349.826.826,0,0,0,.894.586,2.538,2.538,0,0,0,1.489-.743.816.816,0,0,0,.312-.661V22.707H25v7.969Zm7.847-6.145q-.191-.021-.339-.028c-.1,0-.179-.007-.24-.007-.747,0-1.211.724-1.508,1.233a3.142,3.142,0,0,0-.143,1.293v3.692H26.99V22.747h1.861v1.6a7.556,7.556,0,0,1,.752-1.18,2.089,2.089,0,0,1,1.26-.558c.038,0,.363.039.452.043Z" fill="#605a51" fill-rule="evenodd"/>
-                              <path id="Path_10927" data-name="Path 10927" d="M123.379,81.958l0,.2a6.757,6.757,0,0,0-1.089.192c-.208.068-.293.049-.293.146s.332,1.067.469,1.546l1.38,4.594,1.083-2.481c.081-.216,1.347-3.522,1.365-3.613.029-.147-.455-.194-.7-.251a6.906,6.906,0,0,0-.953-.142l-.009-.208s.71.05,1.588.05c.557,0,1.427-.041,1.427-.041v.223c-.351.09-.547.107-.649.261a7.616,7.616,0,0,0-.559,1.152l-3.165,7.167-2.414-7.39a6.5,6.5,0,0,0-.316-.854,1.048,1.048,0,0,0-.71-.339V81.94s.65.044,1.6.059c.994.015,1.942-.041,1.942-.041" transform="translate(-86.959 -59.462)" fill="#605a51" fill-rule="evenodd"/>
-                              <path id="Path_10928" data-name="Path 10928" d="M149.081,90.017a2.635,2.635,0,0,0,1.069-.312c.137-.117.148-.461.148-.929V83.318c0-.44,0-.807-.006-.821a3.131,3.131,0,0,0-1.039-.291l0-.222,2.493.046,3.271-.054-.086,1.9h-.255c-.105-.549-.17-1.109-.38-1.27-.158-.125-.34-.15-.785-.155l-1.5.01a.7.7,0,0,0-.365.053c-.052.037-.129.07-.129.342v3.065s1.243,0,1.84-.014a2.882,2.882,0,0,0,1.071-.131c.145-.157.17-.427.258-.907l.183,0,0,2.465h-.177a1.708,1.708,0,0,0-.3-.984c-.145-.157-.4-.132-.929-.132h-1.946v3.112c0,.34.063.354.181.39a5.018,5.018,0,0,0,1.252.1,3.089,3.089,0,0,0,1.475-.194c.279-.21.429-1,.52-1.293h.24l-.209,1.849h-5.905Z" transform="translate(-108.175 -59.488)" fill="#605a51" fill-rule="evenodd"/>
-                              <path id="Path_10929" data-name="Path 10929" d="M176.507,89.971a4.389,4.389,0,0,0,1.319-.257,2.035,2.035,0,0,0,.123-1.013V82.919c0-.436-.013-.478-.1-.53a2.979,2.979,0,0,0-1.049-.216l0-.225s2.089.075,3.755-.015a2.46,2.46,0,0,1,1.236.277,2.111,2.111,0,0,1,1.082,1.968,1.759,1.759,0,0,1-.742,1.374,2.843,2.843,0,0,1-1.319.513s1.47,2.21,2.512,3.589a.984.984,0,0,0,.337.317,1.775,1.775,0,0,0,.649.287v.166a3.468,3.468,0,0,1-1.364-.3,14.053,14.053,0,0,1-3.554-4.027,3.539,3.539,0,0,0,1.359-.242,1.961,1.961,0,0,0,.866-1.878,1.879,1.879,0,0,0-.836-1.515,2.573,2.573,0,0,0-1.54.045v6.341c0,.46-.047.728.091.852a4.69,4.69,0,0,0,1.419.3l.015.166h-4.253Z" transform="translate(-128.086 -59.454)" fill="#605a51" fill-rule="evenodd"/>
-                              <path id="Path_10930" data-name="Path 10930" d="M207.48,87.931a7.751,7.751,0,0,0,.2,1.325,2.363,2.363,0,0,0,1.4.406,1.946,1.946,0,0,0,1.385-.594,1.23,1.23,0,0,0,.266-.789,1.269,1.269,0,0,0-.51-1.052c-.19-.189-.574-.523-1.115-.986l-.789-.672a2.806,2.806,0,0,1-.961-2.085,2.52,2.52,0,0,1,.422-1.328,2.151,2.151,0,0,1,1.954-.749,5.274,5.274,0,0,1,.892.111c.276.047.7.146.7.146l-.131,1.654-.186,0c-.155-.785-.18-.913-.3-1.071a1.526,1.526,0,0,0-1.016-.354,1.507,1.507,0,0,0-.946.233,1.2,1.2,0,0,0-.4.916,1.3,1.3,0,0,0,.408.946,15.988,15.988,0,0,1,2.058,1.7,4.94,4.94,0,0,1,.832,1.132,1.964,1.964,0,0,1,.148.87,1.88,1.88,0,0,1-1.04,1.788,3.634,3.634,0,0,1-1.62.5c-.383,0-.892-.045-1.329-.095-.454-.051-.892-.112-.892-.112l.32-1.845Z" transform="translate(-150.146 -59.075)" fill="#605a51" fill-rule="evenodd"/>
-                              <path id="Path_10931" data-name="Path 10931" d="M42.938,87.517c-1.39,0-1.931,1.694-1.941,2.72-.012,1.225.477,2.707,1.849,2.707,1.49,0,1.9-1.575,1.9-2.7,0-1.409-.611-2.732-1.805-2.732" transform="translate(-29.75 -63.509)" fill="#605a51" fill-rule="evenodd"/>
-                            </g>
-                          </svg>
-                          
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                         </a></li>
                         <li class="list__item"><a href="#" class="list__link">
-                          <svg id="Component_26_36" data-name="Component 26 – 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.641" height="31.222" viewBox="0 0 61.641 31.222">
-                            <defs>
-                              <clipPath id="clip-path">
-                                <rect id="Rectangle_889" data-name="Rectangle 889" width="61.641" height="31.222" fill="#605a51"/>
-                              </clipPath>
-                            </defs>
-                            <g id="Group_329" data-name="Group 329" clip-path="url(#clip-path)">
-                              <path id="Path_21721" data-name="Path 21721" d="M0,15.3h11.2a4.049,4.049,0,0,0,.142-.6,1.6,1.6,0,0,0-.44-.165l-.084-.013c-.352-.05-1.167-.169-1.407-.8a.325.325,0,0,0-.086-.148,1.072,1.072,0,0,0-.17.059,5.5,5.5,0,0,1-1.334.336,5.885,5.885,0,0,0-.761.21.107.107,0,0,1-.028.005H7.027l-.257-.033a.091.091,0,0,1-.039-.014,1,1,0,0,0-.4-.167l-.21-.011c-.1-.006-.219-.015-.351-.015-.417,0-.684.089-.795.267a.088.088,0,0,1-.06.04l-.439.074H4.461A.089.089,0,0,1,4.4,14.3a1.266,1.266,0,0,0-.675-.258.084.084,0,0,1-.035-.008l-.218-.1a.1.1,0,0,1-.03-.021C.573,10.822.571,10.817.566,10.812A2.163,2.163,0,0,1,0,9.608a.855.855,0,0,1,.029-.218L.218,8.9a1.919,1.919,0,0,0,.221-.739.341.341,0,0,0,0-.036V8.1S.411,7.268.4,7.014a.712.712,0,0,1-.2-.433c0-.016,0-.036,0-.057A.724.724,0,0,1,.434,6c.195-.2,1.031-1.494,1.513-2.265a.081.081,0,0,1,.034-.031l.27-.14a.092.092,0,0,1,.041-.01H2.3l.1,0a1.1,1.1,0,0,0,.488-.082L3.35,3.01c.009-.195.031-.653.031-.653a.072.072,0,0,1,.008-.031l.084-.195a.075.075,0,0,1,.018-.026L5.289.268A.085.085,0,0,1,5.342.241L5.709.2h.01A.1.1,0,0,1,5.765.21l.5.306.075.062a.058.058,0,0,1,.009.009.757.757,0,0,0,.065.062l0,0A2.394,2.394,0,0,1,7.6.218a.765.765,0,0,1,.2.024A.485.485,0,0,0,7.952.13.083.083,0,0,1,7.981.108L8.2.008A.09.09,0,0,1,8.24,0h4.209a.088.088,0,0,1,.062.025l.3.287a.093.093,0,0,1,.028.062s.026.959.034,1.185a.363.363,0,0,0,.23.132,22.6,22.6,0,0,1,2.755,1.153.334.334,0,0,0,.152.028.659.659,0,0,0,.161-.019c.045-.321.176-.829.542-.99a.6.6,0,0,1,.239-.05.667.667,0,0,1,.389.132,5.658,5.658,0,0,0,1.845.7,4.042,4.042,0,0,1,1.251.224A1.192,1.192,0,0,1,21.1,2.6h.121c.078,0,.167,0,.262,0,.553,0,1.314.067,1.522.638.161.444.309.856.074,1.159a.556.556,0,0,1-.451.207H22.6l.416.547h-.807l-.673-.98a.09.09,0,0,1,.01-.078l.284-.426a.084.084,0,0,1,.057-.038H21.9a.079.079,0,0,1,.038.009,3.229,3.229,0,0,0,.421.141c-.031-.108-.072-.223-.1-.3-.021-.018-.165-.107-.85-.107l-.186,0-.133,0a.879.879,0,0,0-.255.146.721.721,0,0,1-.409.181.438.438,0,0,1-.131-.021.079.079,0,0,1-.035-.021L20.2,3.593a.094.094,0,0,1-.04-.013,3.238,3.238,0,0,0-.978-.166,6.115,6.115,0,0,1-2.172-.765A1.381,1.381,0,0,0,16.92,3a.687.687,0,0,1-.4.529A1.192,1.192,0,0,1,16,3.644a1.091,1.091,0,0,1-.532-.127,24.294,24.294,0,0,0-2.525-1.065,1.162,1.162,0,0,1-.806-.592.087.087,0,0,1-.006-.016L12.1,1.72a.1.1,0,0,1,0-.019s-.018-.565-.028-.925H8.385a.953.953,0,0,1-.592.241A.691.691,0,0,1,7.6.99H7.584a1.763,1.763,0,0,0-.746.308.6.6,0,0,1-.4.147.917.917,0,0,1-.621-.289c-.03-.018-.078-.047-.13-.079l-.072-.044-1.48,1.51L4.107,3.2A.068.068,0,0,1,4.1,3.23l-.087.2a.1.1,0,0,1-.019.026l-.573.573a1.421,1.421,0,0,1-.939.306,26.486,26.486,0,0,1-1.489,2.2L1,6.541a.094.094,0,0,1,.028.031l.123.241a.1.1,0,0,1,.01.038l.036,1.2c0,.034,0,.072,0,.107a2.536,2.536,0,0,1-.277,1.03l-.008.018L.762,9.6h0s0,.008,0,.015a1.53,1.53,0,0,0,.373.688c.024.026,2.492,2.692,2.778,3a1.968,1.968,0,0,1,.669.215,1.888,1.888,0,0,1,1.2-.343c.148,0,.283.009.4.018l.145.008a1.441,1.441,0,0,1,.651.2,3.435,3.435,0,0,1,.835-.2,5.6,5.6,0,0,0,1.035-.273,1.19,1.19,0,0,1,.478-.117.759.759,0,0,1,.3.059.951.951,0,0,1,.5.58c.036.1.2.229.8.309l.152.025a1.434,1.434,0,0,1,.933.522,1.371,1.371,0,0,1-.018,1H61.626v.773H26.749c-1.587,1.719-1.991,2.157-2.111,2.268l.008.008a1.621,1.621,0,0,0-.26.407c.058.122.244.521.244.521a.087.087,0,0,1,.006.016l.024.1c0,.005,0,.009,0,.014l.268,3.288a.088.088,0,0,1-.008.044l-.118.263a.1.1,0,0,1-.028.035c-.019.014-1.854,1.383-2.231,1.662.043.331.162,1.268.162,1.268v.109c0,.005,0,.011,0,.016a1.552,1.552,0,0,1-.415.92,2.428,2.428,0,0,1-.708.284.461.461,0,0,0-.06.033l-.077.731a.084.084,0,0,1-.009.03l-.083.165a.075.075,0,0,1-.016.023L19.117,30.5a.1.1,0,0,1-.023.016l-.163.084a.109.109,0,0,1-.026.009L17,30.916l-1.52.3h-.018a.1.1,0,0,1-.041-.01l-.331-.174a.091.091,0,0,1-.04-.044,29.7,29.7,0,0,0-1.769-3.643.108.108,0,0,1-.016-.025l-.077-.177a.113.113,0,0,1-.008-.028s-.092-1.169-.107-1.368l-.827-1.476a1.283,1.283,0,0,1-.238-.738,1.2,1.2,0,0,1,.092-.459,14.467,14.467,0,0,0,.436-1.836.089.089,0,0,1,.04-.059l.317-.2a.443.443,0,0,0-.011-.088s-.194-1.159-.221-1.329l-.4-.757c-.775-1.455-1.144-2.152-1.154-2.174a1.4,1.4,0,0,1-.078-.482c0-.024,0-.049,0-.075H0ZM13.94,26.96A30.862,30.862,0,0,1,15.63,30.4l1.23-.245,1.8-.288c.068-.069.262-.262.5-.5.551-.551,1.367-1.368,1.53-1.534l.06-.557c0-.469.49-.67.588-.707a3.243,3.243,0,0,0,.458-.148A2.042,2.042,0,0,0,21.933,26c-.024-.182-.184-1.418-.184-1.418a.086.086,0,0,1,.006-.047l.117-.275a.083.083,0,0,1,.029-.036s1.872-1.4,2.24-1.671c-.036-.461-.228-2.787-.245-3.008-.048-.1-.234-.5-.234-.5a.569.569,0,0,1-.058-.255,1.664,1.664,0,0,1,.461-.941L25.7,16.075H11.8a.934.934,0,0,0,.01.248s0,.006,0,.009l1.558,2.925a.148.148,0,0,1,.006.014l.033.1,0,.014.226,1.361a1.218,1.218,0,0,1,.026.244.708.708,0,0,1-.192.514.63.63,0,0,1-.229.147,11.829,11.829,0,0,1-.433,1.728.42.42,0,0,0-.031.166.519.519,0,0,0,.094.288l.03.043.883,1.577.008.016.038.121a.052.052,0,0,1,0,.02s.088,1.133.106,1.354m12.7.756a.6.6,0,0,1-.171-.024,1.894,1.894,0,0,1-.885-.588,3.569,3.569,0,0,1-.238-1.734v-.2a.09.09,0,0,1,.057-.083l.189-.073a.9.9,0,0,0,.111-.058,2.025,2.025,0,0,0,.052-.592,1.5,1.5,0,0,1-.047-1.108.632.632,0,0,1,.446-.324l.384-.028c.353,0,.479-.014.6-.287.337-.892.714-1.347,1.12-1.347a.6.6,0,0,1,.174.028.775.775,0,0,1,.542.328,1.164,1.164,0,0,1,.078.931c-.1.433-.37,1.164-.6,1.811l-.053.146c-.151.416-.357.986-.368,1.094a8.486,8.486,0,0,1-.484,1.48l-.016.038a.1.1,0,0,1-.011.02l-.023.029a1.222,1.222,0,0,1-.853.546m-.444-1.085a1.124,1.124,0,0,0,.436.306.973.973,0,0,0,.219-.2,7.928,7.928,0,0,0,.411-1.216,9.22,9.22,0,0,1,.454-1.4c.235-.641.493-1.358.587-1.75a1.105,1.105,0,0,0,.035-.25.325.325,0,0,0-.005-.063l-.03-.006a3.162,3.162,0,0,0-.45.851l-.01.021a1.24,1.24,0,0,1-1.3.743s-.091.005-.16.005h0a1.29,1.29,0,0,0,.089.4,1.071,1.071,0,0,1,.06.39,3.517,3.517,0,0,1-.078.67.73.73,0,0,1-.333.454,6.769,6.769,0,0,0,.074,1.04" fill="#605a51"/>
-                              <path id="Path_21722" data-name="Path 21722" d="M148.186,55.7h-2.854l-.409,1.34H142.35l3.056-8.157h2.773l3.052,8.157h-2.638Zm-.537-1.768L146.759,51l-.893,2.932Z" transform="translate(-124.45 -42.733)" fill="#605a51"/>
-                              <path id="Path_21723" data-name="Path 21723" d="M222.06,48.88h3.33l1.259,4.964,1.264-4.964h3.315v8.157H229.16V50.82l-1.583,6.217h-1.871l-1.577-6.217v6.217H222.06Z" transform="translate(-194.137 -42.733)" fill="#605a51"/>
-                              <path id="Path_21724" data-name="Path 21724" d="M304.04,57.027V48.87h4.2a6.1,6.1,0,0,1,1.787.2,1.919,1.919,0,0,1,1,.742,2.3,2.3,0,0,1-.714,3.29,3.155,3.155,0,0,1-.892.321,2.437,2.437,0,0,1,.656.3,2.4,2.4,0,0,1,.4.43,3.2,3.2,0,0,1,.353.509l1.231,2.36H309.22l-1.357-2.5a1.948,1.948,0,0,0-.46-.629,1.06,1.06,0,0,0-.62-.189h-.221v3.313Zm2.525-4.858h1.071a3.753,3.753,0,0,0,.674-.112.671.671,0,0,0,.414-.255.753.753,0,0,0,.16-.473.744.744,0,0,0-.253-.606,1.549,1.549,0,0,0-.949-.211h-1.117Z" transform="translate(-265.808 -42.725)" fill="#605a51"/>
-                              <path id="Path_21725" data-name="Path 21725" d="M376.98,48.88h6.736v1.738h-4.211v1.308h3.912v1.656h-3.912v1.61h4.338v1.846H376.98Z" transform="translate(-329.576 -42.733)" fill="#605a51"/>
-                              <path id="Path_21726" data-name="Path 21726" d="M440.64,48.88h6.232v1.752h-3.708v1.435h3.171v1.641h-3.171v3.33H440.64Z" transform="translate(-385.231 -42.733)" fill="#605a51"/>
-                              <path id="Path_21727" data-name="Path 21727" d="M222.33,137.466h.928v-1.431h1.279v-.781h-1.279v-.688h1.368v-.786h-2.3Z" transform="translate(-194.373 -116.957)" fill="#605a51"/>
-                              <rect id="Rectangle_887" data-name="Rectangle 887" width="0.929" height="3.877" transform="translate(30.629 16.633)" fill="#605a51"/>
-                              <path id="Path_21728" data-name="Path 21728" d="M254.158,142.865c-.02.084-.043.18-.063.273-.025-.1-.052-.192-.074-.27l-.4-1.318H252.59l.986,2.453a.257.257,0,0,1,.026.108.191.191,0,0,1-.034.084.87.87,0,0,1-.309.3,1.237,1.237,0,0,1-.331.131l-.064.014.2.792.054-.006a1.455,1.455,0,0,0,.806-.37,3.9,3.9,0,0,0,.925-1.721l.631-1.784h-.993Z" transform="translate(-220.828 -123.751)" fill="#605a51"/>
-                              <rect id="Rectangle_888" data-name="Rectangle 888" width="0.929" height="2.709" transform="translate(34.844 17.799)" fill="#605a51"/>
-                              <path id="Path_21729" data-name="Path 21729" d="M277.42,132.64a.462.462,0,0,0-.49.464.457.457,0,0,0,.48.464.464.464,0,0,0,.5-.464h0a.462.462,0,0,0-.485-.463" transform="translate(-242.107 -115.961)" fill="#605a51"/>
-                              <path id="Path_21730" data-name="Path 21730" d="M290.015,141.09a.992.992,0,0,0-.766.333l-.029-.275h-.82l0,.065c.011.24.021.507.021.821v1.822h.929V142.3a.5.5,0,0,1,.023-.177.384.384,0,0,1,.353-.262c.228,0,.343.167.343.5v1.494H291v-1.589c0-.736-.367-1.176-.986-1.176" transform="translate(-252.135 -123.348)" fill="#605a51"/>
-                              <path id="Path_21731" data-name="Path 21731" d="M313.935,141.354a.852.852,0,0,0-.669-.274,1.3,1.3,0,0,0-1.236,1.426,1.192,1.192,0,0,0,1.157,1.32.914.914,0,0,0,.645-.241v.009a.555.555,0,0,1-.607.619,1.507,1.507,0,0,1-.718-.187l-.072-.041-.191.741.043.024a2.123,2.123,0,0,0,.959.2,1.621,1.621,0,0,0,1.088-.332,1.5,1.5,0,0,0,.417-1.21v-1.437c0-.378.01-.592.021-.767l0-.067h-.822Zm-.113,1.279a.648.648,0,0,1-.024.2.373.373,0,0,1-.367.277c-.318,0-.46-.313-.46-.624,0-.407.182-.671.465-.671a.377.377,0,0,1,.372.3.672.672,0,0,1,.014.135Z" transform="translate(-272.793 -123.34)" fill="#605a51"/>
-                              <path id="Path_21732" data-name="Path 21732" d="M349.127,133.962a2.381,2.381,0,0,0-1.5-.392,7.141,7.141,0,0,0-1.093.08l-.053.009v3.6l.054.008a7.085,7.085,0,0,0,.922.053,2.635,2.635,0,0,0,1.689-.474,1.866,1.866,0,0,0,.609-1.49,1.651,1.651,0,0,0-.626-1.393m-.655,2.311a1.132,1.132,0,0,1-.831.29c-.074,0-.165,0-.231-.006v-2.224a1.848,1.848,0,0,1,.3-.02.964.964,0,0,1,1.068,1.068,1.217,1.217,0,0,1-.307.893" transform="translate(-302.911 -116.774)" fill="#605a51"/>
-                              <path id="Path_21733" data-name="Path 21733" d="M375.767,141.04a1.351,1.351,0,0,0-1.447,1.436,1.323,1.323,0,0,0,1.4,1.395,1.359,1.359,0,0,0,1.426-1.441,1.325,1.325,0,0,0-1.378-1.39m-.026,2.129c-.343,0-.465-.368-.465-.714s.122-.713.465-.713.449.381.449.708c0,.438-.176.719-.449.719" transform="translate(-327.25 -123.305)" fill="#605a51"/>
-                              <path id="Path_21734" data-name="Path 21734" d="M400.268,141.833a1.054,1.054,0,0,1,.424.074l.07.031.155-.726-.05-.019a1.915,1.915,0,0,0-.635-.1,1.411,1.411,0,0,0-1.542,1.436,1.319,1.319,0,0,0,1.431,1.383,1.889,1.889,0,0,0,.746-.128l.043-.02-.116-.718-.074.033a1.088,1.088,0,0,1-.435.079.612.612,0,0,1-.645-.661.667.667,0,0,1,.177-.485.615.615,0,0,1,.451-.175" transform="translate(-348.556 -123.348)" fill="#605a51"/>
-                              <path id="Path_21735" data-name="Path 21735" d="M418.886,135.85l-.913.251v.465h-.343v.717h.343v.993a1.124,1.124,0,0,0,.24.81.921.921,0,0,0,.651.24,1.771,1.771,0,0,0,.539-.073l.042-.015-.006-.729-.075.016a.949.949,0,0,1-.225.02c-.165,0-.254-.063-.254-.391v-.873h.576v-.717h-.576v-.715Z" transform="translate(-365.114 -118.767)" fill="#605a51"/>
-                              <path id="Path_21736" data-name="Path 21736" d="M434.947,141.04a1.351,1.351,0,0,0-1.447,1.436,1.323,1.323,0,0,0,1.4,1.395,1.359,1.359,0,0,0,1.426-1.441,1.325,1.325,0,0,0-1.378-1.39m-.026,2.129c-.343,0-.465-.368-.465-.714s.122-.713.465-.713.449.381.449.708c0,.438-.176.719-.449.719" transform="translate(-378.989 -123.305)" fill="#605a51"/>
-                              <path id="Path_21737" data-name="Path 21737" d="M460.214,141.04a.793.793,0,0,0-.669.394l-.021-.329h-.814l.005.068c.015.211.021.449.021.846v1.8h.929v-1.373a.814.814,0,0,1,.015-.166.456.456,0,0,1,.488-.357,1.18,1.18,0,0,1,.206.02l.073.013v-.883l-.052-.009a.822.822,0,0,0-.182-.019" transform="translate(-401.029 -123.305)" fill="#605a51"/>
-                              <path id="Path_21738" data-name="Path 21738" d="M474.966,142.12c-.323-.113-.375-.163-.375-.241,0-.13.17-.143.244-.143a1.215,1.215,0,0,1,.529.141l.072.039.168-.683-.045-.023a1.76,1.76,0,0,0-.752-.16c-.656,0-1.114.376-1.114.912-.005.262.127.619.782.837.3.1.332.153.332.241,0,.04,0,.148-.28.148a1.5,1.5,0,0,1-.659-.181l-.073-.044-.175.7.043.023a1.886,1.886,0,0,0,.865.192c.727,0,1.177-.346,1.177-.9-.006-.411-.241-.684-.739-.855" transform="translate(-414.064 -123.313)" fill="#605a51"/>
-                            </g>
-                          </svg>
-                          
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
                         </a></li>
                         <li class="list__item"><a href="#" class="list__link">
-                          <svg id="Component_27_36" data-name="Component 27 – 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.641" height="33.704" viewBox="0 0 61.641 33.704">
-                            <defs>
-                              <clipPath id="clip-path">
-                                <rect id="Rectangle_891" data-name="Rectangle 891" width="61.641" height="33.704" fill="#605a51"/>
-                              </clipPath>
-                            </defs>
-                            <g id="Group_333" data-name="Group 333" clip-path="url(#clip-path)">
-                              <path id="Path_22320" data-name="Path 22320" d="M233.535,10.081c-.019-.13.011-.262-.013-.392a1.608,1.608,0,0,1-.036-.348c-.027-.138.018-.29-.042-.42a.783.783,0,0,1-.015-.3c.014-.115-.056-.217-.037-.332a1.5,1.5,0,0,0-.015-.346,5.147,5.147,0,0,1,.018-.63c.009-.129-.02-.256-.013-.384a3.881,3.881,0,0,1-.008-.421,3.653,3.653,0,0,0-.024-.58c-.04-.156-.008-.323-.063-.476a2.418,2.418,0,0,1-.08-.384c-.062-.117-.11-.243-.18-.358a3.054,3.054,0,0,0-.548-.555c-.145-.112-.231-.3-.408-.361a1.479,1.479,0,0,1-.286-.175,5.153,5.153,0,0,0-.849-.3c-.154-.022-.3-.1-.45-.112a2.723,2.723,0,0,1-.534-.109c-.09-.017-.182.025-.27-.006-.223-.07-.464-.014-.69-.076-.2.02-.4-.04-.606-.036-.208-.029-.42.011-.626-.031a1.983,1.983,0,0,1-.354-.023c-.169-.058-.352-.021-.521-.065-.111-.033-.224-.05-.336-.077a1.167,1.167,0,0,1-.458-.181,4.76,4.76,0,0,1-.387-.279c-.067-.071-.168-.084-.245-.139A2.188,2.188,0,0,0,225.1,2a1.94,1.94,0,0,0-.27-.085,2.5,2.5,0,0,0-.337-.1,1.219,1.219,0,0,0-.449-.11.587.587,0,0,0-.255-.052c-.063-.133.057-.274-.013-.4a.982.982,0,0,1-.043-.22,1.609,1.609,0,0,0-.148-.233c-.046-.068-.05-.164-.122-.215-.09-.073-.155-.178-.271-.213a1.088,1.088,0,0,0-.383-.148c.016.048.037.1.052.151a.442.442,0,0,1,.294.3.789.789,0,0,1-.033.652.555.555,0,0,1-.425.129c-.124.014-.2-.109-.307-.139a.285.285,0,0,1-.149-.109c-.059-.076-.153-.119-.209-.2a1.047,1.047,0,0,0-.271-.191c-.106-.078-.233,0-.352-.01s-.179.1-.229.184a1.908,1.908,0,0,0-.177.307c-.012-.005-.041-.013-.054-.018a.543.543,0,0,0-.127-.209c-.114-.107-.189-.265-.344-.32a.589.589,0,0,0-.453.17c-.074.08-.2.086-.252.184s-.153.1-.241.122a.432.432,0,0,1-.284.133.544.544,0,0,1-.305-.033.894.894,0,0,1-.23-.234,1.276,1.276,0,0,1-.032-.441.722.722,0,0,1,.1-.316c-.014-.129.1-.211.118-.332a.316.316,0,0,0-.271.076,1.954,1.954,0,0,0-.259.3,1.971,1.971,0,0,0-.211.51,2.786,2.786,0,0,0,.012.584.86.86,0,0,0,.095.356,1.373,1.373,0,0,0,.182.312c.1.063.2.139.314.195.082.029.129.112.214.147a1.086,1.086,0,0,0,.547.139.538.538,0,0,0,.273.016c-.018.1.06.169.107.248s.061.19.1.279c.062.092.009.207.054.31.006.113.091.192.107.3a5.179,5.179,0,0,1,.16.8.974.974,0,0,1,.036.566c-.023.077.014.154,0,.233a5.064,5.064,0,0,1-.1.508,3.612,3.612,0,0,1-.119.473,2.392,2.392,0,0,1-.291.5,3.073,3.073,0,0,1-.42.454c-.054.05-.122.1-.124.179a.085.085,0,0,0,.1.055,1.241,1.241,0,0,1,.273-.084c-.024.087-.078.188-.028.277.015,0,.049,0,.067,0a2.626,2.626,0,0,1,.142-.237c.081-.1.186-.179.26-.282.015-.039.056-.046.092-.06.007.254-.163.46-.207.7a.887.887,0,0,0,.077.045c.061-.008.066-.08.094-.123.05-.108.142-.194.182-.307a1.68,1.68,0,0,1,.029.464c.011.076.106.084.167.07.063-.175.223-.294.286-.469a.113.113,0,0,1,.09.017.731.731,0,0,1-.136.372c-.043.042-.035.1-.037.154.049.028.111.033.138-.024.071-.111.155-.206.228-.312.054-.041.109-.078.161-.124a2.441,2.441,0,0,1,.254-.279.707.707,0,0,1,.169.239c.07.1.188.16.238.275s.149.2.2.317a1.264,1.264,0,0,1,.142.8c.017.131-.034.254-.022.385a3.572,3.572,0,0,1-.02.405c-.015.067,0,.138-.017.206-.052.164-.058.341-.113.509a1.439,1.439,0,0,0-.038.241c.017.125.067.248.094.374.019.105.119.176.125.286a.845.845,0,0,0,.09.24,2.484,2.484,0,0,0,.033.3c.012.123-.036.242-.028.364a1.427,1.427,0,0,1-.041.277c-.007.119-.08.219-.095.337,0,.084-.07.149-.07.233-.014.147-.075.283-.075.432a2.974,2.974,0,0,0-.044.344c.006.11-.107.186-.093.3.022.041.083.046.121.068s.092-.039.143-.024c.07.007.139.012.208.016.107-.119.2-.248.3-.369.036-.039.09-.075.094-.132a.52.52,0,0,1-.01-.2c.09-.383.084-.775.14-1.163a3.341,3.341,0,0,1,.032-.451c.042-.279-.01-.567.037-.847.005-.277.083-.547.1-.822.048-.149.032-.307.076-.456a1.222,1.222,0,0,1,.046-.334,2.311,2.311,0,0,1,.048-.336,1.021,1.021,0,0,0,.082-.368c.02-.007.056-.023.077-.031-.008-.015-.022-.048-.029-.063a1.181,1.181,0,0,1,.148.545,4.59,4.59,0,0,1,.065.476,1.269,1.269,0,0,0,.049.31,1.366,1.366,0,0,1,.035.226,2.964,2.964,0,0,1,.049.351c-.011.164-.123.331-.042.492.07.133.084.287.147.422a1.611,1.611,0,0,1,.085.328.829.829,0,0,1,.054.379c.042.141-.028.285,0,.429.011.087-.025.175-.013.264a.418.418,0,0,1-.01.126c-.052.174-.064.357-.106.531-.027.231-.148.44-.162.671.041.071.1.214.2.142s.195.006.295.006c.049,0,.072-.047.095-.083.055-.093.021-.221.12-.291.034-.082.114-.126.163-.2a2.058,2.058,0,0,0-.01-.351c0-.1-.025-.206-.024-.308a3.765,3.765,0,0,1-.021-.718c.011-.144-.025-.287,0-.432a1.517,1.517,0,0,1,.033-.323.57.57,0,0,0,.052-.218c.04-.137.039-.283.078-.419.01-.167-.007-.336.007-.5a.386.386,0,0,0,.013-.256c-.034-.08.019-.158.006-.236a4.754,4.754,0,0,0,.019-.641,1.535,1.535,0,0,1,0-.362,1.431,1.431,0,0,1-.022-.459c.122.13.316.026.45.12a2.832,2.832,0,0,0,.436.122c.106.035.234-.019.324.062a.331.331,0,0,0,.254.057.6.6,0,0,0,.365.1c.029.028.06.066.109.066a4.915,4.915,0,0,1,.976.192,1.574,1.574,0,0,1,.328-.046c.1-.078.22-.107.317-.18a1.542,1.542,0,0,1,.267-.245c.245-.125.464-.3.715-.416.061-.028.112-.078.176-.1a.924.924,0,0,1,.443-.137c.028.035.057.069.088.1a1.463,1.463,0,0,1,.2.309c.055.153.18.267.222.424a.445.445,0,0,0,.163.17c.075.038.081.138.148.186a1.984,1.984,0,0,0,.293.375.431.431,0,0,1,.127.13,1.634,1.634,0,0,1,.19.323c.075.167.162.33.222.5a.759.759,0,0,1,.107.276c.022.151.128.271.142.424a3.567,3.567,0,0,1,.16.773.967.967,0,0,0-.011.231,2.862,2.862,0,0,1-.077.694,2.878,2.878,0,0,1-.239.513c-.092.142-.108.319-.2.461a.363.363,0,0,0-.086.208.416.416,0,0,1-.113.321.172.172,0,0,0,.193.05.735.735,0,0,1,.282-.031c.082,0,.152.066.233.057a.175.175,0,0,0,.1-.2c.056-.02.108-.054.164-.073.09,0,.195.012.253-.077.04.041.1.095.16.054.038-.057.066-.119.1-.176a1.753,1.753,0,0,0,.324-.228.7.7,0,0,0,.126.014.244.244,0,0,0,.067-.193c0-.1.07-.191.067-.293s.034-.228.03-.343a1.612,1.612,0,0,0,.065-.544,3.2,3.2,0,0,1,.028-.367,3.514,3.514,0,0,1,.04-.475,1.26,1.26,0,0,1,.043-.363,3.037,3.037,0,0,0,.026-.331,7.649,7.649,0,0,0-.016-1.028m-.813-1.712c-.023.347-.074.685-.1,1.029-.049.016-.113.023-.131-.037a.9.9,0,0,1,.094-.007c-.036-.01-.074-.017-.108-.027a1.5,1.5,0,0,0-.037-.174c-.048-.113-.189-.142-.23-.258a1.894,1.894,0,0,1-.085-.289,2.531,2.531,0,0,1,.1-.444.611.611,0,0,0,.05-.213c.075-.255.119-.517.2-.771a.915.915,0,0,1,.088-.295c.038.017.079.037.121.057a1.353,1.353,0,0,1,.047.453,4.28,4.28,0,0,1,.027.438c.035.183-.064.357-.039.536" transform="translate(-186.181 -0.003)" fill="#605a51"/>
-                              <path id="Path_22321" data-name="Path 22321" d="M231.935,14.7a.289.289,0,0,1-.108-.029.3.3,0,0,0-.109-.029h-.067a.55.55,0,0,0-.216.031.173.173,0,0,1-.193-.051h0a.419.419,0,0,0,.112-.321.363.363,0,0,1,.086-.209,1.01,1.01,0,0,0,.1-.232,1.023,1.023,0,0,1,.1-.229,1.83,1.83,0,0,1,.1-.193,1.1,1.1,0,0,0,.139-.32l.012-.066a2.562,2.562,0,0,0,.064-.627.986.986,0,0,1,.011-.231c-.012-.069-.022-.14-.031-.209a2.272,2.272,0,0,0-.128-.564.69.69,0,0,0-.072-.222.741.741,0,0,1-.07-.2.761.761,0,0,0-.107-.276,3.756,3.756,0,0,0-.155-.359c-.022-.047-.045-.1-.067-.143a.76.76,0,0,0-.117-.213c-.025-.035-.051-.072-.072-.11a.424.424,0,0,0-.127-.13.973.973,0,0,1-.2-.242c-.029-.044-.059-.09-.093-.133a.24.24,0,0,1-.067-.089.2.2,0,0,0-.08-.1l-.02-.015a.389.389,0,0,1-.143-.155.825.825,0,0,0-.115-.228.977.977,0,0,1-.106-.2c-.022-.034-.042-.071-.062-.107a.732.732,0,0,0-.14-.2c-.029-.03-.057-.062-.089-.1h-.033a.766.766,0,0,0-.324.1l-.084.039a.522.522,0,0,0-.095.055.6.6,0,0,1-.081.049,3.6,3.6,0,0,0-.389.223c-.105.067-.214.135-.327.193-.027.023-.055.046-.083.068a.9.9,0,0,0-.184.177.858.858,0,0,1-.152.085.814.814,0,0,0-.165.095.728.728,0,0,0-.211.024c-.038.008-.077.017-.117.022L227.53,9.3a4.164,4.164,0,0,0-.845-.158h0a.141.141,0,0,1-.1-.055l-.012-.011a.521.521,0,0,1-.323-.08l-.041-.02a.477.477,0,0,1-.062,0,.3.3,0,0,1-.193-.061.238.238,0,0,0-.173-.048h-.035a.373.373,0,0,1-.116-.014,1.524,1.524,0,0,0-.174-.043.991.991,0,0,1-.262-.079.365.365,0,0,0-.209-.046.309.309,0,0,1-.24-.074,1.177,1.177,0,0,0,.012.388c0,.023.007.047.01.07,0,.041,0,.082-.008.122a.767.767,0,0,0,0,.241,1.6,1.6,0,0,1,0,.385,2.327,2.327,0,0,0-.014.257.278.278,0,0,1-.007.1.219.219,0,0,0,0,.134.38.38,0,0,1-.013.257,2.7,2.7,0,0,0,0,.271c0,.076,0,.155,0,.232a1.461,1.461,0,0,0-.039.209,1.48,1.48,0,0,1-.039.21.581.581,0,0,1-.052.218.492.492,0,0,0-.025.191.739.739,0,0,1-.008.132,1.069,1.069,0,0,0,0,.237,1.317,1.317,0,0,1,0,.194,1.877,1.877,0,0,0,0,.476c.007.079.015.161.017.242a1.055,1.055,0,0,0,.012.149,1,1,0,0,1,.012.159.943.943,0,0,0,.009.144.645.645,0,0,1,0,.208.528.528,0,0,1-.071.08.363.363,0,0,0-.092.119.232.232,0,0,0-.083.169.356.356,0,0,1-.038.122l-.008.014c-.02.033-.042.07-.084.07h0a.416.416,0,0,1-.1-.018.2.2,0,0,0-.19.013.089.089,0,0,1-.072.018c-.051-.012-.087-.078-.116-.132l-.016-.028a1.451,1.451,0,0,1,.082-.356,1.659,1.659,0,0,0,.079-.316c.018-.075.031-.153.043-.229a2.4,2.4,0,0,1,.063-.3.409.409,0,0,0,.01-.126.5.5,0,0,1,.007-.134.5.5,0,0,0,.007-.13.645.645,0,0,1,0-.2.543.543,0,0,0,0-.228.822.822,0,0,0-.054-.379,1.292,1.292,0,0,0-.067-.273l-.018-.055a1.286,1.286,0,0,1-.067-.2,1.119,1.119,0,0,0-.08-.224.434.434,0,0,1,.006-.323.87.87,0,0,0,.035-.17,1.218,1.218,0,0,1-.017-.147.847.847,0,0,0-.032-.2.667.667,0,0,1-.011-.091.454.454,0,0,0-.024-.134.442.442,0,0,1-.036-.186.669.669,0,0,0-.013-.124c-.012-.065-.017-.132-.023-.2a1.388,1.388,0,0,0-.042-.279l0-.039a1.106,1.106,0,0,0-.139-.5l.008.019c.006.014.013.029.018.038h0l-.024.01-.052.021a.686.686,0,0,1-.053.279c-.01.029-.02.059-.029.088a.573.573,0,0,0-.031.189.85.85,0,0,1-.017.147,1.24,1.24,0,0,0-.047.334,1.174,1.174,0,0,0-.036.223,1.122,1.122,0,0,1-.04.234,3.649,3.649,0,0,1-.048.381,3.151,3.151,0,0,0-.05.441,2.444,2.444,0,0,0-.02.435,2.6,2.6,0,0,1-.017.412,3.343,3.343,0,0,0-.032.452c-.022.152-.035.308-.047.458a4.824,4.824,0,0,1-.093.7.3.3,0,0,0,0,.138c0,.019.006.039.008.059a.176.176,0,0,1-.068.106l-.027.027c-.046.053-.09.109-.133.163s-.112.14-.172.206c-.062,0-.134-.008-.209-.016a.092.092,0,0,0-.068.015.078.078,0,0,1-.076.009.3.3,0,0,0-.044-.018.128.128,0,0,1-.078-.05.249.249,0,0,1,.046-.152.266.266,0,0,0,.047-.144,1.6,1.6,0,0,1,.027-.234c.006-.036.012-.073.017-.11a1.067,1.067,0,0,1,.039-.242,1.349,1.349,0,0,0,.036-.19.29.29,0,0,1,.035-.12.314.314,0,0,0,.035-.113.691.691,0,0,1,.047-.159.589.589,0,0,0,.048-.178.685.685,0,0,1,.021-.113.46.46,0,0,0,.02-.165.8.8,0,0,1,.014-.176.736.736,0,0,0,.013-.188.685.685,0,0,0-.017-.133.536.536,0,0,1-.015-.169c-.009-.021-.019-.042-.029-.062a.549.549,0,0,1-.061-.178.322.322,0,0,0-.064-.155.375.375,0,0,1-.061-.131c-.011-.052-.027-.1-.041-.156a1.485,1.485,0,0,1-.052-.218.925.925,0,0,0,.011-.094.558.558,0,0,1,.026-.148,1.834,1.834,0,0,0,.059-.261,1.882,1.882,0,0,1,.055-.248.372.372,0,0,0,.01-.11.435.435,0,0,1,.006-.1,1.031,1.031,0,0,0,.015-.236,1.415,1.415,0,0,1,0-.169.8.8,0,0,1,.012-.185.749.749,0,0,0,.01-.2c0-.046,0-.094,0-.141a1,1,0,0,0-.142-.66.785.785,0,0,0-.1-.163.814.814,0,0,1-.1-.154.505.505,0,0,0-.134-.166.726.726,0,0,1-.1-.11.707.707,0,0,0-.169-.239,1.053,1.053,0,0,0-.163.173c-.029.036-.058.072-.09.106s-.073.059-.109.085l-.052.039c-.031.044-.064.088-.1.13-.044.058-.091.118-.132.182a.074.074,0,0,1-.046.041.121.121,0,0,1-.094-.017V8.066a.164.164,0,0,1,.037-.126.71.71,0,0,0,.136-.372.112.112,0,0,0-.089-.017.907.907,0,0,1-.143.234.909.909,0,0,0-.143.235A.182.182,0,0,1,220.419,8a.077.077,0,0,1-.033-.055c0-.025,0-.049,0-.074a1.359,1.359,0,0,0-.03-.388.744.744,0,0,1-.1.169.914.914,0,0,0-.084.136.268.268,0,0,0-.021.044c-.015.037-.03.075-.074.08-.029-.015-.055-.03-.078-.046a1.353,1.353,0,0,1,.1-.29.983.983,0,0,0,.108-.411l-.017.006c-.03.01-.061.021-.074.053a1.226,1.226,0,0,1-.139.154,1.468,1.468,0,0,0-.12.128,2.028,2.028,0,0,0-.116.191l-.026.046h0l-.034,0-.029,0a.268.268,0,0,1,.01-.223c.006-.019.012-.036.017-.054a.444.444,0,0,0-.166.046.726.726,0,0,1-.107.039.085.085,0,0,1-.1-.056.232.232,0,0,1,.1-.16l.021-.019.074-.072a2.461,2.461,0,0,0,.345-.382c.027-.042.056-.085.084-.126a1.551,1.551,0,0,0,.207-.371,1.075,1.075,0,0,0,.075-.275,1.533,1.533,0,0,1,.044-.2,2.7,2.7,0,0,0,.071-.345c.009-.053.017-.109.028-.163a.384.384,0,0,0,0-.106.31.31,0,0,1,0-.127.991.991,0,0,0-.036-.566,2.961,2.961,0,0,0-.1-.558c-.02-.079-.04-.16-.058-.241a.455.455,0,0,0-.053-.141.4.4,0,0,1-.055-.161.353.353,0,0,1-.02-.145A.273.273,0,0,0,220,3.172a1.64,1.64,0,0,1-.068-.179c-.011-.033-.022-.067-.035-.1s-.025-.039-.038-.057a.254.254,0,0,1-.069-.19.544.544,0,0,1-.272-.016l-.033,0a1.01,1.01,0,0,1-.514-.136.39.39,0,0,1-.106-.074.336.336,0,0,0-.108-.073,1.863,1.863,0,0,1-.209-.126c-.035-.023-.07-.047-.106-.069l-.033-.048a1.109,1.109,0,0,1-.149-.264l-.019-.048a.723.723,0,0,1-.076-.308l0-.027a2.667,2.667,0,0,1-.01-.558c.012-.035.024-.072.035-.107a1.479,1.479,0,0,1,.176-.4A.755.755,0,0,1,218.523.2a1.27,1.27,0,0,0,.1-.111A.323.323,0,0,1,218.9.007a.4.4,0,0,1-.059.144.308.308,0,0,0-.059.188l-.005.011a.7.7,0,0,0-.093.3c0,.035,0,.07,0,.1a.878.878,0,0,0,.034.336l.029.037a.745.745,0,0,0,.2.2l.066.017a.385.385,0,0,0,.239.016.436.436,0,0,0,.283-.133l.034-.008a.288.288,0,0,0,.207-.114A.272.272,0,0,1,219.91,1a.381.381,0,0,0,.116-.077.6.6,0,0,1,.445-.17h.008a.58.58,0,0,1,.24.2,1.2,1.2,0,0,0,.1.117.455.455,0,0,1,.113.179l.014.031.025.008L221,1.3c.021-.036.04-.074.058-.111a.875.875,0,0,1,.119-.2l.005-.009c.047-.079.105-.177.205-.177h.04A.614.614,0,0,0,221.539.8a.271.271,0,0,1,.223.023.99.99,0,0,0,.1.058.507.507,0,0,1,.174.132.551.551,0,0,0,.106.1.593.593,0,0,1,.1.1.28.28,0,0,0,.149.109.4.4,0,0,1,.123.068.288.288,0,0,0,.165.072h.019l.057,0a.526.526,0,0,0,.368-.131.792.792,0,0,0,.032-.651.438.438,0,0,0-.294-.3c-.009-.03-.02-.06-.031-.089s-.015-.042-.022-.062h0a1.1,1.1,0,0,1,.383.148.466.466,0,0,1,.189.136,1.041,1.041,0,0,0,.082.077.254.254,0,0,1,.082.129.411.411,0,0,0,.04.086,1.635,1.635,0,0,1,.148.233c0,.019.005.037.008.055a.668.668,0,0,0,.036.165.29.29,0,0,1,.009.2.31.31,0,0,0,0,.2l.058,0a.42.42,0,0,1,.2.047l.1.014a.89.89,0,0,1,.352.1,1.6,1.6,0,0,1,.25.069l.087.028a.625.625,0,0,0,.117.033A.472.472,0,0,1,225.1,2l.018.008a2.049,2.049,0,0,1,.337.177.564.564,0,0,0,.105.054.4.4,0,0,1,.14.084,1.038,1.038,0,0,0,.214.159,1.364,1.364,0,0,1,.173.12.913.913,0,0,0,.37.157l.087.023c.045.011.091.02.135.03.066.014.135.028.2.047a1.119,1.119,0,0,0,.241.027.98.98,0,0,1,.28.038.526.526,0,0,0,.2.018.8.8,0,0,1,.151,0,1.611,1.611,0,0,0,.339.02,1.9,1.9,0,0,1,.286.011h.018a2.109,2.109,0,0,1,.25.02,1.521,1.521,0,0,0,.337.016,1.367,1.367,0,0,0,.336.035,1.273,1.273,0,0,1,.354.041.337.337,0,0,0,.148.007.45.45,0,0,1,.121,0l.014,0a2.671,2.671,0,0,0,.52.105,1.122,1.122,0,0,1,.24.058,1.317,1.317,0,0,0,.21.054,5.118,5.118,0,0,1,.849.3l.071.049a.982.982,0,0,0,.214.126.669.669,0,0,1,.259.211,1.1,1.1,0,0,0,.15.15,3.072,3.072,0,0,1,.548.555,2.187,2.187,0,0,1,.11.214c.022.048.045.1.07.144a2.443,2.443,0,0,0,.08.384.873.873,0,0,1,.038.259,1.047,1.047,0,0,0,.025.217,1.926,1.926,0,0,0,.017.232,1.248,1.248,0,0,1,.007.348.887.887,0,0,0,0,.237,1.188,1.188,0,0,1,.007.183,1.357,1.357,0,0,0,.007.185,1.269,1.269,0,0,1,.006.2l0,.049a4.716,4.716,0,0,0-.015.58c0,.036.006.073.011.109a.82.82,0,0,1,0,.237.412.412,0,0,0,.017.171.447.447,0,0,1,.019.161.778.778,0,0,0,.015.3.56.56,0,0,1,.033.247.843.843,0,0,0,.009.173.591.591,0,0,0,.016.214.987.987,0,0,1,.02.135.949.949,0,0,1,.008.206,1.071,1.071,0,0,0,0,.186h0a7.572,7.572,0,0,1,.016,1.028,1.113,1.113,0,0,0-.008.138.858.858,0,0,1-.018.193,1.247,1.247,0,0,0-.043.362,3.527,3.527,0,0,0-.039.475.9.9,0,0,1-.016.16.712.712,0,0,0-.012.206,1.622,1.622,0,0,1-.065.545,1.061,1.061,0,0,1-.015.186,1.308,1.308,0,0,0-.015.158.422.422,0,0,1-.033.154.489.489,0,0,0-.034.139v.012a.228.228,0,0,1-.067.181.371.371,0,0,1-.087-.008l-.04-.006c-.029.022-.058.045-.086.068a1.082,1.082,0,0,1-.237.16c-.019.028-.035.059-.052.088s-.032.059-.051.087c-.059.041-.12-.011-.16-.053-.05.075-.132.076-.212.076h-.042a.668.668,0,0,0-.086.038.785.785,0,0,1-.077.035.177.177,0,0,1-.1.2h-.015m-.217-.059a.3.3,0,0,1,.11.029.291.291,0,0,0,.107.029h.015a.176.176,0,0,0,.1-.2h0a.719.719,0,0,0,.077-.035.644.644,0,0,1,.086-.038h.042c.08,0,.162,0,.211-.076h0a.182.182,0,0,0,.115.068.078.078,0,0,0,.045-.014c.018-.028.035-.058.051-.087s.033-.06.052-.089a1.088,1.088,0,0,0,.237-.16c.028-.023.058-.047.087-.068l.04.006a.381.381,0,0,0,.086.008.229.229,0,0,0,.066-.181v-.012a.487.487,0,0,1,.034-.139.426.426,0,0,0,.033-.154,1.252,1.252,0,0,1,.016-.158,1.089,1.089,0,0,0,.015-.186,1.61,1.61,0,0,0,.065-.544.714.714,0,0,1,.012-.207.871.871,0,0,0,.016-.16,3.581,3.581,0,0,1,.039-.475,1.259,1.259,0,0,1,.043-.363.846.846,0,0,0,.018-.193,1.143,1.143,0,0,1,.008-.138,7.593,7.593,0,0,0-.016-1.028,1.046,1.046,0,0,1,0-.186,1.563,1.563,0,0,0-.028-.34.6.6,0,0,1-.016-.214.84.84,0,0,1-.009-.173.56.56,0,0,0-.033-.247.781.781,0,0,1-.015-.3.445.445,0,0,0-.019-.161.417.417,0,0,1-.017-.172.817.817,0,0,0,0-.237c0-.036-.009-.073-.011-.109a4.745,4.745,0,0,1,.015-.58l0-.049a1.283,1.283,0,0,0-.006-.2,1.358,1.358,0,0,1-.007-.185,1.169,1.169,0,0,0-.007-.183.888.888,0,0,1,0-.238,1.24,1.24,0,0,0-.007-.348,1.955,1.955,0,0,1-.017-.232,1.066,1.066,0,0,1-.025-.217.872.872,0,0,0-.038-.259,2.43,2.43,0,0,1-.08-.384c-.025-.047-.048-.1-.07-.144a2.186,2.186,0,0,0-.109-.214,3.085,3.085,0,0,0-.547-.555,1.109,1.109,0,0,1-.15-.15.67.67,0,0,0-.258-.21.977.977,0,0,1-.215-.126l-.071-.049a5.119,5.119,0,0,0-.849-.3,1.333,1.333,0,0,1-.21-.055,1.13,1.13,0,0,0-.24-.058,2.661,2.661,0,0,1-.521-.106l-.014,0a.41.41,0,0,0-.121,0,.339.339,0,0,1-.148-.007,1.265,1.265,0,0,0-.354-.041,1.376,1.376,0,0,1-.336-.035c-.029,0-.058,0-.087,0a2.054,2.054,0,0,1-.251-.02,2.076,2.076,0,0,0-.25-.02h-.018a1.954,1.954,0,0,0-.286-.011,1.612,1.612,0,0,1-.34-.02.734.734,0,0,0-.151,0,.535.535,0,0,1-.2-.018.969.969,0,0,0-.28-.038,1.122,1.122,0,0,1-.241-.027c-.066-.02-.135-.034-.2-.047-.044-.009-.09-.019-.135-.03l-.087-.023a.914.914,0,0,1-.371-.157,1.325,1.325,0,0,0-.173-.12,1.05,1.05,0,0,1-.214-.159.4.4,0,0,0-.139-.084.553.553,0,0,1-.105-.055,2.056,2.056,0,0,0-.337-.177L225.1,2a.479.479,0,0,0-.152-.051.629.629,0,0,1-.118-.033l-.087-.029a1.593,1.593,0,0,0-.25-.068.894.894,0,0,0-.352-.1l-.1-.014a.42.42,0,0,0-.2-.047l-.059,0a.309.309,0,0,1-.005-.2.288.288,0,0,0-.009-.2.669.669,0,0,1-.036-.165c0-.018,0-.037-.007-.055A1.664,1.664,0,0,0,223.584.8a.413.413,0,0,1-.04-.086.256.256,0,0,0-.081-.128.968.968,0,0,1-.082-.077.466.466,0,0,0-.189-.136,1.1,1.1,0,0,0-.382-.148c.007.02.014.04.022.061s.022.059.03.089a.439.439,0,0,1,.294.3.793.793,0,0,1-.033.652.528.528,0,0,1-.368.131l-.057,0h-.019a.291.291,0,0,1-.165-.072.39.39,0,0,0-.123-.068.282.282,0,0,1-.15-.11.607.607,0,0,0-.1-.1.555.555,0,0,1-.106-.1.51.51,0,0,0-.174-.132.949.949,0,0,1-.1-.058A.27.27,0,0,0,221.539.8a.628.628,0,0,1-.109.013h-.04c-.1,0-.157.1-.2.176L221.181,1a.872.872,0,0,0-.119.2c-.018.037-.037.075-.058.111l-.03-.009-.025-.008-.014-.031a.459.459,0,0,0-.113-.178,1.2,1.2,0,0,1-.1-.117.577.577,0,0,0-.239-.2h-.008a.6.6,0,0,0-.444.17A.377.377,0,0,1,219.91,1a.273.273,0,0,0-.136.108.289.289,0,0,1-.208.114l-.034.008a.438.438,0,0,1-.283.133.39.39,0,0,1-.239-.016l-.066-.017a.742.742,0,0,1-.2-.2l-.029-.037a.879.879,0,0,1-.034-.337c0-.035,0-.07,0-.1a.7.7,0,0,1,.093-.306L218.78.34a.307.307,0,0,1,.058-.189A.408.408,0,0,0,218.9.008a.324.324,0,0,0-.27.077,1.208,1.208,0,0,1-.1.111.762.762,0,0,0-.156.191,1.481,1.481,0,0,0-.176.4c-.011.035-.023.071-.035.107a2.654,2.654,0,0,0,.01.557l0,.027a.721.721,0,0,0,.075.308l.02.048a1.106,1.106,0,0,0,.149.263l.033.048c.035.022.071.045.106.069a1.863,1.863,0,0,0,.208.126.343.343,0,0,1,.108.073.387.387,0,0,0,.106.074,1.012,1.012,0,0,0,.514.136l.033,0a.538.538,0,0,0,.273.016h0a.252.252,0,0,0,.068.19c.013.019.027.038.038.057s.024.067.035.1a1.665,1.665,0,0,0,.068.179.273.273,0,0,1,.034.165.355.355,0,0,0,.02.145.4.4,0,0,0,.054.16.46.46,0,0,1,.053.142c.017.081.038.162.057.241a2.953,2.953,0,0,1,.1.558.92.92,0,0,1,.036.566.3.3,0,0,0,0,.127.386.386,0,0,1,0,.107c-.01.054-.019.109-.028.163a2.714,2.714,0,0,1-.071.345,1.555,1.555,0,0,0-.044.2,1.07,1.07,0,0,1-.075.276,1.556,1.556,0,0,1-.207.371c-.028.041-.057.083-.084.126a2.472,2.472,0,0,1-.346.383l-.074.072-.021.019a.232.232,0,0,0-.1.16.078.078,0,0,0,.038.046.076.076,0,0,0,.058.009.728.728,0,0,0,.107-.038.441.441,0,0,1,.167-.046h0c0,.018-.011.035-.017.054a.269.269,0,0,0-.011.222h0l.026,0,.038,0,.025-.046a1.976,1.976,0,0,1,.116-.191,1.5,1.5,0,0,1,.12-.128,1.21,1.21,0,0,0,.139-.153c.013-.033.044-.043.074-.054l.018-.006h0a.985.985,0,0,1-.108.412,1.375,1.375,0,0,0-.1.29c.023.015.049.03.077.045.042-.006.058-.043.073-.079a.265.265,0,0,1,.021-.044.9.9,0,0,1,.084-.136.726.726,0,0,0,.1-.171v0a1.356,1.356,0,0,1,.03.39c0,.025,0,.049,0,.074A.077.077,0,0,0,220.42,8a.185.185,0,0,0,.134.016.906.906,0,0,1,.143-.235.913.913,0,0,0,.143-.234.111.111,0,0,1,.091.017.71.71,0,0,1-.136.373.161.161,0,0,0-.036.125c0,.009,0,.019,0,.029a.122.122,0,0,0,.092.016.074.074,0,0,0,.045-.04c.041-.065.087-.124.132-.182.032-.042.066-.085.1-.13l.052-.039a1.344,1.344,0,0,0,.109-.085c.032-.033.061-.07.09-.105a1.036,1.036,0,0,1,.164-.174.7.7,0,0,1,.17.24.731.731,0,0,0,.1.11.511.511,0,0,1,.135.166.794.794,0,0,0,.1.153.788.788,0,0,1,.1.163,1,1,0,0,1,.142.661c0,.046,0,.095,0,.141a.738.738,0,0,1-.01.2.809.809,0,0,0-.012.185,1.449,1.449,0,0,0,0,.169,1.018,1.018,0,0,1-.015.237.432.432,0,0,0-.006.1.383.383,0,0,1-.01.11,1.883,1.883,0,0,0-.055.248,1.857,1.857,0,0,1-.059.261.551.551,0,0,0-.026.147c0,.031-.005.062-.011.094a1.492,1.492,0,0,0,.052.218c.015.051.03.1.041.156a.371.371,0,0,0,.061.131.324.324,0,0,1,.064.156.54.54,0,0,0,.061.178c.01.02.02.041.029.062a.54.54,0,0,0,.015.169.686.686,0,0,1,.017.133.75.75,0,0,1-.013.189.8.8,0,0,0-.014.176.462.462,0,0,1-.02.165.7.7,0,0,0-.021.112.584.584,0,0,1-.048.178.676.676,0,0,0-.047.159.315.315,0,0,1-.035.113.289.289,0,0,0-.035.12,1.347,1.347,0,0,1-.036.19,1.063,1.063,0,0,0-.039.242c0,.037-.011.074-.017.11a1.6,1.6,0,0,0-.027.234.27.27,0,0,1-.047.144.248.248,0,0,0-.046.151.129.129,0,0,0,.077.049.262.262,0,0,1,.044.018c.026.014.05,0,.075-.01a.1.1,0,0,1,.068-.015c.074.008.147.012.208.016.06-.066.116-.137.171-.206s.087-.109.133-.163l.027-.027a.175.175,0,0,0,.067-.1c0-.019-.005-.04-.008-.059a.3.3,0,0,1,0-.138,4.8,4.8,0,0,0,.093-.7c.012-.15.025-.306.047-.458a3.345,3.345,0,0,1,.032-.452,2.566,2.566,0,0,0,.017-.412,2.46,2.46,0,0,1,.02-.435,3.135,3.135,0,0,1,.05-.441,3.678,3.678,0,0,0,.048-.381,1.1,1.1,0,0,0,.04-.234,1.2,1.2,0,0,1,.036-.223,1.255,1.255,0,0,1,.047-.334.818.818,0,0,0,.017-.146.575.575,0,0,1,.031-.19c.009-.03.019-.059.029-.089a.689.689,0,0,0,.054-.279l.053-.021.024-.01c0-.009-.011-.023-.017-.037l-.012-.026h0a1.089,1.089,0,0,1,.144.506l0,.039a1.389,1.389,0,0,1,.042.279c.005.065.011.132.023.2a.662.662,0,0,1,.013.125.44.44,0,0,0,.036.185.454.454,0,0,1,.024.135.66.66,0,0,0,.011.091.864.864,0,0,1,.032.2,1.135,1.135,0,0,0,.017.146.883.883,0,0,1-.035.17.432.432,0,0,0-.007.322,1.125,1.125,0,0,1,.08.224,1.257,1.257,0,0,0,.067.2l.018.055a1.3,1.3,0,0,1,.067.273.824.824,0,0,1,.054.379.542.542,0,0,1,0,.229.644.644,0,0,0,0,.2.5.5,0,0,1-.007.13.505.505,0,0,0-.006.134.42.42,0,0,1-.01.126,2.351,2.351,0,0,0-.063.3c-.012.076-.025.154-.043.229a1.66,1.66,0,0,1-.079.316,1.445,1.445,0,0,0-.082.355l.016.028c.029.053.065.119.116.131a.089.089,0,0,0,.072-.018.2.2,0,0,1,.191-.013.415.415,0,0,0,.1.018h0c.041,0,.064-.037.083-.069l.008-.014a.361.361,0,0,0,.038-.122.235.235,0,0,1,.083-.169.364.364,0,0,1,.092-.119.522.522,0,0,0,.071-.079.645.645,0,0,0,0-.207.947.947,0,0,1-.009-.144.973.973,0,0,0-.012-.159,1.031,1.031,0,0,1-.012-.149c0-.081-.01-.163-.017-.241a1.866,1.866,0,0,1,0-.477,1.3,1.3,0,0,0,0-.194,1.074,1.074,0,0,1,0-.238.748.748,0,0,0,.008-.132.491.491,0,0,1,.025-.191.575.575,0,0,0,.052-.218,1.458,1.458,0,0,0,.039-.21,1.475,1.475,0,0,1,.039-.209c0-.077,0-.155,0-.232a2.666,2.666,0,0,1,0-.271.379.379,0,0,0,.013-.256.221.221,0,0,1,0-.134.276.276,0,0,0,.007-.1,2.411,2.411,0,0,1,.014-.257,1.586,1.586,0,0,0,0-.385.774.774,0,0,1,0-.241c0-.04.007-.081.008-.121q0-.035-.01-.07a1.178,1.178,0,0,1-.012-.389h0a.308.308,0,0,0,.24.074.363.363,0,0,1,.209.046.991.991,0,0,0,.262.079,1.517,1.517,0,0,1,.174.043.371.371,0,0,0,.116.014h.034a.244.244,0,0,1,.175.048.327.327,0,0,0,.254.057l.042.02a.521.521,0,0,0,.323.08l.012.012a.14.14,0,0,0,.1.054h0a4.153,4.153,0,0,1,.845.159l.131.034c.039,0,.078-.013.116-.022a.843.843,0,0,1,.179-.026h.033a.812.812,0,0,1,.165-.095A.872.872,0,0,0,228.3,9.1a.9.9,0,0,1,.184-.177c.028-.022.056-.045.083-.068.113-.057.222-.126.327-.193a3.618,3.618,0,0,1,.389-.223.582.582,0,0,0,.081-.049.563.563,0,0,1,.095-.055l.084-.039a.7.7,0,0,1,.358-.1c.032.04.06.072.089.1a.734.734,0,0,1,.14.2c.019.036.039.073.062.107a.977.977,0,0,0,.106.2.821.821,0,0,1,.116.228.391.391,0,0,0,.143.155l.02.015a.2.2,0,0,1,.081.1.242.242,0,0,0,.067.089c.033.042.063.088.093.133a.973.973,0,0,0,.2.242.427.427,0,0,1,.127.13c.022.038.047.075.072.11a.762.762,0,0,1,.118.213c.022.048.045.1.067.143a3.758,3.758,0,0,1,.155.359.762.762,0,0,1,.107.276.742.742,0,0,0,.07.2.685.685,0,0,1,.072.223,2.27,2.27,0,0,1,.128.564c.01.069.019.14.032.209a.994.994,0,0,0-.011.231,2.556,2.556,0,0,1-.065.627l-.012.066a1.113,1.113,0,0,1-.14.321,1.783,1.783,0,0,0-.1.193,1.016,1.016,0,0,0-.1.229,1.007,1.007,0,0,1-.1.232.363.363,0,0,0-.086.208.421.421,0,0,1-.113.321.171.171,0,0,0,.192.05.556.556,0,0,1,.216-.031h.067m.843-5.236a.081.081,0,0,1-.039-.008.064.064,0,0,1-.031-.04h0a.908.908,0,0,1,.091-.006l-.041-.01c-.021,0-.043-.01-.063-.016-.006-.023-.009-.045-.013-.067a.582.582,0,0,0-.025-.107.327.327,0,0,0-.114-.125.31.31,0,0,1-.116-.133,1.552,1.552,0,0,1-.074-.245l-.011-.045c.013-.053.022-.108.031-.161a1.128,1.128,0,0,1,.073-.284.61.61,0,0,0,.049-.213c.036-.123.065-.249.094-.37s.063-.268.1-.4c.005-.023.01-.046.014-.068a.653.653,0,0,1,.074-.227c.039.016.081.037.121.057a1.326,1.326,0,0,1,.048.454.767.767,0,0,1,.018.239.915.915,0,0,0,.008.2.74.74,0,0,1-.018.281.78.78,0,0,0-.021.256h0c-.012.174-.031.349-.049.518s-.037.34-.048.511a.2.2,0,0,1-.062.012m-.069-.049a.062.062,0,0,0,.03.039.132.132,0,0,0,.1,0c.011-.171.03-.343.048-.511s.037-.344.049-.518a.782.782,0,0,1,.021-.256.738.738,0,0,0,.018-.28.926.926,0,0,1-.008-.2.759.759,0,0,0-.018-.239,1.331,1.331,0,0,0-.047-.454c-.04-.019-.082-.04-.12-.057a.664.664,0,0,0-.073.226c0,.022-.009.045-.014.068-.04.132-.072.269-.1.4s-.058.248-.094.37a.607.607,0,0,1-.05.213,1.13,1.13,0,0,0-.073.283c-.009.053-.018.108-.031.161l.011.044a1.536,1.536,0,0,0,.074.244.306.306,0,0,0,.116.132.328.328,0,0,1,.114.126.592.592,0,0,1,.025.107c0,.022.007.044.012.066.02.006.041.011.062.016l.045.011h0c-.025,0-.07,0-.094.006" transform="translate(-186.178 0.001)" fill="#605a51"/>
-                              <path id="Path_22322" data-name="Path 22322" d="M99.157,11.109a3.036,3.036,0,0,0,.026.331,1.265,1.265,0,0,1,.043.363,3.533,3.533,0,0,1,.039.475,3.236,3.236,0,0,1,.028.367,1.612,1.612,0,0,0,.065.544c0,.115.029.228.03.343s.063.19.067.293a.244.244,0,0,0,.067.193A.7.7,0,0,0,99.651,14a1.764,1.764,0,0,0,.324.228c.038.057.065.118.1.176.059.041.12-.013.16-.054.058.089.163.074.253.077.056.018.108.052.164.073a.175.175,0,0,0,.1.2c.081.009.151-.058.233-.057a.736.736,0,0,1,.282.031.172.172,0,0,0,.193-.05.416.416,0,0,1-.113-.321.364.364,0,0,0-.086-.208c-.093-.142-.109-.319-.2-.461a2.875,2.875,0,0,1-.239-.513,2.847,2.847,0,0,1-.077-.694.982.982,0,0,0-.011-.231,3.565,3.565,0,0,1,.16-.773c.014-.154.12-.274.142-.424a.757.757,0,0,1,.108-.276c.06-.171.146-.335.221-.5a1.648,1.648,0,0,1,.19-.323.431.431,0,0,1,.127-.13,1.985,1.985,0,0,0,.293-.375c.067-.048.073-.148.148-.186a.443.443,0,0,0,.163-.17c.042-.157.167-.271.222-.424a1.469,1.469,0,0,1,.2-.309c.032-.033.06-.066.088-.1a.924.924,0,0,1,.442.137c.064.027.115.076.176.1.251.118.47.291.715.416a1.553,1.553,0,0,1,.267.245c.1.073.219.1.316.18a1.573,1.573,0,0,1,.328.046,4.916,4.916,0,0,1,.976-.192c.049,0,.08-.038.109-.066a.6.6,0,0,0,.365-.1.331.331,0,0,0,.254-.057c.09-.081.218-.027.324-.062a2.842,2.842,0,0,0,.436-.122c.134-.094.328.01.45-.12a1.435,1.435,0,0,1-.022.459,1.544,1.544,0,0,1,0,.362,4.732,4.732,0,0,0,.018.641c-.014.078.04.156.006.236a.387.387,0,0,0,.013.256c.015.167,0,.336.007.5.04.136.039.282.078.419a.57.57,0,0,0,.052.218,1.516,1.516,0,0,1,.033.323c.022.144-.015.287,0,.432a3.754,3.754,0,0,1-.021.718c0,.1-.027.2-.024.308a2.073,2.073,0,0,0-.01.351c.049.072.129.116.163.2.1.07.065.2.12.291.023.036.045.085.095.083.1,0,.2-.078.295-.006s.162-.07.2-.142c-.014-.231-.135-.44-.162-.671-.042-.174-.053-.357-.106-.531a.418.418,0,0,1-.01-.126c.012-.089-.024-.177-.013-.264.027-.144-.044-.288,0-.429a.829.829,0,0,1,.054-.379,1.614,1.614,0,0,1,.085-.328c.063-.135.077-.289.147-.422.081-.161-.031-.328-.042-.492a2.97,2.97,0,0,1,.049-.351,1.367,1.367,0,0,1,.035-.226,1.269,1.269,0,0,0,.049-.31,4.551,4.551,0,0,1,.065-.476,1.179,1.179,0,0,1,.148-.545c-.008.015-.021.049-.029.063.021.008.057.024.077.031a1.021,1.021,0,0,0,.082.368,2.313,2.313,0,0,1,.048.336,1.227,1.227,0,0,1,.046.334c.044.149.028.308.076.456.015.275.093.545.1.822.047.279,0,.567.037.847a3.3,3.3,0,0,1,.032.451c.056.388.051.78.14,1.163a.519.519,0,0,1-.01.2c0,.057.059.093.094.132.1.121.2.25.3.369.069,0,.138-.009.208-.016.051-.015.094.052.143.024s.1-.027.121-.068c.014-.11-.1-.185-.093-.3a3.01,3.01,0,0,0-.044-.344c0-.149-.062-.285-.075-.432,0-.084-.066-.149-.07-.233-.015-.118-.088-.219-.095-.337a1.426,1.426,0,0,1-.041-.277c.008-.123-.04-.242-.028-.364a2.457,2.457,0,0,0,.033-.3.846.846,0,0,0,.09-.24c.006-.111.106-.181.125-.286.027-.126.077-.249.093-.374a1.453,1.453,0,0,0-.038-.241c-.055-.168-.061-.345-.114-.509-.02-.067,0-.138-.017-.206a3.606,3.606,0,0,1-.02-.405c.012-.131-.039-.254-.022-.385a1.264,1.264,0,0,1,.142-.8c.049-.118.148-.2.2-.317s.168-.176.238-.275a.712.712,0,0,1,.169-.239,2.441,2.441,0,0,1,.254.279c.051.046.107.083.161.124.074.106.157.2.228.312.028.057.089.052.138.024,0-.053.006-.112-.037-.154a.728.728,0,0,1-.136-.372.112.112,0,0,1,.09-.017c.063.175.223.294.286.469.061.013.156.006.167-.07a1.669,1.669,0,0,1,.029-.464c.04.113.132.2.182.307.028.043.033.116.094.123.028-.015.055-.03.077-.045-.044-.242-.215-.448-.207-.7.036.013.077.021.092.06.074.1.179.181.259.282a2.6,2.6,0,0,1,.142.237c.018,0,.052,0,.067,0,.05-.089,0-.19-.028-.277a1.243,1.243,0,0,1,.274.084.085.085,0,0,0,.1-.055c0-.08-.07-.129-.124-.179a3.065,3.065,0,0,1-.42-.454,2.392,2.392,0,0,1-.291-.5,3.616,3.616,0,0,1-.119-.473,4.988,4.988,0,0,1-.1-.508c-.012-.08.024-.156,0-.233a.975.975,0,0,1,.036-.566,5.2,5.2,0,0,1,.16-.8c.016-.11.1-.189.107-.3.044-.1-.009-.218.054-.31.042-.089.068-.187.1-.279s.124-.148.106-.248a.54.54,0,0,0,.273-.016,1.088,1.088,0,0,0,.547-.139c.085-.035.132-.118.214-.147.113-.056.211-.132.314-.195a1.362,1.362,0,0,0,.182-.312.86.86,0,0,0,.095-.356A2.785,2.785,0,0,0,114.549.9a1.976,1.976,0,0,0-.212-.51,1.946,1.946,0,0,0-.259-.3.316.316,0,0,0-.271-.076c.017.121.132.2.118.332a.72.72,0,0,1,.1.316,1.272,1.272,0,0,1-.032.441.893.893,0,0,1-.23.234.544.544,0,0,1-.305.033.432.432,0,0,1-.284-.133c-.088-.022-.19-.035-.241-.122s-.178-.1-.252-.184a.589.589,0,0,0-.453-.17c-.155.055-.23.214-.344.32a.546.546,0,0,0-.127.209c-.013,0-.042.012-.054.018A1.9,1.9,0,0,0,111.525,1c-.05-.084-.114-.2-.229-.184s-.246-.068-.352.01a1.048,1.048,0,0,0-.271.191c-.057.076-.15.119-.209.2a.284.284,0,0,1-.149.109c-.11.029-.183.153-.307.139a.555.555,0,0,1-.425-.129.791.791,0,0,1-.033-.652.443.443,0,0,1,.294-.3c.015-.051.037-.1.052-.151a1.086,1.086,0,0,0-.383.148c-.116.035-.181.14-.271.213-.072.051-.076.146-.122.215a1.608,1.608,0,0,0-.148.233.976.976,0,0,1-.043.22c-.07.128.05.27-.013.4a.588.588,0,0,0-.255.052,1.219,1.219,0,0,0-.449.11,2.515,2.515,0,0,0-.337.1,1.946,1.946,0,0,0-.27.085,2.193,2.193,0,0,0-.355.185c-.077.055-.177.068-.245.139a4.732,4.732,0,0,1-.387.279,1.168,1.168,0,0,1-.457.181c-.113.028-.226.045-.337.077-.169.045-.352.007-.521.065a1.983,1.983,0,0,1-.354.023c-.206.042-.418,0-.626.031-.2,0-.4.056-.606.036-.227.063-.467.007-.69.076-.087.03-.18-.011-.27.006a2.72,2.72,0,0,1-.534.109c-.154.014-.3.09-.45.112a5.151,5.151,0,0,0-.849.3,1.484,1.484,0,0,1-.286.175c-.177.065-.263.249-.408.361a3.054,3.054,0,0,0-.548.555c-.07.115-.118.241-.18.358a2.419,2.419,0,0,1-.08.384c-.055.153-.023.32-.063.476a3.633,3.633,0,0,0-.024.58,3.877,3.877,0,0,1-.008.421c.007.128-.023.255-.013.384a5.15,5.15,0,0,1,.018.63,1.5,1.5,0,0,0-.015.346c.02.115-.05.217-.037.332a.786.786,0,0,1-.015.3c-.06.13-.015.282-.042.42a1.6,1.6,0,0,1-.036.348c-.024.13.006.262-.013.392a7.671,7.671,0,0,0-.016,1.028m.79-3.276a4.233,4.233,0,0,1,.027-.438,1.349,1.349,0,0,1,.047-.453c.041-.02.083-.041.121-.057a.912.912,0,0,1,.088.295c.077.254.121.516.2.771a.611.611,0,0,0,.049.213,2.544,2.544,0,0,1,.1.444,1.878,1.878,0,0,1-.085.289c-.041.116-.183.145-.23.258a1.459,1.459,0,0,0-.037.174c-.034.011-.072.018-.107.027a.894.894,0,0,1,.094.007c-.018.061-.082.053-.131.037-.023-.344-.074-.683-.1-1.029.025-.179-.074-.354-.039-.536" transform="translate(-84.618 -0.003)" fill="#605a51"/>
-                              <path id="Path_22323" data-name="Path 22323" d="M100.768,14.7h-.015a.177.177,0,0,1-.1-.2.739.739,0,0,1-.077-.035.664.664,0,0,0-.086-.038h-.041c-.08,0-.162,0-.212-.076-.041.043-.1.094-.16.054-.019-.028-.035-.058-.051-.087s-.033-.06-.052-.089a1.084,1.084,0,0,1-.237-.16c-.028-.023-.058-.047-.087-.069l-.04.006a.378.378,0,0,1-.086.008.228.228,0,0,1-.067-.182v-.012a.486.486,0,0,0-.034-.139.427.427,0,0,1-.033-.154,1.281,1.281,0,0,0-.015-.158,1.076,1.076,0,0,1-.015-.186,1.621,1.621,0,0,1-.065-.544.7.7,0,0,0-.012-.207.9.9,0,0,1-.016-.16,3.492,3.492,0,0,0-.039-.475,1.249,1.249,0,0,0-.043-.363.846.846,0,0,1-.018-.193,1.121,1.121,0,0,0-.008-.138h0a7.624,7.624,0,0,1,.016-1.028,1.045,1.045,0,0,0,0-.186,1.549,1.549,0,0,1,.028-.341.6.6,0,0,0,.016-.213.863.863,0,0,0,.009-.173.559.559,0,0,1,.033-.247.783.783,0,0,0,.015-.3.448.448,0,0,1,.019-.161.416.416,0,0,0,.017-.171.817.817,0,0,1,0-.237c0-.036.009-.073.011-.109a4.68,4.68,0,0,0-.015-.581l0-.048a1.272,1.272,0,0,1,.006-.2,1.38,1.38,0,0,0,.007-.184,1.175,1.175,0,0,1,.007-.183.889.889,0,0,0,0-.237,1.255,1.255,0,0,1,.007-.348,1.919,1.919,0,0,0,.017-.231,1.057,1.057,0,0,0,.025-.217.875.875,0,0,1,.038-.26,2.407,2.407,0,0,0,.08-.384c.025-.047.048-.1.07-.145a2.235,2.235,0,0,1,.109-.213,3.066,3.066,0,0,1,.548-.555,1.106,1.106,0,0,0,.15-.15.671.671,0,0,1,.259-.211.972.972,0,0,0,.215-.126l.071-.049a5.223,5.223,0,0,1,.849-.3,1.3,1.3,0,0,0,.21-.054,1.119,1.119,0,0,1,.24-.058,2.685,2.685,0,0,0,.521-.106l.013,0a.449.449,0,0,1,.121,0,.338.338,0,0,0,.148-.007,1.278,1.278,0,0,1,.354-.041,1.365,1.365,0,0,0,.336-.035A1.54,1.54,0,0,0,104.051,3a2.076,2.076,0,0,1,.25-.02h.018a1.873,1.873,0,0,1,.286-.011,1.628,1.628,0,0,0,.339-.02.806.806,0,0,1,.151,0,.53.53,0,0,0,.2-.018.978.978,0,0,1,.28-.038,1.121,1.121,0,0,0,.241-.027c.066-.019.135-.034.2-.047.044-.009.09-.019.135-.03l.087-.023a.914.914,0,0,0,.37-.157,1.35,1.35,0,0,1,.173-.12A1.029,1.029,0,0,0,107,2.326a.408.408,0,0,1,.14-.084.549.549,0,0,0,.105-.054,2.05,2.05,0,0,1,.337-.177L107.6,2a.472.472,0,0,1,.152-.051.637.637,0,0,0,.117-.033l.087-.028a1.614,1.614,0,0,1,.25-.069.9.9,0,0,1,.352-.1l.1-.014a.42.42,0,0,1,.2-.047l.059,0a.312.312,0,0,0,0-.2.29.29,0,0,1,.009-.2.658.658,0,0,0,.036-.164c0-.018,0-.037.008-.055A1.639,1.639,0,0,1,109.117.8a.418.418,0,0,0,.04-.086.255.255,0,0,1,.082-.129,1,1,0,0,0,.082-.077.468.468,0,0,1,.189-.136,1.1,1.1,0,0,1,.383-.148h0c-.007.02-.014.041-.022.062s-.022.059-.03.088a.44.44,0,0,0-.294.3.792.792,0,0,0,.033.652.547.547,0,0,0,.424.129h.019a.29.29,0,0,0,.165-.072.4.4,0,0,1,.123-.068.279.279,0,0,0,.149-.109.587.587,0,0,1,.1-.1.552.552,0,0,0,.106-.1.509.509,0,0,1,.174-.132.97.97,0,0,0,.1-.058A.273.273,0,0,1,111.163.8a.5.5,0,0,0,.129.012h.02c.1,0,.158.1.205.176l.005.009a.88.88,0,0,1,.119.2c.018.037.037.075.058.111a.22.22,0,0,1,.028-.01l.025-.008.014-.031a.457.457,0,0,1,.113-.178,1.184,1.184,0,0,0,.1-.117.579.579,0,0,1,.24-.2h.008a.6.6,0,0,1,.445.17.373.373,0,0,0,.116.077.274.274,0,0,1,.136.108.288.288,0,0,0,.207.114l.034.008a.437.437,0,0,0,.284.133.387.387,0,0,0,.239-.016l.066-.017a.742.742,0,0,0,.2-.2l.029-.036a.881.881,0,0,0,.034-.336c0-.035,0-.07,0-.105a.7.7,0,0,0-.093-.305l0-.01a.309.309,0,0,0-.059-.189A.411.411,0,0,1,113.8.01a.319.319,0,0,1,.272.076,1.2,1.2,0,0,0,.1.111.758.758,0,0,1,.156.192,1.491,1.491,0,0,1,.177.4c.011.035.023.071.035.106a2.664,2.664,0,0,1-.01.559l0,.025a.718.718,0,0,1-.076.308l-.019.048a1.1,1.1,0,0,1-.149.263l-.034.049c-.035.022-.071.046-.105.069a1.872,1.872,0,0,1-.209.126.341.341,0,0,0-.108.073.39.39,0,0,1-.106.074,1.013,1.013,0,0,1-.514.136l-.033,0a.531.531,0,0,1-.272.016.253.253,0,0,1-.068.19c-.013.018-.027.038-.038.057s-.024.067-.035.1a1.683,1.683,0,0,1-.068.179.272.272,0,0,0-.034.164.358.358,0,0,1-.02.146.4.4,0,0,1-.054.16.453.453,0,0,0-.053.141c-.017.081-.038.162-.058.241a2.946,2.946,0,0,0-.1.558.919.919,0,0,0-.036.566.306.306,0,0,1,0,.127.385.385,0,0,0,0,.106c.01.054.019.109.028.162a2.747,2.747,0,0,0,.071.346,1.554,1.554,0,0,1,.044.2,1.079,1.079,0,0,0,.075.275,1.556,1.556,0,0,0,.207.371c.028.041.057.083.084.125a2.453,2.453,0,0,0,.346.383l.074.072.021.019a.231.231,0,0,1,.1.16.08.08,0,0,1-.039.047.078.078,0,0,1-.059.009.752.752,0,0,1-.107-.039.44.44,0,0,0-.165-.046c0,.017.011.035.017.053a.271.271,0,0,1,.011.223l-.029,0-.036,0h0l-.027-.047a2.017,2.017,0,0,0-.116-.19,1.45,1.45,0,0,0-.12-.128,1.211,1.211,0,0,1-.139-.153c-.012-.032-.044-.043-.074-.053l-.017-.006a.985.985,0,0,0,.108.411,1.393,1.393,0,0,1,.1.29.784.784,0,0,1-.078.046c-.044-.005-.059-.043-.074-.08a.266.266,0,0,0-.021-.044.926.926,0,0,0-.084-.136.743.743,0,0,1-.1-.169,1.368,1.368,0,0,0-.03.388c0,.025,0,.049,0,.074a.078.078,0,0,1-.033.055.182.182,0,0,1-.135.016A.92.92,0,0,0,112,7.787a.909.909,0,0,1-.143-.234.114.114,0,0,0-.089.018.739.739,0,0,0,.136.371.163.163,0,0,1,.037.126c0,.009,0,.019,0,.029a.119.119,0,0,1-.094.017.075.075,0,0,1-.046-.041c-.041-.065-.087-.125-.132-.183-.032-.042-.065-.085-.1-.129l-.052-.039c-.036-.027-.074-.054-.109-.085s-.061-.07-.09-.106a1.036,1.036,0,0,0-.164-.173.71.71,0,0,0-.168.239.725.725,0,0,1-.1.11.511.511,0,0,0-.134.166.8.8,0,0,1-.1.154.779.779,0,0,0-.1.163,1,1,0,0,0-.142.66c0,.047,0,.095,0,.141a.735.735,0,0,0,.01.2.812.812,0,0,1,.012.185,1.451,1.451,0,0,1,0,.169,1.03,1.03,0,0,0,.015.236.445.445,0,0,1,.006.1.387.387,0,0,0,.01.11,1.854,1.854,0,0,1,.055.247,1.859,1.859,0,0,0,.059.261.551.551,0,0,1,.026.148c0,.031.006.062.011.093a1.5,1.5,0,0,1-.052.218c-.015.051-.03.1-.041.156a.372.372,0,0,1-.061.131.322.322,0,0,0-.064.155.544.544,0,0,1-.061.178c-.01.02-.02.041-.029.062a.533.533,0,0,1-.015.169.693.693,0,0,0-.017.133.746.746,0,0,0,.013.188.807.807,0,0,1,.014.176.461.461,0,0,0,.02.165.7.7,0,0,1,.021.112.589.589,0,0,0,.048.178.672.672,0,0,1,.047.159.311.311,0,0,0,.035.113.291.291,0,0,1,.035.12,1.353,1.353,0,0,0,.036.19,1.064,1.064,0,0,1,.039.242c0,.036.011.074.017.109a1.6,1.6,0,0,1,.027.235.267.267,0,0,0,.047.144.25.25,0,0,1,.046.152.129.129,0,0,1-.078.05.263.263,0,0,0-.044.018.078.078,0,0,1-.076-.009.122.122,0,0,0-.052-.017l-.015,0c-.075.008-.151.012-.208.016-.06-.067-.117-.137-.172-.206s-.088-.11-.134-.163l-.027-.027a.175.175,0,0,1-.068-.106c0-.02,0-.04.008-.059a.3.3,0,0,0,0-.138,4.806,4.806,0,0,1-.093-.7c-.012-.15-.025-.306-.047-.458a3.312,3.312,0,0,0-.032-.452,2.572,2.572,0,0,1-.017-.412,2.452,2.452,0,0,0-.02-.434,3.151,3.151,0,0,0-.05-.441,3.648,3.648,0,0,1-.048-.381,1.118,1.118,0,0,1-.04-.234,1.172,1.172,0,0,0-.036-.222,1.244,1.244,0,0,0-.046-.334.822.822,0,0,1-.017-.147.573.573,0,0,0-.031-.189c-.009-.029-.019-.059-.029-.088a.693.693,0,0,1-.054-.28c-.014,0-.036-.014-.056-.022l-.021-.008h0c0-.009.011-.024.018-.038l.008-.019a1.1,1.1,0,0,0-.139.5l0,.039a1.394,1.394,0,0,0-.042.279c-.005.065-.011.132-.023.2a.658.658,0,0,0-.013.124.44.44,0,0,1-.036.186.451.451,0,0,0-.024.134.688.688,0,0,1-.011.091.861.861,0,0,0-.032.2,1.2,1.2,0,0,1-.017.147.864.864,0,0,0,.035.17.433.433,0,0,1,.006.323,1.119,1.119,0,0,0-.08.224,1.259,1.259,0,0,1-.067.2l-.018.056a1.283,1.283,0,0,0-.067.271.823.823,0,0,0-.054.379.543.543,0,0,0,0,.228.646.646,0,0,1,0,.2.5.5,0,0,0,.007.13.5.5,0,0,1,.007.134.417.417,0,0,0,.01.126,2.384,2.384,0,0,1,.063.3c.012.075.025.154.043.228a1.666,1.666,0,0,0,.079.316,1.456,1.456,0,0,1,.082.356l-.016.029c-.029.053-.065.119-.116.131a.089.089,0,0,1-.072-.018.2.2,0,0,0-.19-.013.408.408,0,0,1-.1.018h0c-.042,0-.064-.037-.084-.069l-.009-.014a.357.357,0,0,1-.038-.122.231.231,0,0,0-.083-.169.363.363,0,0,0-.092-.119.532.532,0,0,1-.071-.079.642.642,0,0,1,0-.208.96.96,0,0,0,.009-.144.976.976,0,0,1,.012-.159,1.027,1.027,0,0,0,.012-.149c0-.081.01-.163.017-.241a1.878,1.878,0,0,0,0-.476,1.3,1.3,0,0,1,0-.194,1.06,1.06,0,0,0,0-.237.738.738,0,0,1-.008-.132.5.5,0,0,0-.025-.191.568.568,0,0,1-.052-.218,1.48,1.48,0,0,1-.039-.21,1.448,1.448,0,0,0-.039-.208c0-.077,0-.155,0-.231a2.626,2.626,0,0,0,0-.272.38.38,0,0,1-.013-.256.22.22,0,0,0,0-.134.278.278,0,0,1-.007-.1,2.371,2.371,0,0,0-.014-.257,1.587,1.587,0,0,1,0-.385.767.767,0,0,0,0-.241c0-.04-.007-.081-.008-.121,0-.023.006-.047.01-.07a1.173,1.173,0,0,0,.012-.388.31.31,0,0,1-.24.074.364.364,0,0,0-.209.046.994.994,0,0,1-.262.079,1.526,1.526,0,0,0-.174.043.372.372,0,0,1-.116.014h-.034a.239.239,0,0,0-.173.048.33.33,0,0,1-.254.057l-.041.02a.525.525,0,0,1-.324.08l-.011.011a.142.142,0,0,1-.1.055h0a4.167,4.167,0,0,0-.847.159l-.129.033c-.039,0-.079-.013-.117-.022a.712.712,0,0,0-.211-.024.83.83,0,0,0-.165-.095A.852.852,0,0,1,104.4,9.1a.918.918,0,0,0-.185-.178c-.028-.022-.056-.044-.083-.068-.113-.057-.221-.126-.327-.193a3.6,3.6,0,0,0-.388-.223.614.614,0,0,1-.081-.049.551.551,0,0,0-.095-.055l-.084-.039a.693.693,0,0,0-.358-.1c-.032.041-.06.072-.088.1a.725.725,0,0,0-.14.2c-.019.036-.04.073-.062.108a.968.968,0,0,1-.106.2.822.822,0,0,0-.115.228.389.389,0,0,1-.142.154l-.021.016a.2.2,0,0,0-.081.1.242.242,0,0,1-.067.09c-.033.042-.063.088-.092.132a.975.975,0,0,1-.2.243.425.425,0,0,0-.127.13c-.022.038-.048.075-.072.11a.761.761,0,0,0-.117.213c-.022.048-.045.1-.067.144a3.676,3.676,0,0,0-.154.358.76.76,0,0,0-.107.277.747.747,0,0,1-.07.2.686.686,0,0,0-.072.222,2.27,2.27,0,0,0-.128.563c-.01.069-.02.141-.032.21a.988.988,0,0,1,.011.231,2.561,2.561,0,0,0,.065.628l.012.066a1.107,1.107,0,0,0,.139.321,1.781,1.781,0,0,1,.1.193,1.022,1.022,0,0,1,.1.229,1,1,0,0,0,.1.232.363.363,0,0,1,.086.209.419.419,0,0,0,.113.321h0a.173.173,0,0,1-.193.051.6.6,0,0,0-.237-.031h-.046a.294.294,0,0,0-.109.029.291.291,0,0,1-.108.029m-.533-.353h0c.049.075.131.075.211.076h.042a.671.671,0,0,1,.087.038.744.744,0,0,0,.077.035h0a.175.175,0,0,0,.1.2h.015a.29.29,0,0,0,.107-.029.3.3,0,0,1,.11-.029h.067a.552.552,0,0,1,.216.031.172.172,0,0,0,.192-.05.42.42,0,0,1-.113-.321.364.364,0,0,0-.086-.208,1.011,1.011,0,0,1-.1-.232,1.022,1.022,0,0,0-.1-.229,1.8,1.8,0,0,0-.1-.193,1.111,1.111,0,0,1-.14-.321l-.012-.066a2.555,2.555,0,0,1-.065-.628.974.974,0,0,0-.011-.231c.012-.07.022-.141.032-.21a2.273,2.273,0,0,1,.128-.563.681.681,0,0,1,.072-.222.748.748,0,0,0,.07-.2.761.761,0,0,1,.108-.277,3.69,3.69,0,0,1,.154-.357c.022-.047.045-.1.067-.144a.765.765,0,0,1,.117-.213c.025-.035.05-.072.072-.11a.427.427,0,0,1,.127-.13.972.972,0,0,0,.2-.242c.029-.044.059-.09.092-.132a.245.245,0,0,0,.067-.09.2.2,0,0,1,.081-.1l.021-.016a.387.387,0,0,0,.142-.154.825.825,0,0,1,.116-.228.968.968,0,0,0,.106-.2c.023-.034.043-.072.062-.108a.729.729,0,0,1,.14-.2c.028-.029.056-.061.088-.1l.035,0a.763.763,0,0,1,.324.1l.084.039a.547.547,0,0,1,.095.055.57.57,0,0,0,.081.049,3.6,3.6,0,0,1,.389.223c.105.067.214.135.327.193.027.023.055.046.083.068a.928.928,0,0,1,.185.178.858.858,0,0,0,.151.085.813.813,0,0,1,.165.1.693.693,0,0,1,.211.024c.038.008.077.017.116.022l.129-.033a4.158,4.158,0,0,1,.847-.159h0a.141.141,0,0,0,.1-.054l.012-.012a.522.522,0,0,0,.324-.08l.041-.02a.328.328,0,0,0,.254-.057.266.266,0,0,1,.191-.048h.017a.371.371,0,0,0,.116-.014,1.52,1.52,0,0,1,.174-.043,1,1,0,0,0,.262-.079.362.362,0,0,1,.209-.046.308.308,0,0,0,.24-.074h0a1.177,1.177,0,0,1-.012.389c0,.023-.007.047-.01.07,0,.04,0,.081.008.121a.765.765,0,0,1,0,.241,1.6,1.6,0,0,0,0,.385,2.337,2.337,0,0,1,.014.257.277.277,0,0,0,.007.1.22.22,0,0,1,0,.135.379.379,0,0,0,.013.256,2.629,2.629,0,0,1,0,.272c0,.076,0,.154,0,.231a1.49,1.49,0,0,1,.039.208,1.484,1.484,0,0,0,.039.21.571.571,0,0,0,.052.218.491.491,0,0,1,.025.191.734.734,0,0,0,.008.132,1.074,1.074,0,0,1,0,.238,1.3,1.3,0,0,0,0,.194,1.866,1.866,0,0,1,0,.477c-.007.079-.015.161-.017.241a1.03,1.03,0,0,1-.012.149.959.959,0,0,0-.012.159.962.962,0,0,1-.009.144.643.643,0,0,0,0,.207.526.526,0,0,0,.071.079.364.364,0,0,1,.092.119.235.235,0,0,1,.083.169.361.361,0,0,0,.038.122l.009.014c.02.032.042.069.083.069h0a.412.412,0,0,0,.1-.018.2.2,0,0,1,.191.013.088.088,0,0,0,.072.018c.051-.012.087-.078.115-.131l.016-.029a1.462,1.462,0,0,0-.082-.355,1.668,1.668,0,0,1-.079-.316c-.018-.075-.031-.153-.043-.228a2.36,2.36,0,0,0-.063-.3.419.419,0,0,1-.01-.126.5.5,0,0,0-.006-.134.5.5,0,0,1-.007-.13.64.64,0,0,0,0-.2.545.545,0,0,1,0-.229.822.822,0,0,1,.054-.379,1.282,1.282,0,0,1,.067-.272l.018-.056a1.288,1.288,0,0,0,.067-.2,1.136,1.136,0,0,1,.08-.224.432.432,0,0,0-.006-.322.88.88,0,0,1-.035-.17,1.191,1.191,0,0,0,.017-.147.857.857,0,0,1,.032-.2.681.681,0,0,0,.011-.091.449.449,0,0,1,.024-.135.44.44,0,0,0,.035-.185.663.663,0,0,1,.013-.125c.012-.065.017-.132.023-.2a1.393,1.393,0,0,1,.042-.28l0-.039a1.089,1.089,0,0,1,.143-.507h0l-.011.025c-.006.014-.013.029-.018.038l.02.008c.02.008.042.018.056.022a.7.7,0,0,0,.054.28c.01.029.02.059.029.088a.577.577,0,0,1,.031.189.819.819,0,0,0,.017.147,1.239,1.239,0,0,1,.046.334,1.183,1.183,0,0,1,.036.222,1.13,1.13,0,0,0,.04.234,3.685,3.685,0,0,0,.048.381,3.152,3.152,0,0,1,.05.441,2.455,2.455,0,0,1,.02.434,2.569,2.569,0,0,0,.017.412,3.321,3.321,0,0,1,.032.452c.022.152.035.308.047.458a4.8,4.8,0,0,0,.093.7.3.3,0,0,1,0,.139c0,.019-.007.039-.008.058a.174.174,0,0,0,.067.1l.027.027c.046.053.09.109.134.163s.111.139.171.205c.057,0,.132-.008.208-.016a.1.1,0,0,1,.068.015.077.077,0,0,0,.075.01.254.254,0,0,1,.044-.018.128.128,0,0,0,.077-.05.248.248,0,0,0-.046-.151.27.27,0,0,1-.047-.145,1.6,1.6,0,0,0-.027-.235c-.006-.036-.012-.073-.017-.109a1.061,1.061,0,0,0-.039-.242,1.334,1.334,0,0,1-.036-.19.287.287,0,0,0-.035-.12.313.313,0,0,1-.035-.113.681.681,0,0,0-.047-.159.589.589,0,0,1-.048-.178.7.7,0,0,0-.021-.112.462.462,0,0,1-.02-.165.8.8,0,0,0-.014-.176.755.755,0,0,1-.013-.188.7.7,0,0,1,.017-.133.532.532,0,0,0,.015-.169c.009-.021.019-.042.029-.062a.543.543,0,0,0,.061-.178.322.322,0,0,1,.064-.156.378.378,0,0,0,.061-.131c.011-.052.026-.1.041-.156a1.5,1.5,0,0,0,.052-.218.936.936,0,0,1-.011-.093.549.549,0,0,0-.026-.148,1.859,1.859,0,0,1-.059-.261,1.873,1.873,0,0,0-.055-.247.379.379,0,0,1-.01-.11.442.442,0,0,0-.006-.1,1.034,1.034,0,0,1-.016-.236,1.389,1.389,0,0,0,0-.169.794.794,0,0,0-.012-.185.737.737,0,0,1-.01-.2c0-.046,0-.095,0-.141a1,1,0,0,1,.142-.66.792.792,0,0,1,.1-.163.8.8,0,0,0,.1-.154.511.511,0,0,1,.135-.166.738.738,0,0,0,.1-.11.7.7,0,0,1,.169-.24,1.013,1.013,0,0,1,.165.173c.029.036.058.072.09.106s.072.059.108.085l.052.039c.031.044.064.087.1.129.045.058.091.118.132.183a.074.074,0,0,0,.045.04.12.12,0,0,0,.092-.017c0-.009,0-.019,0-.028a.161.161,0,0,0-.036-.125.741.741,0,0,1-.136-.373.114.114,0,0,1,.091-.018.927.927,0,0,0,.143.234.906.906,0,0,1,.143.235A.188.188,0,0,0,112.282,8a.076.076,0,0,0,.033-.054c0-.024,0-.049,0-.074a1.367,1.367,0,0,1,.03-.391v0a.737.737,0,0,0,.1.171.9.9,0,0,1,.084.136.279.279,0,0,1,.021.044c.015.036.03.074.073.079.028-.015.054-.03.077-.045a1.407,1.407,0,0,0-.1-.289.983.983,0,0,1-.108-.412h0l.018.006c.03.01.062.021.074.054a1.216,1.216,0,0,0,.139.153,1.5,1.5,0,0,1,.12.129,1.976,1.976,0,0,1,.116.19l.026.046.037,0,.029,0a.271.271,0,0,0-.012-.222c-.006-.019-.012-.037-.017-.054h0a.443.443,0,0,1,.167.046.768.768,0,0,0,.107.039.084.084,0,0,0,.1-.055.231.231,0,0,0-.1-.159l-.021-.019-.074-.072a2.455,2.455,0,0,1-.346-.383c-.027-.042-.056-.084-.084-.125a1.56,1.56,0,0,1-.207-.372,1.078,1.078,0,0,1-.075-.275,1.556,1.556,0,0,0-.044-.2,2.718,2.718,0,0,1-.071-.346c-.008-.053-.017-.108-.028-.162a.394.394,0,0,1,0-.107.3.3,0,0,0,0-.126.992.992,0,0,1,.036-.567,2.957,2.957,0,0,1,.1-.559c.02-.079.04-.16.058-.241a.459.459,0,0,1,.053-.141.407.407,0,0,0,.054-.16.356.356,0,0,0,.02-.145.274.274,0,0,1,.034-.165,1.646,1.646,0,0,0,.068-.179c.011-.033.023-.067.035-.1s.025-.039.038-.058a.252.252,0,0,0,.068-.19h0a.531.531,0,0,0,.272-.016l.033,0a1.013,1.013,0,0,0,.514-.136.387.387,0,0,0,.106-.074.345.345,0,0,1,.108-.073,1.841,1.841,0,0,0,.209-.126c.034-.023.07-.046.105-.068l.034-.049a1.1,1.1,0,0,0,.148-.263l.019-.048a.714.714,0,0,0,.075-.308l0-.025a2.661,2.661,0,0,0,.01-.559c-.012-.035-.024-.071-.035-.106a1.487,1.487,0,0,0-.176-.4A.759.759,0,0,0,114.178.2a1.2,1.2,0,0,1-.1-.111A.322.322,0,0,0,113.8.01a.419.419,0,0,0,.06.143.311.311,0,0,1,.059.189l0,.01a.7.7,0,0,1,.093.306c0,.035,0,.07,0,.105a.877.877,0,0,1-.034.336l-.029.037a.742.742,0,0,1-.2.2l-.066.017a.388.388,0,0,1-.239.016.438.438,0,0,1-.284-.133l-.033-.008a.289.289,0,0,1-.208-.114A.273.273,0,0,0,112.792,1a.378.378,0,0,1-.116-.077.594.594,0,0,0-.444-.17h-.008a.578.578,0,0,0-.239.2,1.219,1.219,0,0,1-.1.117.455.455,0,0,0-.113.178l-.014.031-.025.008-.029.01c-.022-.037-.041-.075-.059-.112a.867.867,0,0,0-.119-.2l-.005-.009c-.047-.079-.1-.176-.2-.176h-.04A.629.629,0,0,1,111.162.8a.268.268,0,0,0-.222.022.931.931,0,0,1-.1.058.506.506,0,0,0-.174.132.554.554,0,0,1-.106.1.591.591,0,0,0-.1.1.28.28,0,0,1-.15.11.391.391,0,0,0-.123.068.29.29,0,0,1-.165.072H110a.549.549,0,0,1-.425-.129.792.792,0,0,1-.033-.652.44.44,0,0,1,.295-.3c.008-.029.019-.059.03-.088s.015-.041.022-.061a1.1,1.1,0,0,0-.382.147.468.468,0,0,0-.189.136,1.053,1.053,0,0,1-.082.077.253.253,0,0,0-.081.128.4.4,0,0,1-.04.086,1.648,1.648,0,0,0-.148.233c0,.018-.005.037-.007.055a.662.662,0,0,1-.036.165.288.288,0,0,0-.009.2.312.312,0,0,1,0,.2l-.059.005a.418.418,0,0,0-.2.046l-.1.014a.89.89,0,0,0-.351.1,1.6,1.6,0,0,0-.25.069l-.088.029a.622.622,0,0,1-.117.033A.48.48,0,0,0,107.6,2l-.018.008a2.059,2.059,0,0,0-.337.177.547.547,0,0,1-.105.055.4.4,0,0,0-.139.084,1.038,1.038,0,0,1-.215.159,1.332,1.332,0,0,0-.173.12.917.917,0,0,1-.371.158l-.087.023c-.045.011-.091.02-.135.03-.066.014-.135.028-.2.047a1.123,1.123,0,0,1-.241.027.975.975,0,0,0-.28.038.527.527,0,0,1-.2.018.745.745,0,0,0-.151,0,1.632,1.632,0,0,1-.34.02,1.912,1.912,0,0,0-.286.011H104.3a2.076,2.076,0,0,0-.25.02,1.56,1.56,0,0,1-.338.016,1.374,1.374,0,0,1-.336.035,1.27,1.27,0,0,0-.354.041.339.339,0,0,1-.149.007.415.415,0,0,0-.121,0l-.013,0a2.676,2.676,0,0,1-.521.106,1.136,1.136,0,0,0-.24.058,1.316,1.316,0,0,1-.21.055,5.25,5.25,0,0,0-.849.3l-.07.049a.982.982,0,0,1-.215.126.669.669,0,0,0-.258.21,1.116,1.116,0,0,1-.15.15,3.073,3.073,0,0,0-.548.555,2.182,2.182,0,0,0-.109.213c-.022.048-.045.1-.07.145a2.425,2.425,0,0,1-.08.384.873.873,0,0,0-.038.259,1.066,1.066,0,0,1-.025.217,1.922,1.922,0,0,1-.017.231,1.247,1.247,0,0,0-.007.348.9.9,0,0,1,0,.237,1.176,1.176,0,0,0-.007.183,1.357,1.357,0,0,1-.007.185,1.27,1.27,0,0,0-.006.2l0,.048a4.739,4.739,0,0,1,.015.582c0,.036-.006.073-.011.109a.8.8,0,0,0,0,.237.419.419,0,0,1-.018.172.446.446,0,0,0-.019.16.782.782,0,0,1-.015.3.56.56,0,0,0-.033.247.852.852,0,0,1-.009.173.6.6,0,0,1-.016.213,1.562,1.562,0,0,0-.028.34,1.061,1.061,0,0,1-.005.187,7.644,7.644,0,0,0-.016,1.028,1.121,1.121,0,0,1,.008.138.86.86,0,0,0,.018.193,1.252,1.252,0,0,1,.043.363,3.516,3.516,0,0,1,.039.475.894.894,0,0,0,.016.16.711.711,0,0,1,.012.207,1.62,1.62,0,0,0,.065.544,1.075,1.075,0,0,0,.015.186,1.282,1.282,0,0,1,.015.158.421.421,0,0,0,.033.154.494.494,0,0,1,.034.139v.012a.228.228,0,0,0,.066.181.362.362,0,0,0,.086-.008l.04-.006c.03.022.059.046.087.069a1.082,1.082,0,0,0,.237.16c.019.029.036.06.053.09s.032.058.051.086c.058.04.119-.012.159-.054Zm-.092-4.942a.2.2,0,0,1-.061-.011c-.012-.171-.031-.344-.049-.511s-.037-.345-.049-.519a.781.781,0,0,0-.021-.256.737.737,0,0,1-.018-.28.923.923,0,0,0,.008-.2.757.757,0,0,1,.018-.24,1.327,1.327,0,0,1,.047-.453c.041-.02.083-.041.121-.058a.647.647,0,0,1,.075.228c0,.022.009.045.014.067.04.132.072.268.1.4s.058.248.094.371a.611.611,0,0,0,.05.213,1.131,1.131,0,0,1,.073.283c.009.053.018.108.032.161l-.012.047a1.528,1.528,0,0,1-.073.243.308.308,0,0,1-.116.133.327.327,0,0,0-.114.125.594.594,0,0,0-.024.107c0,.022-.007.044-.012.067-.02.007-.042.012-.063.017l-.041.01a.9.9,0,0,1,.09.006h0a.064.064,0,0,1-.031.04.083.083,0,0,1-.039.008m0-2.526c-.037.017-.079.038-.12.057a1.334,1.334,0,0,0-.047.453.756.756,0,0,0-.018.24.936.936,0,0,1-.008.2.737.737,0,0,0,.018.28.779.779,0,0,1,.021.256c.012.174.031.349.049.519s.037.34.049.511a.131.131,0,0,0,.1,0,.063.063,0,0,0,.03-.039c-.024,0-.069-.006-.094-.006h0l.045-.011c.021,0,.043-.01.063-.016,0-.022.008-.044.012-.066a.592.592,0,0,1,.024-.107.328.328,0,0,1,.114-.125.308.308,0,0,0,.116-.132,1.535,1.535,0,0,0,.073-.242l.012-.047c-.013-.053-.023-.108-.032-.161a1.132,1.132,0,0,0-.073-.283.608.608,0,0,1-.05-.213c-.036-.122-.065-.249-.094-.371s-.062-.268-.1-.4c-.005-.022-.01-.045-.014-.067a.653.653,0,0,0-.074-.227" transform="translate(-84.615 -0.001)" fill="#605a51"/>
-                              <path id="Path_22324" data-name="Path 22324" d="M2.1,142.57l-.049-2.242h.42q.1.316.225.652a2.413,2.413,0,0,0,.337.612,1.672,1.672,0,0,0,.533.454,1.691,1.691,0,0,0,.821.178,1.747,1.747,0,0,0,.67-.109,1.051,1.051,0,0,0,.4-.267.853.853,0,0,0,.186-.346,1.35,1.35,0,0,0,.049-.336,1.25,1.25,0,0,0-.034-.292.755.755,0,0,0-.147-.286,1.254,1.254,0,0,0-.328-.277,2.68,2.68,0,0,0-.587-.252l-.968-.316a3.665,3.665,0,0,1-.543-.227,1.817,1.817,0,0,1-.479-.356,1.708,1.708,0,0,1-.342-.528,1.9,1.9,0,0,1-.132-.746,2.012,2.012,0,0,1,.2-.914,2.112,2.112,0,0,1,.528-.677,2.227,2.227,0,0,1,.748-.415,2.767,2.767,0,0,1,.87-.138A2.8,2.8,0,0,1,5.5,135.9a2.972,2.972,0,0,1,.6.3l.117-.346H6.6l.1,2.114H6.329q-.1-.267-.235-.573a2.493,2.493,0,0,0-.347-.563,1.76,1.76,0,0,0-.513-.425,1.517,1.517,0,0,0-.743-.168,1.17,1.17,0,0,0-.89.3,1.046,1.046,0,0,0-.284.746.955.955,0,0,0,.205.607,1.53,1.53,0,0,0,.714.439l1.085.365a4.218,4.218,0,0,1,.582.247,2.18,2.18,0,0,1,.523.375,1.7,1.7,0,0,1,.376.558,2.042,2.042,0,0,1,.142.8,1.84,1.84,0,0,1-.723,1.5,2.415,2.415,0,0,1-.812.405,3.66,3.66,0,0,1-1.037.138,2.644,2.644,0,0,1-1.022-.178,6.8,6.8,0,0,1-.738-.356l-.108.375Z" transform="translate(-1.755 -115.853)" fill="#605a51"/>
-                              <path id="Path_22325" data-name="Path 22325" d="M43.158,143.538v-.375l.313-.02a.534.534,0,0,0,.352-.123.618.618,0,0,0,.1-.41v-4.79a.618.618,0,0,0-.1-.41.534.534,0,0,0-.352-.124l-.313-.02v-.375h5.329l.557,1.689-.391.168q-.127-.217-.3-.464a2.411,2.411,0,0,0-.42-.459,2.284,2.284,0,0,0-.582-.355,1.94,1.94,0,0,0-.772-.143H45.407v2.608h.645a1.063,1.063,0,0,0,.846-.291,1.387,1.387,0,0,0,.3-.785h.4v2.667h-.411a1.078,1.078,0,0,0-.3-.869,1.309,1.309,0,0,0-.856-.247h-.626v2a.883.883,0,0,0,.122.5.606.606,0,0,0,.523.178h.733a1.848,1.848,0,0,0,1.208-.4,3.491,3.491,0,0,0,.865-1.146l.381.119-.45,1.867Z" transform="translate(-36.834 -116.831)" fill="#605a51"/>
-                              <path id="Path_22326" data-name="Path 22326" d="M90.932,143.538v-.375l.313-.02a.533.533,0,0,0,.352-.123.618.618,0,0,0,.1-.41v-4.79a.617.617,0,0,0-.1-.41.534.534,0,0,0-.352-.124l-.313-.02v-.375h3.3a4.3,4.3,0,0,1,.851.089,2.655,2.655,0,0,1,.8.3,1.741,1.741,0,0,1,.592.553,1.521,1.521,0,0,1,.23.859,1.275,1.275,0,0,1-.108.533,1.681,1.681,0,0,1-.274.425,2.18,2.18,0,0,1-.367.331,3.2,3.2,0,0,1-.391.242,2.832,2.832,0,0,1-.342.153q-.152.054-.22.074.127.079.269.188a2.925,2.925,0,0,1,.293.262,3.747,3.747,0,0,1,.313.365q.161.213.347.5l.23.365.161.257q.068.109.122.188a1.733,1.733,0,0,0,.112.148,2.559,2.559,0,0,0,.2.227.812.812,0,0,0,.176.138.762.762,0,0,0,.181.074,1.217,1.217,0,0,0,.22.035l.186.02v.326H95.723l-1.007-1.61q-.156-.247-.313-.469a3.058,3.058,0,0,0-.323-.39,1.434,1.434,0,0,0-.357-.267.873.873,0,0,0-.406-.1h-.2v1.906a.618.618,0,0,0,.1.41.533.533,0,0,0,.352.123l.342.02v.375Zm2.19-3.309h.342a2.425,2.425,0,0,0,.577-.074,1.6,1.6,0,0,0,.548-.247,1.384,1.384,0,0,0,.406-.459,1.432,1.432,0,0,0,.161-.711,1.334,1.334,0,0,0-.391-1.106,1.924,1.924,0,0,0-1.193-.306h-.45Z" transform="translate(-77.607 -116.831)" fill="#605a51"/>
-                              <path id="Path_22327" data-name="Path 22327" d="M143.912,143.538v-.375l.313-.02a.534.534,0,0,0,.352-.123.618.618,0,0,0,.1-.41v-4.79a.618.618,0,0,0-.1-.41.534.534,0,0,0-.352-.124l-.313-.02v-.375h5.329l.557,1.689-.391.168q-.127-.217-.3-.464a2.411,2.411,0,0,0-.42-.459,2.285,2.285,0,0,0-.582-.355,1.94,1.94,0,0,0-.772-.143h-1.173v2.608h.645a1.063,1.063,0,0,0,.846-.291,1.387,1.387,0,0,0,.3-.785h.4v2.667h-.411a1.078,1.078,0,0,0-.3-.869,1.309,1.309,0,0,0-.856-.247h-.626v2a.883.883,0,0,0,.122.5.606.606,0,0,0,.523.178h.733a1.848,1.848,0,0,0,1.208-.4,3.491,3.491,0,0,0,.865-1.146l.381.119-.45,1.867Z" transform="translate(-122.823 -116.831)" fill="#605a51"/>
-                              <path id="Path_22328" data-name="Path 22328" d="M191.688,143.423v-.375l.381-.03a.44.44,0,0,0,.362-.188.878.878,0,0,0,.108-.474v-4.83a1.326,1.326,0,0,0-.332-.267.867.867,0,0,0-.45-.128v-.356h2.093l3.7,4.514v-3.467a.878.878,0,0,0-.108-.474.44.44,0,0,0-.362-.188l-.381-.03v-.375h2.327v.375l-.411.03a.44.44,0,0,0-.362.188.878.878,0,0,0-.107.474V143.5h-.557l-4.449-5.482v4.336a.879.879,0,0,0,.107.474.439.439,0,0,0,.362.188l.411.03v.375Z" transform="translate(-163.598 -116.716)" fill="#605a51"/>
-                              <path id="Path_22329" data-name="Path 22329" d="M251.4,141.888a3.7,3.7,0,0,1-.782.425,5.938,5.938,0,0,1-.89.286,4.8,4.8,0,0,1-1.154.128,4.246,4.246,0,0,1-1.384-.222,3.246,3.246,0,0,1-1.134-.657,3.113,3.113,0,0,1-.768-1.076,3.922,3.922,0,0,1-.02-2.879,3.455,3.455,0,0,1,.733-1.126,3.363,3.363,0,0,1,1.12-.751,3.652,3.652,0,0,1,1.423-.272,3.693,3.693,0,0,1,.684.059,3.734,3.734,0,0,1,.572.153,3.291,3.291,0,0,1,.465.207,3.24,3.24,0,0,1,.352.222l.078-.494h.46l.039,2.36h-.45a5.232,5.232,0,0,0-.239-.7,2.488,2.488,0,0,0-.406-.657,1.938,1.938,0,0,0-1.564-.682,1.572,1.572,0,0,0-.919.252,1.762,1.762,0,0,0-.572.672,3.238,3.238,0,0,0-.293.978,7.964,7.964,0,0,0-.083,1.17,5.557,5.557,0,0,0,.1,1.062,3.315,3.315,0,0,0,.332.953,1.967,1.967,0,0,0,.6.686,1.522,1.522,0,0,0,.9.262,2.369,2.369,0,0,0,.538-.059.963.963,0,0,0,.445-.237,1.219,1.219,0,0,0,.3-.5,2.613,2.613,0,0,0,.113-.844v-.286a.618.618,0,0,0-.1-.41.536.536,0,0,0-.352-.124l-.313-.02V139.4h2.953v.375l-.342.02a.535.535,0,0,0-.352.124.617.617,0,0,0-.1.41Z" transform="translate(-209.099 -115.853)" fill="#605a51"/>
-                              <path id="Path_22330" data-name="Path 22330" d="M297.98,143.538v-.375l.313-.02a.534.534,0,0,0,.352-.123.619.619,0,0,0,.1-.41v-4.79a.618.618,0,0,0-.1-.41.535.535,0,0,0-.352-.124l-.313-.02v-.375h5.329l.557,1.689-.391.168q-.127-.217-.3-.464a2.414,2.414,0,0,0-.421-.459,2.281,2.281,0,0,0-.582-.355,1.941,1.941,0,0,0-.773-.143h-1.173v2.608h.645a1.063,1.063,0,0,0,.846-.291,1.388,1.388,0,0,0,.3-.785h.4v2.667h-.411a1.078,1.078,0,0,0-.3-.869,1.309,1.309,0,0,0-.855-.247h-.626v2a.882.882,0,0,0,.122.5.605.605,0,0,0,.523.178h.733a1.847,1.847,0,0,0,1.207-.4,3.493,3.493,0,0,0,.865-1.146l.381.119-.45,1.867Z" transform="translate(-254.314 -116.831)" fill="#605a51"/>
-                              <path id="Path_22331" data-name="Path 22331" d="M346.116,142.455v-.375l.411-.02a.534.534,0,0,0,.352-.123.619.619,0,0,0,.1-.41v-5.244h-.45a1.658,1.658,0,0,0-.719.138,1.848,1.848,0,0,0-.5.351,2.3,2.3,0,0,0-.367.469q-.152.257-.3.494l-.352-.109.44-1.906.235-.109a1.573,1.573,0,0,0,.406.173,2.6,2.6,0,0,0,.66.064h3.618a2.6,2.6,0,0,0,.66-.064,1.569,1.569,0,0,0,.406-.173l.235.109.44,1.886-.352.109q-.147-.237-.3-.489a2.367,2.367,0,0,0-.367-.464,1.745,1.745,0,0,0-.508-.346,1.721,1.721,0,0,0-.714-.133h-.655v5.244a.618.618,0,0,0,.1.41.533.533,0,0,0,.352.123l.411.02v.375Z" transform="translate(-293.835 -115.738)" fill="#605a51"/>
-                              <path id="Path_22332" data-name="Path 22332" d="M398.268,143.538v-.375l.313-.02a.534.534,0,0,0,.352-.123.619.619,0,0,0,.1-.41v-4.79a.618.618,0,0,0-.1-.41.535.535,0,0,0-.352-.124l-.313-.02v-.375h3.041v.375l-.313.02a.534.534,0,0,0-.352.124.617.617,0,0,0-.1.41v4.79a.618.618,0,0,0,.1.41.533.533,0,0,0,.352.123l.313.02v.375Z" transform="translate(-339.906 -116.831)" fill="#605a51"/>
-                              <path id="Path_22333" data-name="Path 22333" d="M0,203.863v-.246l.207-.013a.356.356,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.357.357,0,0,0-.233-.081L0,199.75V199.5H2.047q.233,0,.525.029a2.012,2.012,0,0,1,.544.13,1.08,1.08,0,0,1,.427.3.822.822,0,0,1,.175.554.8.8,0,0,1-.12.444,1.186,1.186,0,0,1-.279.3,1.417,1.417,0,0,1-.317.184,1.941,1.941,0,0,1-.236.084,1.464,1.464,0,0,1,.3.052,1.632,1.632,0,0,1,.427.178,1.37,1.37,0,0,1,.382.334.816.816,0,0,1,.165.525,1,1,0,0,1-.152.557,1.142,1.142,0,0,1-.434.382,2.4,2.4,0,0,1-.687.223,5.053,5.053,0,0,1-.91.074Zm1.49-2.4h.162a2.144,2.144,0,0,0,.424-.039.874.874,0,0,0,.334-.139.657.657,0,0,0,.22-.272,1.063,1.063,0,0,0,.078-.437.753.753,0,0,0-.22-.6,1.066,1.066,0,0,0-.706-.191H1.49Zm0,1.626a1.257,1.257,0,0,0,.016.211.272.272,0,0,0,.081.155.423.423,0,0,0,.184.094,1.337,1.337,0,0,0,.334.032.825.825,0,0,0,.615-.23.907.907,0,0,0,.227-.664.777.777,0,0,0-.343-.706,1.715,1.715,0,0,0-.933-.22H1.49Z" transform="translate(0 -170.269)" fill="#605a51"/>
-                              <path id="Path_22334" data-name="Path 22334" d="M27.139,203.637v-.24l.162-.013a.427.427,0,0,0,.275-.136,1.029,1.029,0,0,0,.185-.3l1.541-3.7h.382l1.69,3.809a1.028,1.028,0,0,0,.139.243.329.329,0,0,0,.236.094l.149.013v.24h-2.04v-.24l.142-.013a.852.852,0,0,0,.233-.049.157.157,0,0,0,.091-.165.388.388,0,0,0-.026-.139q-.026-.068-.058-.146l-.252-.518H28.421l-.214.518q-.033.078-.058.155a.452.452,0,0,0-.026.142.154.154,0,0,0,.071.149.509.509,0,0,0,.188.052l.181.013v.24Zm1.412-1.6h1.334l-.667-1.665Z" transform="translate(-23.162 -170.043)" fill="#605a51"/>
-                              <path id="Path_22335" data-name="Path 22335" d="M61.261,203.863v-.246l.207-.013a.357.357,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.357.357,0,0,0-.233-.081l-.207-.013V199.5h2.014v.246l-.207.013a.358.358,0,0,0-.233.081.4.4,0,0,0-.065.269v3.077a.36.36,0,0,0,.107.3.5.5,0,0,0,.314.084h.337a1.713,1.713,0,0,0,.56-.084,1.368,1.368,0,0,0,.427-.237,1.505,1.505,0,0,0,.314-.356,2.766,2.766,0,0,0,.227-.444l.279.071-.363,1.341Z" transform="translate(-52.284 -170.269)" fill="#605a51"/>
-                              <path id="Path_22336" data-name="Path 22336" d="M90.255,203.863v-.246l.207-.013a.357.357,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.357.357,0,0,0-.233-.081l-.207-.013V199.5h2.014v.246l-.207.013a.358.358,0,0,0-.233.081.4.4,0,0,0-.065.269v3.077a.36.36,0,0,0,.107.3.5.5,0,0,0,.314.084h.337a1.713,1.713,0,0,0,.56-.084,1.368,1.368,0,0,0,.427-.237,1.505,1.505,0,0,0,.314-.356,2.767,2.767,0,0,0,.227-.444l.279.071-.363,1.341Z" transform="translate(-77.029 -170.269)" fill="#605a51"/>
-                              <path id="Path_22337" data-name="Path 22337" d="M118.679,202.7a2.2,2.2,0,0,1-.489-.725,2.371,2.371,0,0,1-.178-.933,2.4,2.4,0,0,1,.178-.936,2.161,2.161,0,0,1,.489-.725,2.185,2.185,0,0,1,.732-.466,2.537,2.537,0,0,1,1.8,0,2.188,2.188,0,0,1,.732.466,2.164,2.164,0,0,1,.489.725,2.4,2.4,0,0,1,.178.936,2.371,2.371,0,0,1-.178.933,2.144,2.144,0,0,1-1.221,1.189,2.537,2.537,0,0,1-1.8,0,2.209,2.209,0,0,1-.732-.463m.6-.376a1.33,1.33,0,0,0,.366.515,1.152,1.152,0,0,0,1.328,0,1.3,1.3,0,0,0,.363-.518,2.415,2.415,0,0,0,.152-.654q.032-.346.032-.625t-.032-.628a2.421,2.421,0,0,0-.152-.657,1.3,1.3,0,0,0-.363-.518,1.152,1.152,0,0,0-1.328,0,1.327,1.327,0,0,0-.366.518,2.268,2.268,0,0,0-.152.657q-.029.35-.029.628t.029.625a2.3,2.3,0,0,0,.152.657" transform="translate(-100.719 -169.628)" fill="#605a51"/>
-                              <path id="Path_22338" data-name="Path 22338" d="M153.066,202.7a2.2,2.2,0,0,1-.489-.725,2.371,2.371,0,0,1-.178-.933,2.4,2.4,0,0,1,.178-.936,2.161,2.161,0,0,1,.489-.725,2.185,2.185,0,0,1,.732-.466,2.537,2.537,0,0,1,1.8,0,2.188,2.188,0,0,1,.732.466,2.164,2.164,0,0,1,.489.725,2.4,2.4,0,0,1,.178.936,2.371,2.371,0,0,1-.178.933,2.144,2.144,0,0,1-1.221,1.189,2.537,2.537,0,0,1-1.8,0,2.209,2.209,0,0,1-.732-.463m.6-.376a1.328,1.328,0,0,0,.366.515,1.152,1.152,0,0,0,1.328,0,1.3,1.3,0,0,0,.363-.518,2.414,2.414,0,0,0,.152-.654q.032-.346.032-.625t-.032-.628a2.42,2.42,0,0,0-.152-.657,1.3,1.3,0,0,0-.363-.518,1.152,1.152,0,0,0-1.328,0,1.326,1.326,0,0,0-.366.518,2.264,2.264,0,0,0-.152.657q-.029.35-.029.628t.029.625a2.3,2.3,0,0,0,.152.657" transform="translate(-130.067 -169.628)" fill="#605a51"/>
-                              <path id="Path_22339" data-name="Path 22339" d="M186.256,203.788v-.246l.253-.019a.292.292,0,0,0,.24-.123.571.571,0,0,0,.071-.311v-3.167a.876.876,0,0,0-.22-.175.577.577,0,0,0-.3-.084v-.233h1.386l2.448,2.96v-2.274a.571.571,0,0,0-.071-.311.292.292,0,0,0-.24-.123l-.253-.02v-.246h1.541v.246l-.272.02a.292.292,0,0,0-.24.123.571.571,0,0,0-.071.311v3.724h-.369l-2.947-3.595v2.844a.57.57,0,0,0,.071.311.292.292,0,0,0,.24.123l.272.019v.246Z" transform="translate(-158.962 -170.194)" fill="#605a51"/>
-                              <path id="Path_22340" data-name="Path 22340" d="M233.493,203.229l-.032-1.47h.279q.065.207.149.427a1.578,1.578,0,0,0,.223.4,1.1,1.1,0,0,0,.353.3,1.128,1.128,0,0,0,.544.117,1.167,1.167,0,0,0,.444-.071.7.7,0,0,0,.262-.175.554.554,0,0,0,.123-.227.879.879,0,0,0,.033-.22.806.806,0,0,0-.023-.191.49.49,0,0,0-.1-.188.83.83,0,0,0-.217-.181,1.8,1.8,0,0,0-.389-.165l-.641-.207a2.407,2.407,0,0,1-.36-.149,1.206,1.206,0,0,1-.317-.233,1.123,1.123,0,0,1-.227-.346,1.237,1.237,0,0,1-.087-.489,1.311,1.311,0,0,1,.133-.6,1.388,1.388,0,0,1,.35-.444,1.474,1.474,0,0,1,.5-.272,1.851,1.851,0,0,1,.576-.091,1.873,1.873,0,0,1,.674.1,1.978,1.978,0,0,1,.4.194l.078-.227h.259l.065,1.386h-.246q-.065-.175-.156-.376a1.637,1.637,0,0,0-.23-.369,1.164,1.164,0,0,0-.34-.278,1.012,1.012,0,0,0-.492-.11.779.779,0,0,0-.589.2.681.681,0,0,0-.188.489.622.622,0,0,0,.136.4,1.012,1.012,0,0,0,.473.288l.719.24a2.824,2.824,0,0,1,.385.162,1.449,1.449,0,0,1,.346.246,1.113,1.113,0,0,1,.249.366,1.328,1.328,0,0,1,.094.528,1.222,1.222,0,0,1-.126.56,1.236,1.236,0,0,1-.353.424,1.6,1.6,0,0,1-.538.266,2.449,2.449,0,0,1-.687.091,1.768,1.768,0,0,1-.677-.117,4.536,4.536,0,0,1-.489-.233l-.071.246Z" transform="translate(-199.25 -169.628)" fill="#605a51"/>
-                              <path id="Path_22341" data-name="Path 22341" d="M255.471,203.637v-.24l.162-.013a.427.427,0,0,0,.275-.136,1.026,1.026,0,0,0,.185-.3l1.542-3.7h.382l1.69,3.809a1.033,1.033,0,0,0,.139.243.329.329,0,0,0,.236.094l.149.013v.24h-2.04v-.24l.142-.013a.852.852,0,0,0,.233-.049.157.157,0,0,0,.091-.165.391.391,0,0,0-.026-.139c-.017-.045-.037-.094-.058-.146l-.252-.518h-1.568l-.214.518q-.032.078-.058.155a.453.453,0,0,0-.026.142.154.154,0,0,0,.071.149.509.509,0,0,0,.188.052l.181.013v.24Zm1.412-1.6h1.334l-.667-1.665Z" transform="translate(-218.034 -170.043)" fill="#605a51"/>
-                              <path id="Path_22342" data-name="Path 22342" d="M289.594,203.863v-.246l.207-.013a.357.357,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.357.357,0,0,0-.233-.081l-.207-.013V199.5h3.524l.33,1.121-.253.1q-.078-.142-.181-.3a1.5,1.5,0,0,0-.262-.3,1.355,1.355,0,0,0-.382-.236,1.4,1.4,0,0,0-.541-.094h-.745v1.716h.447a.7.7,0,0,0,.56-.194.922.922,0,0,0,.2-.518h.266v1.749h-.272a.7.7,0,0,0-.2-.57.873.873,0,0,0-.567-.162h-.434v1.425a.416.416,0,0,0,.065.272.344.344,0,0,0,.233.084l.324.019v.253Z" transform="translate(-247.157 -170.269)" fill="#605a51"/>
-                              <path id="Path_22343" data-name="Path 22343" d="M312.8,203.637v-.24l.162-.013a.427.427,0,0,0,.275-.136,1.026,1.026,0,0,0,.184-.3l1.542-3.7h.382l1.69,3.809a1.034,1.034,0,0,0,.139.243.329.329,0,0,0,.236.094l.149.013v.24h-2.04v-.24l.142-.013a.852.852,0,0,0,.233-.049.157.157,0,0,0,.091-.165.391.391,0,0,0-.026-.139c-.017-.045-.037-.094-.058-.146l-.253-.518h-1.568l-.214.518q-.032.078-.058.155a.452.452,0,0,0-.026.142.154.154,0,0,0,.071.149.51.51,0,0,0,.188.052l.181.013v.24Zm1.412-1.6h1.334l-.667-1.665Z" transform="translate(-266.962 -170.043)" fill="#605a51"/>
-                              <path id="Path_22344" data-name="Path 22344" d="M346.921,203.863v-.246l.207-.013a.356.356,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.356.356,0,0,0-.233-.081l-.207-.013V199.5H349.1a2.864,2.864,0,0,1,.564.058,1.77,1.77,0,0,1,.531.194,1.15,1.15,0,0,1,.392.363.99.99,0,0,1,.152.563.828.828,0,0,1-.071.35,1.106,1.106,0,0,1-.181.279,1.448,1.448,0,0,1-.243.217,2.124,2.124,0,0,1-.259.159,1.869,1.869,0,0,1-.227.1q-.1.036-.146.048.084.052.178.123a1.93,1.93,0,0,1,.194.172,2.444,2.444,0,0,1,.207.24q.107.14.23.327l.152.24.107.168c.03.048.057.089.081.123a1.083,1.083,0,0,0,.074.1,1.651,1.651,0,0,0,.13.149.527.527,0,0,0,.117.091.507.507,0,0,0,.12.049.815.815,0,0,0,.146.023l.123.013v.214h-1.38l-.667-1.056q-.1-.162-.207-.308a2,2,0,0,0-.214-.256.943.943,0,0,0-.236-.175A.582.582,0,0,0,348.5,202h-.13v1.25a.4.4,0,0,0,.065.269.357.357,0,0,0,.233.081l.227.013v.246Zm1.451-2.17h.227a1.627,1.627,0,0,0,.382-.049,1.062,1.062,0,0,0,.363-.162.909.909,0,0,0,.269-.3.932.932,0,0,0,.107-.466.87.87,0,0,0-.259-.725,1.284,1.284,0,0,0-.79-.2h-.3Z" transform="translate(-296.083 -170.269)" fill="#605a51"/>
-                              <path id="Path_22345" data-name="Path 22345" d="M380.2,203.863v-.246l.207-.013a.357.357,0,0,0,.233-.081.4.4,0,0,0,.065-.269v-3.141a.4.4,0,0,0-.065-.269.357.357,0,0,0-.233-.081l-.207-.013V199.5h2.014v.246l-.207.013a.357.357,0,0,0-.233.081.4.4,0,0,0-.065.269v3.141a.4.4,0,0,0,.065.269.356.356,0,0,0,.233.081l.207.013v.246Z" transform="translate(-324.488 -170.269)" fill="#605a51"/>
-                              <path id="Path_22346" data-name="Path 22346" d="M398.579,203.229l-.032-1.47h.279q.065.207.149.427a1.579,1.579,0,0,0,.223.4,1.1,1.1,0,0,0,.353.3,1.128,1.128,0,0,0,.544.117,1.167,1.167,0,0,0,.444-.071.7.7,0,0,0,.262-.175.554.554,0,0,0,.123-.227.879.879,0,0,0,.033-.22.806.806,0,0,0-.023-.191.49.49,0,0,0-.1-.188.83.83,0,0,0-.217-.181,1.8,1.8,0,0,0-.389-.165l-.641-.207a2.409,2.409,0,0,1-.36-.149,1.205,1.205,0,0,1-.317-.233,1.123,1.123,0,0,1-.227-.346,1.237,1.237,0,0,1-.087-.489,1.311,1.311,0,0,1,.133-.6,1.388,1.388,0,0,1,.35-.444,1.474,1.474,0,0,1,.5-.272,1.851,1.851,0,0,1,.576-.091,1.873,1.873,0,0,1,.674.1,1.978,1.978,0,0,1,.4.194l.078-.227h.259l.065,1.386h-.246q-.065-.175-.156-.376a1.637,1.637,0,0,0-.23-.369,1.163,1.163,0,0,0-.34-.278,1.012,1.012,0,0,0-.492-.11.779.779,0,0,0-.589.2.681.681,0,0,0-.188.489.622.622,0,0,0,.136.4,1.012,1.012,0,0,0,.473.288l.719.24a2.824,2.824,0,0,1,.385.162,1.449,1.449,0,0,1,.346.246,1.113,1.113,0,0,1,.249.366,1.328,1.328,0,0,1,.094.528,1.222,1.222,0,0,1-.126.56,1.236,1.236,0,0,1-.353.424,1.6,1.6,0,0,1-.538.266,2.449,2.449,0,0,1-.687.091,1.768,1.768,0,0,1-.677-.117,4.534,4.534,0,0,1-.489-.233l-.071.246Z" transform="translate(-340.144 -169.628)" fill="#605a51"/>
-                            </g>
-                          </svg>
-                          
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
                         </a></li>
                     </ul>
+                </div>
+                <div class="col-lg-3 d-lg-block d-none"></div>
+                <div class="col-lg-5 mt-5">
+                  <p class="mb-0">sie wünschen einen rückruf? nutzen sie dazu unseren <a href="#" class="text__accent">rückrufservice</a>.</p>
+                  <p class="mb-0">sie möchten ein angebot erhalten? nutzen sie dazu <a href="" class="text__accent">dieses formular</a>.</p>
                 </div>
             </div>
             <div class="copyright-section">
-                <div class="list d-flex flex-column flex-sm-row align-items-center justify-content-sm-center justify-content-between">
-                  <a href="#" class="list__link">DATENSCHUTZ</a>
-                  <a href="#" class="list__link">IMPRESSUM</a>
-                  <a href="#" class="list__link">AGB / REISEBEDINGUNGEN</a>
-                </div>
+               <p class="text-center mb-0">designed by <span class="text__accent">trendmarke</span></p>
             </div>
         </div>
     </footer>
@@ -608,3 +557,6 @@
     <script src="assets/js/app.js"></script>
   </body>
 </html>
+
+
+

@@ -3,10 +3,6 @@
 
 
 .footer {
-    padding-block: 46px;
-    @include mq(sm) {
-        padding-block: 83px 35px;
-    }
       .copyright__text {
         font-size: 16px;
         line-height: 21px;
@@ -14,8 +10,65 @@
     }
 
     &__list {
-        .list-link {
-            color: $clr-accent;
+        .list__link {
+            color: $clr-light;
+        }
+    }
+
+    .footer-content {
+        padding-block: 106px 84px;
+        border-block:2px solid #f2f2f2 ;
+    }
+    .copyright-section {
+        padding-block:23px 41px;
+    }
+    &__title {
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    .list--social {
+        svg {
+            fill: $clr-dark;
+        }
+        .list__item {
+            background: $clr-light;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+            &:hover,
+            &:focus {
+                background: $clr-accent;
+            }
+        }        
+    }
+    .list--hover {
+        .list__link {
+            position: relative;
+            transition: padding-left .3s ease-out;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 22px;
+                height: 1px;
+                background: $clr-accent;
+                left: 0;
+                top: 56%;
+                opacity: 0;
+                -webkit-transition: opactiy .1s ease-out;
+                transition: opactiy .1s ease-out;
+            }
+            &:hover,
+            &:focus {
+                padding-left: 30px;
+            }
+            &:hover::before,
+            &:focus::before {
+                opacity: 1;
+            }
         }
     }
 }

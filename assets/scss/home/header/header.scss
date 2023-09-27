@@ -6,15 +6,35 @@
         left: 0;
         right: 0;
         top: 0;
+        z-index: 99;
+        @include mq(lg) {
+          padding-block:20px;
+         }
         &-logo  {
-            height:130px;  
+            height:160px;  
+            @include mq(lg) {
+               display: none;
+            }
+        }
+        &-logo--mobile {
+            display: none;
+            @include mq(lg) {
+                display: block;
+             }
         }
         &-logo-text  {
           color: #F2F2F270; 
           line-height: 20px;
           font-family: 'Urbanist', sans-serif;
         }
-
+        .navbar {
+            padding: 0;
+        }
+        .navbar-nav {
+            @include mq(lg){
+             align-items: flex-start;
+             }
+        }
         &.active {
             background: rgba($color: #fff, $alpha: .4);
             backdrop-filter: blur(8px);
@@ -28,11 +48,8 @@
                 display: none;
             }
         }
-        @include mq(sm) {
-            padding: 5px 0;
-        }
         .nav-item {
-            padding: 0 15px;
+            padding: 0 22px;
         }
         .nav-link {
             padding: 0 !important;
@@ -41,10 +58,8 @@
             font-weight: 500;
 
             @include mq(lg) {
-                color: $clr-white !important;  
-                font-size:31px !important;
-                line-height: 40px;
-                margin-bottom: 20px;
+                color: $clr-light !important; 
+                margin-bottom: 30px;
             }
             &:before {
                 content: '';
@@ -58,9 +73,7 @@
                 background: $clr-accent;
                 transition: opacity .3s ease-in-out;
                 opacity: 0;
-                @include mq(lg) {
-                    display: none;
-                }
+               
             }
 
             &:hover::before,
@@ -94,12 +107,15 @@
 .navbar-toggler {
     border:0;
     padding: 0;
+   
     &:focus {
         box-shadow: none;
     }
     &-icon {
         background: url(../images/mobile-menu.svg) no-repeat center;
         background-size:contain ;
+        width: 2rem;
+        height: 2rem;
     }
 }
 
@@ -108,14 +124,14 @@
     display: none;
     @include mq(lg) {
         display: block;
-        max-width: 35px;
+        max-width: 219px;
     }
 }
-&-logo  {
-    @include mq(lg) {
-        display: none;
-    }
-}
+// &-logo  {
+//     @include mq(lg) {
+//         display: none;
+//     }
+// }
 .offcanvas {
     background: $clr-dark;
     width: 100%;
@@ -123,7 +139,7 @@
         min-height: 100vh;
     }
     .btn-close {
-       background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+       background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23DAFF00'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
        opacity: 1;
        padding: 2px;
        margin: 20px;
@@ -134,7 +150,8 @@
 }
 .offcanvas-header {
     @include mq(lg) {
-        padding-inline: 35px ;
+        padding-inline: 25px;
+        padding-top: 30px;
     }
 }
 }

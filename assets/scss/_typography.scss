@@ -27,8 +27,8 @@ h1 {
     //     line-height: 70px;
     // }
     @include mq(md){
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 32px;
     }
 }
 
@@ -37,8 +37,8 @@ h2{
     line-height: 80px;
     margin-bottom: 51px;
     @include mq(md){
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 32px;
     }
 }
 
@@ -47,7 +47,7 @@ h3{
     line-height: 80px;
     @include mq(md){
         font-size: 20px;
-        line-height: 40px;
+        line-height: 35px;
     }
 }
 

@@ -5,12 +5,31 @@
     color: $clr-white;
     background: transparent;
     border-radius: 5px;
-    padding: 7px 22px;
+    padding: 8px 30px;
     font-weight: 500 !important;
+    min-width: 188px;
     &:hover,
     &:focus {
         background: $clr-accent !important;
         color: $clr-black !important;
         border:2px solid $clr-accent !important;
+    }
+}
+
+.btn-arrow {
+    color: $clr-light;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    svg {
+        transition: transform .3s ease;
+    }
+    &:hover,
+    &:focus {
+        color: $clr-light;
+        svg {
+            transform: translateX(10px);
+        }
     }
 }
