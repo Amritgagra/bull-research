@@ -8,10 +8,13 @@
         top: 0;
         z-index: 99;
         @include mq(lg) {
-          padding-block:20px;
+          padding-block:25px;
          }
         &-logo  {
             height:160px;  
+            @include mq(xxxl) {
+             height: 140px;
+            }
             @include mq(lg) {
                display: none;
             }
@@ -20,6 +23,12 @@
             display: none;
             @include mq(lg) {
                 display: block;
+             }
+        }
+        &-logo--scroll {
+            display: none;
+            @include mq(lg) {
+                max-width:40px;
              }
         }
         &-logo-text  {
@@ -36,20 +45,28 @@
              }
         }
         &.active {
-            background: rgba($color: #fff, $alpha: .4);
-            backdrop-filter: blur(8px);
-            .nav-link { 
-                color: $clr-black;
-            }
+            position: fixed;
+            background:$clr-dark;
+            padding-block:20px;
+            animation: fadeIn .3s ease-in-out both;
             .header-logo--scroll {
                 display: block;
             }
             .header-logo {
                 display: none;
             }
+            .header-logo-text {
+                display: none !important;
+            }
+            .header-logo--mobile {
+                display: none;
+            }
         }
         .nav-item {
             padding: 0 22px;
+            @include mq(xxxl){
+                padding: 0 15px;
+              }
         }
         .nav-link {
             padding: 0 !important;
@@ -57,8 +74,8 @@
             color: $clr-light;
             font-weight: 500;
 
-            @include mq(lg) {
-                color: $clr-light !important; 
+            @include mq(xl) {
+                color: $clr-light; 
                 margin-bottom: 30px;
             }
             &:before {
@@ -93,12 +110,12 @@
 
        
         .offcanvas-body {
-            @include mq(lg) {
+            @include mq(xl) {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                padding-inline:35px;
+                align-items: flex-start;
+                padding-inline:50px 35px;
             }
             
         }
@@ -114,8 +131,11 @@
     &-icon {
         background: url(../images/mobile-menu.svg) no-repeat center;
         background-size:contain ;
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 1.5rem;
+        @include mq(md) {
+            width: 2rem;
+        }
     }
 }
 
@@ -127,15 +147,11 @@
         max-width: 219px;
     }
 }
-// &-logo  {
-//     @include mq(lg) {
-//         display: none;
-//     }
-// }
+
 .offcanvas {
     background: $clr-dark;
     width: 100%;
-    @include mq(lg) {
+    @include mq(xl) {
         min-height: 100vh;
     }
     .btn-close {
@@ -143,15 +159,30 @@
        opacity: 1;
        padding: 2px;
        margin: 20px;
+       width: 1.5rem;
+       height: 1.5rem;
        @include mq(sm) {
         margin: 20px 0px;
+        width: 1.2rem;
+        height: 1.2rem;
     }
     }
 }
 .offcanvas-header {
-    @include mq(lg) {
+    @include mq(xl) {
         padding-inline: 25px;
         padding-top: 30px;
+
+        .header-logo--mobile {
+            display: block !important;
+        }
     }
 }
 }
+
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 

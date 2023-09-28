@@ -35,16 +35,21 @@
 
   <body>
     <header class="header">
-      <nav class="navbar navbar-light navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center gap-lg-5 gap-4" href="index.html">
+      <nav class="navbar navbar-light navbar-expand-xl">
+        <div class="container px-xxl-0">
+          <a class="navbar-brand d-flex align-items-center gap-xxl-5 gap-4" href="index.html">
             <lottie-player src="assets/images/Logo-animation_bull.json" background="transparent" speed="1" autoplay
             class="header-logo"></lottie-player>
-            <span class="header-logo-text d-lg-block d-none">über 10 jahre erfahrung</span>
+            <span class="header-logo-text d-xxl-block d-none">über 10 jahre erfahrung</span>
             <img
               src="assets/images/footer-logo.svg"
               alt=""
               class="header-logo--mobile"
+            />
+            <img
+              src="assets/images/logo--scroll.svg"
+              alt=""
+              class="header-logo--scroll"
             />
           </a>
           <button
@@ -73,7 +78,7 @@
             </div>
             <div class="offcanvas-body">
               <ul
-                class="navbar-nav justify-content-lg-end flex-lg-grow-1 align-items-lg-center"
+                class="navbar-nav justify-content-xl-end flex-xl-grow-1 align-items-xl-center"
               >
                 <li class="nav-item">
                   <a class="nav-link" href="#">leistungen</a>
@@ -138,7 +143,7 @@
       <!-- banner section end -->
 
       <!-- job  section start -->
-      <section class="bg__dark job">
+      <section class="bg__dark job" id="scroll">
         <div class="container mb-130">
           <div class="row">
             <div class="col-12 mb-130">
@@ -150,10 +155,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row flex-wrap-reverse">
             <div class="col-lg-7">
               <div class="overlay-dark"><img src="assets/images/job-img.png" alt="" class="img-fluid"></div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 mb-5 mb-lg-0">
               <p class="text__light mb-75">
                 Bull Research Consulting findet in einem immer komplizierter werdenden Kandidatenmarkt das Perfect-Match für Ihre Vakanz. Egal ob Experten- oder Executive-Level, mit unserem einzigartigen Methoden-Mix finden wir Kandidaten, die andere gar nicht erst finden. Erfolg braucht Methode und wir haben mit unserer STIER-Formel eine eigene Projekt-Methode entwickelt, die die Grundlage für unsere nachhaltig zufriedenen Kunden bildet.
               </p>
@@ -161,7 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="job__content-wrapper overlay-dark d-lg-block d-none">
+        <div class="job__content-wrapper overlay-dark d-xl-block d-none">
           <div class="job__content d-flex flex-wrap">
             <div class="job__item border-left col">
               <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam.</p>
@@ -202,6 +209,76 @@
             </div>
           </div>
         </div>
+        <div class="job__content-wrapper d-xl-none">
+          <div class="accordion" id="job__content-acc">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="job__item-title">s</span>
+                  <span class="job__item-subtitle">strategy</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#job__content-acc">
+                <div class="accordion-body">
+                  <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam mit Ihnen ausführlich und helfen Ihnen mit unserer breiten Expertise und unseren langjährigen Erfahrungen im Research. Genau wie Sie, wollen auch wir schnell und effektiv zum Erfolg kommen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <span class="job__item-title">t</span>
+                  <span class="job__item-subtitle">targeting</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#job__content-acc">
+                <div class="accordion-body">
+                  <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam mit Ihnen ausführlich und helfen Ihnen mit unserer breiten Expertise und unseren langjährigen Erfahrungen im Research. Genau wie Sie, wollen auch wir schnell und effektiv zum Erfolg kommen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  <span class="job__item-title">i</span>
+                  <span class="job__item-subtitle">identification</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#job__content-acc">
+                <div class="accordion-body">
+                  <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam mit Ihnen ausführlich und helfen Ihnen mit unserer breiten Expertise und unseren langjährigen Erfahrungen im Research. Genau wie Sie, wollen auch wir schnell und effektiv zum Erfolg kommen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor">
+                  <span class="job__item-title">e</span>
+                  <span class="job__item-subtitle">empathic</span>
+                </button>
+              </h2>
+              <div id="collapseFor" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#job__content-acc">
+                <div class="accordion-body">
+                  <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam mit Ihnen ausführlich und helfen Ihnen mit unserer breiten Expertise und unseren langjährigen Erfahrungen im Research. Genau wie Sie, wollen auch wir schnell und effektiv zum Erfolg kommen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                  <span class="job__item-title">r</span>
+                  <span class="job__item-subtitle">report</span>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#job__content-acc">
+                <div class="accordion-body">
+                  <p class="job__item-text">Am Anfang eines jeden Projektes gilt es, sich eine passende Strategie zu überlegen. Je genauer man die Ausgangssituation analysiert, desto eher spart man sich große Umwege und Endlosschleifen. Wir analysieren jedes Projekt gemeinsam mit Ihnen ausführlich und helfen Ihnen mit unserer breiten Expertise und unseren langjährigen Erfahrungen im Research. Genau wie Sie, wollen auch wir schnell und effektiv zum Erfolg kommen.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </section>
       <!-- job section end -->
 
@@ -216,7 +293,7 @@
                 <h2 class="section__title section__content-md text__light">
                   wir - ganz einfach auf den <span class="text__accent">punkt</span> gebracht<span class="text__accent">.</span>
                 </h2>
-                <a href="#" class="btn-arrow"
+                <a href="#" class="btn-arrow mb-5 mb-lg-0"
                   >zu unseren referenzen
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
@@ -225,10 +302,10 @@
                   </span></a
                 >
               </div>
-              <a href="#" class="btn btn__outline-accent">jetzt anfragen</a>
+              <a href="#" class="btn btn__outline-accent d-none d-lg-inline-block">jetzt anfragen</a>
             </div>
             <div class="col-lg-6">
-              <p class="mb-130 text__light">
+              <p class="mb-130 text__light mb-5">
                 Sie bekommen die beste Rundum-Versorgung in Sachen Headhunting. Neben den neuen technologischen Such-Möglichkeiten über KI und Social Media, beherrschen wir auch die klassischen Methoden. Auch in Zeiten der zunehmenden Digitalisierung kann ein einfacher Telefonanruf bei einem ausgesprochen guten Kandidaten noch wahre Wunder bewirken. Wir haben das Gespür für die richtige Methode zur richtigen Zeit und sind fest davon überzeugt, dass man sich in einem immer mehr zuspitzendem Markt nur mit dem idealen Methoden-Mix von der Konkurrenz abheben kann. Mit uns kommen Sie so schnell und unkompliziert an ihr Perfect-Match.
               </p>
               <ul class="list--arrow mb-0">
@@ -237,8 +314,9 @@
                 <li class="list__item">über 10 jahre erfahrung</li>
                 <li class="list__item">methoden-mix (digital & klassisch)</li>
                 <li class="list__item">telefon-ident und telefonische direktansprache</li>
-                <li class="list__item mb-0">hohe erfolgsquote durch eigene projekt- methode (stier-formel)</li>
+                <li class="list__item mb-lg-0 mb-5">hohe erfolgsquote durch eigene projekt- methode (stier-formel)</li>
               </ul>
+              <div class="d-lg-none text-center"><a href="#" class="btn btn__outline-accent ">jetzt anfragen</a></div>
             </div>
           </div>
         </div>
@@ -250,21 +328,21 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
-              <img src="assets/images/feature__img-1.png" alt="" class="img-fluid mb-50" />
+              <img src="assets/images/feature__img-1.png" alt="" class="img-fluid mb-50 feature__img" />
               <div class="feature__content">
                 <h3 class="feature__content-title">10</h3>
                 <h3 class="feature__content-text">jahre erfahrung</h3>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
-              <img src="assets/images/feature__img-2.png" alt="" class="img-fluid mb-50" />
+              <img src="assets/images/feature__img-2.png" alt="" class="img-fluid mb-50 feature__img" />
               <div class="feature__content">
                 <h3 class="feature__content-title">100</h3>
                 <h4 class="feature__content-text">schulungen</h4>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5 mb-lg-0 d-flex flex-column  align-items-center text-center">
-              <img src="assets/images/feature__img-3.png" alt="" class="img-fluid mb-50" />
+              <img src="assets/images/feature__img-3.png" alt="" class="img-fluid mb-50 feature__img" />
               <div class="feature__content">
                 <h3 class="feature__content-title">500</h3>
                 <h4 class="feature__content-text">kandidaten vermittelt</h4>
@@ -278,14 +356,14 @@
       <!--services section start -->
       <section class="services bg__dark">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
+          <div class="row border__bottom services__wrapper">
+            <div class="col-lg-6 px-0 ">
               <div class="overlay-dark img-container">
-                <img src="assets/images/services__img.png" alt="" class="img-fluid services__img">
+                <img src="assets/images/services__img.png" alt="" class="img-fluid services__img mb-4 mb-lg-0">
               </div>
-              <div>
+              <div class="px-2 px-lg-0">
                 <h3 class="mb-0">leistungen</h3>
-                <a href="#" class="btn-arrow"
+                <a href="#" class="btn-arrow mb-4 mb-lg-0"
                 >mehr erfahren
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="13.501" viewBox="0 0 20.243 13.501">
@@ -323,8 +401,8 @@
       <!-- blog section start -->
       <section class="blog bg__dark  text__light">
         <div class="container-fluid">
-          <div class="row border__top block-padding">
-            <div class="col-lg-6 ps-lg-5">
+          <div class="row block-padding">
+            <div class="col-lg-6 ps-lg-5 mb-5 mb-lg-0">
               <div class="section__content-md">
                 <h2 class="section__title">
                   immer auf dem neusten stand mit unserem <span class="text__accent">blog</span>.
@@ -332,7 +410,7 @@
                 <a href="#" class="btn btn__outline-accent">mehr erfahren</a>
               </div>
             </div>
-            <div class="col-lg-6 pe-lg-0">
+            <div class="col-lg-6 pe-0">
               <div class="swiper blog-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -429,10 +507,13 @@
             <div class="col-lg-6 d-flex justify-content-center">
             
                   <div class="contact-content">
+                    <span class="d-lg-none">  <svg  xmlns="http://www.w3.org/2000/svg" width="60.193" height="13.501" viewBox="0 0 60.193 13.501">
+                      <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282-56.22.007a.911.911,0,0,0-.907.914.911.911,0,0,0,.907.914l56.213-.007L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(32.075 -11.252)" fill="#f2f2f2"/>
+                    </svg></span> 
                     <div class="d-flex align-items-baseline gap-lg-5">
-                      <h2>nur einen <span class="text__accent position-relative d-inline-block"><span class="arrow-icon">  <svg  xmlns="http://www.w3.org/2000/svg" width="60.193" height="13.501" viewBox="0 0 60.193 13.501">
+                      <h2>nur einen <br/> <span class="text__accent position-relative d-inline-block"><span class="arrow-icon d-none d-lg-inline-block">  <svg  xmlns="http://www.w3.org/2000/svg" width="60.193" height="13.501" viewBox="0 0 60.193 13.501">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.784,11.51a.919.919,0,0,0-.007,1.294l4.275,4.282-56.22.007a.911.911,0,0,0-.907.914.911.911,0,0,0,.907.914l56.213-.007L20.77,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.026,1.026,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.784,11.51Z" transform="translate(32.075 -11.252)" fill="#f2f2f2"/>
-                      </svg></span> klick</span> entfernt.</h2>
+                      </svg></span>  klick</span> entfernt.</h2>
                     </div>
                     <p class="mb-0">Hier geht es zu den passenden Kandidaten. Nehmen sie Kontakt mit uns auf.</p>
                   </div>
@@ -475,10 +556,10 @@
        <footer class="footer bg__dark text__light">
         <div class="container">
             <div class="row footer-content ">
-                <div class="col-lg-3 mb-5 mb-lg-0 text-center text-lg-start">
+                <div class="col-lg-3 mb-5 mb-lg-0 ">
                     <img src="assets/images/footer-logo.svg" alt="footer logo" class="img-fluid footer__logo">
                 </div>
-                <div class="col-lg-2 col-sm-6 text-center text-sm-start">
+                <div class="col-lg-2 col-sm-6 ">
                     <h3 class="footer__title">kontakt.</h3>
                    <address>
                     <p class="mb-0">bull research consulting</p>
@@ -491,7 +572,7 @@
                     <li class="list__item"><a href="mailto:info@bull-research.com"  class="list__link text__accent">info@bull-research.com</a></li>
                 </ul>
                 </div>
-                <div class="col-lg-3 col-sm-6 text-center text-sm-start">
+                <div class="col-lg-3 col-sm-6">
                     <h3 class="footer__title">sitemap.</h3>
                     <ul class="footer__list list--hover">
                         <li class="list__item"><a href="#" class="list__link">leistungen</a></li>
@@ -501,15 +582,15 @@
                         <li class="list__item"><a href="#" class="list__link">news</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-sm-6 text-center text-sm-start">
+                <div class="col-lg-2 col-sm-6">
                     <h3 class="footer__title">rechtliche hinweise.</h3>
                     <ul class="footer__list list--hover">
                         <li class="list__item"><a href="#" class="list__link">impressum</a></li>
                         <li class="list__item"><a href="#" class="list__link">datenschutz</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 pe-lg-0">
-                    <ul class="footer__list d-flex flex-column align-items-lg-end gap-3 list--social">
+                <div class="col-lg-2 col-sm-6 pe-lg-0 mt-5 mt-lg-0">
+                    <ul class="footer__list d-flex flex-lg-column align-items-lg-end gap-3 list--social">
                         <li class="list__item"><a href="#" class="list__link">
                           <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                         </a></li>

@@ -17,14 +17,25 @@
 
     .footer-content {
         padding-block: 106px 84px;
-        border-block:2px solid #f2f2f2 ;
+        border-block:2px solid #6E6E6E ;
+        @include mq(lg){
+            padding-block: 50px;
+         }
     }
     .copyright-section {
         padding-block:23px 41px;
+        @include mq(lg){
+            padding-block: 20px;
+         }
     }
     &__title {
         line-height: 40px;
         margin-bottom: 30px;
+        @include mq(lg){
+            margin-bottom: 0px;
+            font-size: 26px;
+            line-height: 80px;
+         }
     }
     .list--social {
         svg {

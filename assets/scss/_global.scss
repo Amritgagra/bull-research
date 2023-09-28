@@ -25,7 +25,7 @@ ul {
 .block-padding{
    padding-block:115px 280px;
    @include mq(lg){
-       padding-block: 100px;
+       padding-block: 40px 85px;
     }
 }
 .block-padding--xl{
@@ -61,6 +61,9 @@ ul {
 .border__top {
     border-top: 2px solid $clr-light;
 }
+.border__bottom {
+    border-bottom: 2px solid $clr-light;
+}
 .border-block {
     border-block:1px solid #707070 ;
 }
@@ -91,17 +94,21 @@ ul {
         margin-bottom: 30px;
     }
 }
-
 .mb-30 {
     margin-bottom: 30px;
 }
-.mb-130 {
-    margin-bottom: 130px;
+
+@media screen and (min-width:992px) {
+    .mb-130 {
+        margin-bottom: 130px !important;
+    }
 }
 .mb-75 {
     margin-bottom: 75px;
+    @include mq(md) {
+        margin-bottom: 45px;
+    }
 }
-
 
 .mouse {
     width: 26px;
@@ -120,23 +127,27 @@ ul {
     margin-left: -1px;
     height: 8px;
     border-radius: 4px;
-    background: #A5A5A5;
-    animation: mouseScroll 0.8s cubic-bezier(0.3, 0.04, 0.7, 0.95) infinite alternate;
-    z-index: 2;
-}
-.scroll-container:hover .roll, 
-.scroll-container:focus .roll 
-{
     background: $clr-accent;
-}
-.scroll-container {
+    // animation: mouseScroll 0.8s cubic-bezier(0.3, 0.04, 0.7, 0.95) infinite alternate;
+    z-index: 2;
     transition: transform .3s linear;
 }
 
-.scroll-container:hover,
-.scroll-container:focus  {
-    transform: translateY(10px);
+.mouse:hover .roll,
+.mouse:focus .roll
+{
+    background: $clr-accent;
+    transform:translateY(14px)
+    
 }
+// .scroll-container {
+//     transition: transform .3s linear;
+// }
+
+// .scroll-container:hover,
+// .scroll-container:focus  {
+//     transform: translateY(10px);
+// }
 
 @keyframes mouseScroll {
  0% {
@@ -149,11 +160,6 @@ ul {
  }
 }
 
-// .swiper-wrapper,
-// .swiper-slide
-//  {
-//     height: inherit !important;
-// }
 
 .list--arrow {
     list-style-image: url(../images/list-arrow.svg);
@@ -165,9 +171,11 @@ ul {
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 25px;
+        font-family: 'Urbanist', sans-serif;
         @include mq(md){
             font-size: 20px;
             line-height: 35px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -178,7 +186,7 @@ ul {
         max-width: 1470px;
         margin-left: auto;
         padding-top: 341px;
-        padding-bottom: 174px   ;
+        padding-bottom: 174px;
     }
     &-md {
         max-width: 685px;
@@ -188,16 +196,32 @@ ul {
 
 // job
 .job {
-    padding-block: 280px ;
+    padding-block: 280px;
+    @include mq(lg){
+        padding-block: 110px;
+    }
     &__item-title {
         font-size: 200px;
         line-height: 150px;
         color: $clr-accent;
         margin-bottom: 0;
+        font-family: 'Urbanist', sans-serif;
+        @include mq(xl){
+            font-size: 75px;
+            line-height:80px;
+          }
     }
     &__item-subtitle {
         opacity: .8;
         color: $clr-light;
+        font-family: 'Urbanist', sans-serif;
+        @include mq(xl){
+            font-size: 26px;
+            line-height:32px;
+            display: inline-block;
+            margin-left: 25px;
+            margin-top: 15px;
+          }
     }
     &__item-text {
      color: $clr-light;
@@ -205,6 +229,11 @@ ul {
      opacity: 0;
      transition: opacity .3s ease .2s;
      max-width: 504px;
+     @include mq(xl){
+      opacity: 1;
+      max-width: 100%;
+      padding-top: 0px;
+    }
     }
    
     &__content {
@@ -212,7 +241,48 @@ ul {
         position: relative;
         z-index: 1;
         &-wrapper {
-            background: url(../images/job-bg.png) no-repeat center/cover;
+            background: linear-gradient(to bottom , rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/job-bg.png) no-repeat center/cover;
+            @include mq(xl){
+                background-attachment: fixed;
+                padding-inline:7px;
+                margin-top: 105px;
+                padding-bottom: 40px;
+            }
+            .accordion-button:not(.collapsed) {
+                background: transparent;
+                box-shadow: none;
+                &::after {
+                    transform: rotate(-180deg) translateY(0px);
+                }
+            }
+            .accordion-item {
+                border: 0;
+                background: transparent;
+                border-radius: 0;
+            }
+            .accordion-button {
+                background: transparent;
+                border-bottom: 2px solid $clr-light;
+                @include mq(lg){
+                    padding:0 10px;
+                }
+                &::after {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                    background-image: url(../images/acc-icon.svg);
+                    transform:  translateY(10px);
+                }
+               &:focus {
+                box-shadow: none;
+                border-color: $clr-light;
+               }
+            }
+            .accordion-item:last-of-type .accordion-button.collapsed {
+                border-radius: 0;
+            }
+            .accordion-body {
+                padding: 10px;
+            }
+           
         }
     }
 
@@ -232,6 +302,10 @@ ul {
             & + .reference__item {
                 border-top: 0;
             }
+        }
+
+        &.active .job__item-title {
+            font-size: 150px;
         }
         &:hover,
         &:focus {
@@ -260,6 +334,9 @@ ul {
 .reference {
     &-padding {
         padding-block: 133px 154px;
+        @include mq(md) {
+            padding-block: 40px 105px;
+        }
     }
 }
 
@@ -283,12 +360,22 @@ ul {
             line-height: 30px;
         }
     }
+    &__img {
+        @include mq(lg){
+          max-width: 40px;
+         }
+    }
 }
 
 // services
 .services {
-    padding-block: 280px;
     color: $clr-light;
+    &__wrapper{
+        padding-block: 280px;
+        @include mq(md) {
+            padding-block: 105px 65px;
+        }
+    }
     &__img {
         transition: transform .3s ease-in-out;
     }
@@ -333,7 +420,7 @@ ul {
         color: $clr-dark;
         padding: 125px 90px 60px 60px;
         @include mq(md){
-            padding: 56px 17px;
+            padding: 40px 17px;
             min-height: initial;
         }
         h3 {
@@ -362,7 +449,7 @@ ul {
     }
     .grid-col-2 {
         grid-template-columns: 1fr 842px;
-        @include mq(lg) {
+        @include mq(xl) {
             grid-template-columns: 1fr;
             margin-right: calc(var(--bs-gutter-x) * -.5);
             margin-left: calc(var(--bs-gutter-x) * -.5);
@@ -376,10 +463,19 @@ ul {
     }
     .review-swiper  {
         height: inherit !important;
+
+        .swiper-slide h3  {
+            @include mq(lg){
+                margin-bottom: 80px !important;
+               }
+        }
     }
     .review-swiper  .swiper-pagination { 
         bottom: 0;
         text-align: right;
+        @include mq(lg){
+            text-align: center;
+           }
          .swiper-pagination-bullet-active {
             background: $clr-dark;
          }
@@ -391,9 +487,17 @@ ul {
     color: $clr-light;
     .contact-padding {
         padding-block:133px 175px;
+        @include mq(md){
+            padding-block:110px;
+         }
     }
     &-content {
         max-width: 360px;
+        p {
+            @include mq(lg){
+                margin-bottom: 89px !important;
+             } 
+        }
     }
 
     .arrow-icon {
@@ -402,16 +506,22 @@ ul {
     }
     h2  {
         margin-bottom: 44px;
+        @include mq(md){
+            margin-bottom: 17px !important;
+        }
     }
     .form-control {
         border: 0;
         background: transparent;
         color: $clr-light;
-        border-bottom: 1px solid #6E6E6E    ;
+        border-bottom: 1px solid #6E6E6E;
         border-radius: 0;
         padding-left: 0;
         font-size: 30px;
         font-family: 'Urbanist', sans-serif;
+        @include mq(lg){
+            font-size: 20px;
+         }
         &:focus {
             box-shadow: none;
         }
@@ -419,6 +529,9 @@ ul {
             color: $clr-light;
             font-size: 30px;
             font-family: 'Urbanist', sans-serif;
+            @include mq(lg){
+                font-size: 20px;
+             }
         }
     }
     textarea {

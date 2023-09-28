@@ -8,14 +8,31 @@
 }
 .footer .footer-content {
   padding-block: 106px 84px;
-  border-block: 2px solid #f2f2f2;
+  border-block: 2px solid #6E6E6E;
+}
+@media screen and (max-width: 992px) {
+  .footer .footer-content {
+    padding-block: 50px;
+  }
 }
 .footer .copyright-section {
   padding-block: 23px 41px;
 }
+@media screen and (max-width: 992px) {
+  .footer .copyright-section {
+    padding-block: 20px;
+  }
+}
 .footer__title {
   line-height: 40px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .footer__title {
+    margin-bottom: 0px;
+    font-size: 26px;
+    line-height: 80px;
+  }
 }
 .footer .list--social svg {
   fill: #161616;
