@@ -1,0 +1,57 @@
+@import '../../variables';
+@import '../../mixins';
+.contact {
+    color: $clr-light;
+    .contact-padding {
+        padding-block:133px 175px;
+        @include mq(md){
+            padding-block:110px;
+         }
+    }
+    &-content {
+        max-width: 360px;
+        p {
+            @include mq(lg){
+                margin-bottom: 89px !important;
+             } 
+        }
+    }
+
+    .arrow-icon {
+        position: absolute;
+        left: -90px;
+    }
+    h2  {
+        margin-bottom: 44px;
+        @include mq(md){
+            margin-bottom: 17px !important;
+        }
+    }
+    .form-control {
+        border: 0;
+        background: transparent;
+        color: $clr-light;
+        border-bottom: 1px solid #6E6E6E;
+        border-radius: 0;
+        padding-left: 0;
+        font-size: 30px;
+        font-family: 'Urbanist', sans-serif;
+        @include mq(lg){
+            font-size: 20px;
+         }
+        &:focus {
+            box-shadow: none;
+        }
+        &::placeholder {
+            color: $clr-light;
+            font-size: 30px;
+            font-family: 'Urbanist', sans-serif;
+            @include mq(lg){
+                font-size: 20px;
+             }
+        }
+    }
+    textarea {
+        resize: none;
+    }
+}

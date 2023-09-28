@@ -1,0 +1,25 @@
+.services {
+  color: #F2F2F2;
+}
+.services__wrapper {
+  padding-block: 280px;
+}
+@media screen and (max-width: 768px) {
+  .services__wrapper {
+    padding-block: 105px 65px;
+  }
+}
+.services__img {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.services .img-container {
+  max-width: 658px;
+  overflow: hidden;
+}
+.services .img-container:hover img, .services .img-container:focus img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}/*# sourceMappingURL=services.css.map */

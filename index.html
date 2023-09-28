@@ -29,6 +29,12 @@
     />
     <link rel="stylesheet" href="assets/css/header.min.css" />
     <link rel="stylesheet" href="assets/css/banner.min.css" />
+    <link rel="stylesheet" href="assets/css/job.min.css" />
+    <link rel="stylesheet" href="assets/css/reference.min.css" />
+    <link rel="stylesheet" href="assets/css/feature.min.css" />
+    <link rel="stylesheet" href="assets/css/services.min.css" />
+    <link rel="stylesheet" href="assets/css/blog.min.css" />
+    <link rel="stylesheet" href="assets/css/contact.min.css" />
     <link rel="stylesheet" href="assets/css/footer.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
@@ -289,8 +295,8 @@
         <div class="container">
           <div class="row border-top reference-padding">
             <div class="col-lg-6 d-flex flex-column align-items-start justify-content-between">
-              <div>
-                <h2 class="section__title section__content-md text__light">
+              <div class="section__content-md">
+                <h2 class="section__title text__light">
                   wir - ganz einfach auf den <span class="text__accent">punkt</span> gebracht<span class="text__accent">.</span>
                 </h2>
                 <a href="#" class="btn-arrow mb-5 mb-lg-0"
@@ -358,8 +364,12 @@
         <div class="container">
           <div class="row border__bottom services__wrapper">
             <div class="col-lg-6 px-0 ">
-              <div class="overlay-dark img-container">
-                <img src="assets/images/services__img.png" alt="" class="img-fluid services__img mb-4 mb-lg-0">
+              <div class="overlay-dark img-container mb-4 mb-lg-0">
+                <picture>
+                  <source media="(min-width:576px)" srcset="assets/images/services__img.png">
+                  <source media="(max-width:576px)" srcset="assets/images/services__img--mobile.png">
+                  <img src="assets/images/services__img.png" alt="Flowers" class="img-fluid services__img ">
+                </picture>
               </div>
               <div class="px-2 px-lg-0">
                 <h3 class="mb-0">leistungen</h3>

@@ -1,0 +1,27 @@
+@import '../../variables';
+@import '../../mixins';
+.feature {
+    padding-block:130px;
+    &__content-title {
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 700;
+        @include mq(md){
+            font-size: 27px;
+            line-height: 31px;
+        }
+    }
+    &__content-text {
+        font-size: 30px;
+        line-height: 50px;
+        @include mq(md){
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+    &__img {
+        @include mq(lg){
+          max-width: 40px;
+         }
+    }
+}

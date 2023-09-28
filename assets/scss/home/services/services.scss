@@ -1,0 +1,22 @@
+@import '../../variables';
+@import '../../mixins';
+.services {
+    color: $clr-light;
+    &__wrapper{
+        padding-block: 280px;
+        @include mq(md) {
+            padding-block: 105px 65px;
+        }
+    }
+    &__img {
+        transition: transform .3s ease-in-out;
+    }
+    .img-container {
+        max-width: 658px;
+        overflow: hidden;
+        &:hover img,
+        &:focus img {
+            transform: scale(1.1);
+        }
+    }
+}

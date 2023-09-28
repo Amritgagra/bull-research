@@ -1,0 +1,29 @@
+.feature {
+  padding-block: 130px;
+}
+.feature__content-title {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .feature__content-title {
+    font-size: 27px;
+    line-height: 31px;
+  }
+}
+.feature__content-text {
+  font-size: 30px;
+  line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .feature__content-text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .feature__img {
+    max-width: 40px;
+  }
+}/*# sourceMappingURL=feature.css.map */
