@@ -12,6 +12,7 @@
     &__list {
         .list__link {
             color: $clr-light;
+            line-height: 1;
         }
     }
 
@@ -40,6 +41,8 @@
     .list--social {
         svg {
             fill: $clr-dark;
+            width: 1rem;
+            height: 1rem;
         }
         .list__item {
             background: $clr-light;

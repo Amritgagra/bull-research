@@ -18,8 +18,19 @@
 .services .img-container {
   max-width: 658px;
   overflow: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .services .img-container {
+    max-width: 100%;
+  }
 }
 .services .img-container:hover img, .services .img-container:focus img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+.services .img-container:hover::after, .services .img-container:focus::after {
+  opacity: 0.6;
 }/*# sourceMappingURL=services.css.map */

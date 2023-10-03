@@ -5,6 +5,7 @@
 }
 .footer__list .list__link {
   color: #F2F2F2;
+  line-height: 1;
 }
 .footer .footer-content {
   padding-block: 106px 84px;
@@ -36,6 +37,8 @@
 }
 .footer .list--social svg {
   fill: #161616;
+  width: 1rem;
+  height: 1rem;
 }
 .footer .list--social .list__item {
   background: #F2F2F2;

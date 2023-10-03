@@ -50,4 +50,6 @@
   margin-bottom: 80px;
   position: relative;
   z-index: 2;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }/*# sourceMappingURL=banner.css.map */
