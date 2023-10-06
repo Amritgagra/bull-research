@@ -82,4 +82,8 @@
 }
 .footer .list--hover .list__link:hover::before, .footer .list--hover .list__link:focus::before {
   opacity: 1;
+}
+.footer #Ebene_2 {
+  width: 20px !important;
+  height: 20px !important;
 }/*# sourceMappingURL=footer.css.map */

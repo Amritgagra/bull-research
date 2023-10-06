@@ -33,4 +33,10 @@
 }
 .services .img-container:hover::after, .services .img-container:focus::after {
   opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  .services h3 {
+    font-size: 26px;
+    line-height: 40px;
+  }
 }/*# sourceMappingURL=services.css.map */

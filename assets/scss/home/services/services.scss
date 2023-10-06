@@ -28,4 +28,10 @@
             opacity: .6;
         }
     }
+    h3 {
+        @include mq(md) {
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
 }

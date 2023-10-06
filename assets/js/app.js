@@ -23,6 +23,19 @@ $(document).ready(function() {
   if($(window).width() < 993) {
     window.onscroll = function() {scrollFunction(0)};
   }
+
+  $('.callback-link').on('click',function(){
+    $('.callback-popup').toggle();
+    $('.callback-popup').toggleClass('fade');
+  })
+  $('.popup-close-btn').on('click', function(){
+    $('.callback-popup').hide();
+  })
+  $(document).on('click', function(e){
+    if(!$(e.target).closest(".callback-wrapper").length) {
+      $('.callback-popup').hide();
+    }
+  })
 });
 
 
