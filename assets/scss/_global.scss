@@ -350,3 +350,11 @@ ul {
         }
     }
 }
+
+// strategy
+.strategy {
+  &__text {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}

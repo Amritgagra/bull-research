@@ -516,4 +516,9 @@ ul {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
+}
+
+.strategy__text {
+  max-width: 550px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
