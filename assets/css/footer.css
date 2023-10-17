@@ -83,7 +83,7 @@
 .footer .list--hover .list__link:hover::before, .footer .list--hover .list__link:focus::before {
   opacity: 1;
 }
-.footer .xing-icon {
-  width: 18px !important;
-  height: 18px !important;
+.footer #Ebene_2 {
+  width: 20px !important;
+  height: 20px !important;
 }/*# sourceMappingURL=footer.css.map */

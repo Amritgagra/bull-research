@@ -117,6 +117,9 @@
 .header .nav-link.active::before {
   opacity: 1;
 }
+.header .nav-link.active {
+  color: #fff;
+}
 @media screen and (max-width: 1200px) {
   .header .offcanvas-body {
     display: -webkit-box;

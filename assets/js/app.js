@@ -31,6 +31,7 @@ $(document).ready(function() {
   $('.popup-close-btn').on('click', function(){
     $('.callback-popup').hide();
   })
+  
   $(document).on('click', function(e){
     if(!$(e.target).closest(".callback-wrapper").length) {
       $('.callback-popup').hide();
@@ -70,6 +71,24 @@ if (typeof Swiper !== 'undefined') {
   })
 }
 
+gsap.registerPlugin(ScrollTrigger)
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+      trigger: '.faces',
+      start: '300px top',
+      end: 'center top',
+      scrub: 1,
+      ease: 'linear',
+    }
+})
+gsap.set('.scroll-text',{
+  x:700,
+})
+tl.to('.scroll-text', {
+ duration:2,
+  x:-1200,
+})
 
 
- 
+
