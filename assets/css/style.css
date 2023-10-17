@@ -332,7 +332,7 @@ ul {
   width: 20px;
 }
 .callback-wrapper .popup-heading {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
@@ -345,6 +345,8 @@ ul {
   border-radius: 0;
   padding-left: 0;
   max-width: 80%;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-wrapper .form-control:focus {
   -webkit-box-shadow: none;
@@ -353,18 +355,28 @@ ul {
 }
 .callback-wrapper .form-control::-webkit-input-placeholder {
   color: #6e6e6e;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-wrapper .form-control::-moz-placeholder {
   color: #6e6e6e;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-wrapper .form-control:-ms-input-placeholder {
   color: #6e6e6e;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-wrapper .form-control::-ms-input-placeholder {
   color: #6e6e6e;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-wrapper .form-control::placeholder {
   color: #6e6e6e;
+  font-size: 15px;
+  font-family: "Urbanist", sans-serif;
 }
 .callback-link {
   background: #daff00 !important;
