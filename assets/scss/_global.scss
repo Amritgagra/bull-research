@@ -15,7 +15,9 @@ ul {
    list-style: none;
    padding-left: 0;
 }
-
+.max-w-lg {
+    max-width: 780px;
+}
 .block-margin{
    margin-block: 200px;
    @include mq(lg){
