@@ -8,16 +8,16 @@ $( ".job__item" ).hover(
   }
 );
 
-const banner = document.querySelector('.banner');
-const header =  document.querySelector('.header')
-window.onscroll = function() {scrollFunction(banner.offsetHeight)};
-function scrollFunction(scollHeight) {
-  if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
-    header.classList.add('active')
-  } else {
-    header.classList.remove('active')
-  }
-}
+// const banner = document.querySelector('.banner');
+// const header =  document.querySelector('.header')
+// window.onscroll = function() {scrollFunction(banner.offsetHeight)};
+// function scrollFunction(scollHeight) {
+//   if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
+//     header.classList.add('active')
+//   } else {
+//     header.classList.remove('active')
+//   }
+// }
 
 $(document).ready(function() {
   if($(window).width() < 993) {
