@@ -429,3 +429,44 @@ ul {
     }
 
 }
+.industry {
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(237px, 1fr));
+        gap: 75px;
+        @include mq(xxl) {
+            gap: 30px;
+        }
+        .img-container {
+            background: url(../images/industry-card-bg.png) no-repeat center/cover;
+            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            max-height: 225px;
+            min-height:225px;
+            @include mq(lg) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &-card-title {
+        color: $clr-light;
+        line-height: 40px;
+        font-weight: 500;
+        transition: color .3s ease-in-out;
+    }
+    &-card {
+        svg path {
+            transition: fill .3s ease-in-out;
+        }
+        &:hover .industry-card-title ,
+        &:hover svg path
+        {
+            color: $clr-accent;
+            fill: $clr-accent ;
+        }
+    }
+
+}

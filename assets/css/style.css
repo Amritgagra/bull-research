@@ -616,4 +616,51 @@ ul {
   .news-card-img {
     margin-bottom: 30px;
   }
+}
+
+.industry__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
+  gap: 75px;
+}
+@media screen and (max-width: 1400px) {
+  .industry__grid {
+    gap: 30px;
+  }
+}
+.industry__grid .img-container {
+  background: url(../images/industry-card-bg.png) no-repeat center/cover;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  max-height: 225px;
+  min-height: 225px;
+}
+@media screen and (max-width: 992px) {
+  .industry__grid .img-container {
+    margin-bottom: 15px;
+  }
+}
+.industry-card-title {
+  color: #F2F2F2;
+  line-height: 40px;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.industry-card svg path {
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+.industry-card:hover .industry-card-title, .industry-card:hover svg path {
+  color: #DAFF00;
+  fill: #DAFF00;
 }/*# sourceMappingURL=style.css.map */
