@@ -8,16 +8,20 @@ $( ".job__item" ).hover(
   }
 );
 
-// const banner = document.querySelector('.banner');
-// const header =  document.querySelector('.header')
-// window.onscroll = function() {scrollFunction(banner.offsetHeight)};
-// function scrollFunction(scollHeight) {
-//   if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
-//     header.classList.add('active')
-//   } else {
-//     header.classList.remove('active')
-//   }
-// }
+const banner = document.querySelector('.banner');
+const header =  document.querySelector('.header')
+
+if(banner) {
+  function scrollFunction(scollHeight) {
+    if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
+      header.classList.add('active')
+    } else {
+      header.classList.remove('active')
+    }
+  }
+  window.onscroll = function() {scrollFunction(banner.offsetHeight)};
+}
+
 
 $(document).ready(function() {
   if($(window).width() < 993) {
@@ -38,6 +42,30 @@ $(document).ready(function() {
     }
   })
 });
+
+let target = document.querySelector(".feature");
+let observer = new IntersectionObserver(entries => {
+  function counter(id, start, end, duration) {
+    let obj = document.querySelector(id),
+     current = start,
+     range = end - start,
+     increment = end > start ? 1 : -1,
+     step = Math.abs(Math.floor(duration / range)),
+     timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+       clearInterval(timer);
+      }
+     }, step);
+   }
+counter(".counter1", 0, 10, 3000);
+  counter(".counter2", 0, 100, 3000);
+  counter(".counter3", 0, 500, 3000);
+});
+
+observer.observe(target);
+
 
 
 if (typeof Swiper !== 'undefined') {

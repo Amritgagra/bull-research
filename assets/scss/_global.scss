@@ -480,6 +480,10 @@ ul {
 }
 
 .contact-page {
+    padding-block:125px 175px;
+    @include mq(lg) {
+        padding-block:80px 175px;
+    }
     .contact__form {
         max-width: 800px;
         margin-left: auto;

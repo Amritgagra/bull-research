@@ -691,6 +691,14 @@ ul {
   margin-top: -28px;
 }
 
+.contact-page {
+  padding-block: 125px 175px;
+}
+@media screen and (max-width: 992px) {
+  .contact-page {
+    padding-block: 80px 175px;
+  }
+}
 .contact-page .contact__form {
   max-width: 800px;
   margin-left: auto;
