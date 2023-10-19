@@ -178,6 +178,9 @@ ul {
     &-md {
         max-width: 685px;
     }
+    &-lg {
+        max-width: 894px;
+    }
 }
 
 
@@ -360,4 +363,69 @@ ul {
     max-width: 550px;
     margin: 0 auto;
   }
+}
+
+.nav-tabs {
+    border: 0;
+    gap: 30px;
+
+    @include mq(sm) {
+        flex-wrap: nowrap;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+    .nav-link {
+        background: transparent;
+        color: $clr-light;
+        border: 1px solid $clr-accent;
+        border-radius: 5px;
+        font-weight: 500;
+        min-width: 188px;
+        padding: 6px 16px;
+        @include mq(sm) {
+          margin-bottom: 10px;
+        }
+        &.active {
+            background: $clr-accent;
+            border: 1px solid $clr-accent;
+        }
+        &:hover {
+            border: 1px solid $clr-accent;
+        }
+    }
+}
+.news-card {
+    flex:0 0 523px;
+    margin-bottom: 90px;
+    @include mq(xxxl) {
+        flex: 0 0 400px;
+    }
+    @include mq(xxl) {
+       flex: 0 0 calc(50% - 1rem);
+    }
+    @include mq(lg) {
+        margin-bottom: 50px;
+    }
+    @include mq(sm) {
+        flex: 0 0 100%;
+    }
+    
+    &-title {
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 30px;
+        min-height: 77px;
+        @include mq(sm) {
+            min-height: initial;
+        }
+    }
+    &-img {
+        margin-bottom: 71px;
+        @include mq(lg) {
+            margin-bottom: 30px;
+        }
+    }
+
 }
