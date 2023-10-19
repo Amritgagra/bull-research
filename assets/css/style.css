@@ -112,6 +112,25 @@ a, button {
   font-size: 16px !important;
 }
 
+.btn__link {
+  color: #DAFF00;
+  text-decoration: none;
+  font-size: 30px !important;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.btn__link:hover, .btn__link:focus {
+  color: #DAFF00;
+}
+
 @media screen and (min-width: 1850px) {
   .container {
     max-width: 1820px;
@@ -663,4 +682,11 @@ ul {
 .industry-card:hover .industry-card-title, .industry-card:hover svg path {
   color: #DAFF00;
   fill: #DAFF00;
+}
+
+.blog-detail .img-container {
+  margin-bottom: 40px;
+}
+.blog-detail-title {
+  margin-top: -28px;
 }/*# sourceMappingURL=style.css.map */

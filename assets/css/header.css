@@ -108,7 +108,7 @@
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
 }
-.header .nav-link:hover::before, .header .nav-link:focus::before {
+.header .nav-link:hover::before {
   opacity: 1;
 }
 .header .nav-link:hover, .header .nav-link:focus {
