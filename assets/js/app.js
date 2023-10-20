@@ -77,11 +77,11 @@ if(faces) {
       }
   })
   gsap.set('.scroll-text',{
-    x:700,
+    x:"20vw",
   })
   tl.to('.scroll-text', {
    duration:2,
-    x:-1200,
+    x:"-20vw",
   })
 }
 

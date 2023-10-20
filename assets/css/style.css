@@ -450,7 +450,7 @@ ul {
   height: 100%;
   display: block;
   top: 120px;
-  z-index: 99;
+  z-index: 9999;
   display: none;
 }
 .offer-popup {
