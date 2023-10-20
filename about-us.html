@@ -39,8 +39,8 @@
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
 
-  <body>
-    <header class="header py-4">
+  <body id="scroll">
+    <header class="header py-4 header--active">
       <nav class="navbar navbar-light navbar-expand-xl">
         <div class="container px-xxl-0">
           <a class="navbar-brand d-flex align-items-center gap-xxl-5 gap-4" href="index.html">
@@ -94,7 +94,7 @@
                   <a class="nav-link" href="blog.html">blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text__accent" href="#">angebot erhalten!</a>
+                  <a class="nav-link text__accent offer-link" href="#">angebot erhalten!</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text__accent" href="contact.html">kontakt</a>
@@ -108,7 +108,7 @@
     <main>
 
       <!-- job  section start -->
-      <section class="bg__dark job" id="scroll">
+      <section class="bg__dark job pt-117" id="scroll">
         <div class="container mb-130"> 
           <div class="row flex-wrap-reverse block-padding--xl pt-0">
             <div class="col-lg-7">
@@ -382,7 +382,7 @@
             </div>
             <div class="container-fluid mt-5 overflow-hidden">
                 <div class="row">
-                    <div class="col-12 px-0">
+                    <div class="col-12 px-xxl-0">
                         <h2 class="section__title text__accent mb-0 scroll-text">innovation. leidenschaft. geschwindigkeit. kundenorientierung. qualität.</h2>
                     </div>
                 </div>
@@ -561,55 +561,66 @@
       </div>
     </div>
     <!-- Callback section end -->
-
-        <!-- offer section start -->
-        <div class="offer-wrapper d-none">
-          <div class="offer-popup ">
-            <div class="text-end">
-              <button class="popup-close-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              </button>
-            </div>
-            <h3 class="popup-heading">melden sie hier ihre vakanz.</h3>
-            <form>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="name">
-              </div>
-              <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="telefonnummer">
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" placeholder="e-mail">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="funktion">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="firma">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="plz">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" placeholder="anzahl der stellen" rows="3"></textarea>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" placeholder="ich suche" rows="3"></textarea>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">08:00 - 12:00</label>
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">13:00 - 17:00</label>
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">18:00 - 20:00</label>
-              </div>
-              <button type="submit" class="btn btn__accent">senden</button>
-            </form>
+  <!-- offer section start -->
+  <div class="offer-wrapper fade show">
+    <div class="offer-popup">
+      <div class="text-end p-2 col-auto">
+        <button class="popup-close-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        </button>
+      </div>
+      <div class="offer-popup-content flex-grow-1 overflow-auto">
+        <h3 class="popup-heading">melden sie hier ihre vakanz.</h3>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="name">
           </div>
-        </div>
-        <!-- offer section end -->
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="telefonnummer">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="e-mail">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="funktion">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="firma">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="plz">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="anzahl der stellen" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="ich suche" rows="2"></textarea>
+          </div>
+          <div class="mb-3 form-check ps-0">
+            <label for="">ihre erreichbarkeit</label>
+          </div>
+          <div class="mb-3 form-check">
+            <div>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">08:00 - 12:00</label>
+            </div>
+            <div>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">13:00 - 17:00</label>
+            </div>
+            <div>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">18:00 - 20:00</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn__accent">senden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- offer section end -->
+
 
     <!-- jquery cdn -->
     <script

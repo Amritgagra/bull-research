@@ -5,6 +5,10 @@
   top: 0;
   z-index: 99;
 }
+.header--active {
+  position: initial;
+  background: #161616;
+}
 @media screen and (max-width: 992px) {
   .header {
     padding-block: 25px;
@@ -107,6 +111,11 @@
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
+}
+@media screen and (max-width: 1200px) {
+  .header .nav-link:before {
+    display: none;
+  }
 }
 .header .nav-link:hover::before {
   opacity: 1;

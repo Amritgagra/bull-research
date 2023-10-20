@@ -15,8 +15,14 @@ ul {
    list-style: none;
    padding-left: 0;
 }
+
+
 .max-w-lg {
     max-width: 780px;
+}
+
+.pt-117 {
+    padding-top: 117px;
 }
 
 .block-margin{
@@ -195,7 +201,7 @@ ul {
             right: 30px;
         }
         @include mq(sm) {
-            right: 12px;
+            right: 0px;
         }
         button {
             border: 0;
@@ -270,18 +276,31 @@ ul {
         width: 100%;
         height: 100%;
         display: block;
-        top: 100px;
+        top: 120px;
         z-index: 99;
+        display: none;
     }
     &-popup  {
         background: #fff;
-        max-width: 400px;
+        max-width: 391px;
         margin-left: auto;
         margin-right: 150px;
-        padding: 20px;
+        border-radius: 5px;
+        max-height: calc(100% - 120px);
+        display: flex;
+        flex-direction: column;
+        @include mq(xl) {
+            max-width: 95%;
+            margin: 0 auto;
+            max-height: calc(100% - 140px);
+        }
+        &-content {
+            padding: 0px 44px 30px;
+        }
         .popup-close-btn  {
             background: transparent;
             border: 0;
+            cursor: pointer;
             svg {
                 stroke: #000;
                 width: 24px;
@@ -290,7 +309,25 @@ ul {
         .popup-heading {
             font-size: 17px;
             font-weight: 700;
-            line-height: 68px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid #6E6E6E;
+            padding-left: 0;
+            caret-color: #6E6E6E;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        textarea {
+            resize: none;
+            caret-color: #6E6E6E;
+            &:focus {
+                box-shadow: none;
+            }
         }
     }
 }

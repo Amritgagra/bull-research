@@ -7,6 +7,10 @@
         right: 0;
         top: 0;
         z-index: 99;
+        &--active {
+            position: initial;
+            background: $clr-dark;
+        }
         @include mq(lg) {
           padding-block:25px;
          }
@@ -75,7 +79,9 @@
             font-weight: 500;
 
             @include mq(xl) {
-                color: $clr-light; 
+                color: $clr-light;    
+
+                
                 margin-bottom: 30px;
             }
             &:before {
@@ -90,7 +96,9 @@
                 background: $clr-accent;
                 transition: opacity .3s ease-in-out;
                 opacity: 0;
-               
+                @include mq(xl) {
+                    display: none;
+                }
             }
 
             &:hover::before{

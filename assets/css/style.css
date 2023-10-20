@@ -149,6 +149,10 @@ ul {
   max-width: 780px;
 }
 
+.pt-117 {
+  padding-top: 117px;
+}
+
 .block-margin {
   margin-block: 200px;
 }
@@ -351,7 +355,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .callback-wrapper {
-    right: 12px;
+    right: 0px;
   }
 }
 .callback-wrapper button {
@@ -445,19 +449,39 @@ ul {
   width: 100%;
   height: 100%;
   display: block;
-  top: 100px;
+  top: 120px;
   z-index: 99;
+  display: none;
 }
 .offer-popup {
   background: #fff;
-  max-width: 400px;
+  max-width: 391px;
   margin-left: auto;
   margin-right: 150px;
-  padding: 20px;
+  border-radius: 5px;
+  max-height: calc(100% - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .offer-popup {
+    max-width: 95%;
+    margin: 0 auto;
+    max-height: calc(100% - 140px);
+  }
+}
+.offer-popup-content {
+  padding: 0px 44px 30px;
 }
 .offer-popup .popup-close-btn {
   background: transparent;
   border: 0;
+  cursor: pointer;
 }
 .offer-popup .popup-close-btn svg {
   stroke: #000;
@@ -466,7 +490,27 @@ ul {
 .offer-popup .popup-heading {
   font-size: 17px;
   font-weight: 700;
-  line-height: 68px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.offer-popup .form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #6E6E6E;
+  padding-left: 0;
+  caret-color: #6E6E6E;
+}
+.offer-popup .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.offer-popup textarea {
+  resize: none;
+  caret-color: #6E6E6E;
+}
+.offer-popup textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .list--social svg {
