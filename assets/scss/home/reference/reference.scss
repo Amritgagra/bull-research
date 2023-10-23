@@ -2,7 +2,7 @@
 @import '../../mixins';
 .reference {
     &-padding {
-        padding-block: 133px 154px;
+        padding-block: 133px 225px;
         @include mq(md) {
             padding-block: 40px 105px;
         }

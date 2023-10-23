@@ -36,9 +36,11 @@
 
 .btn__accent {
     background: $clr-accent !important;
-    padding: 6px 20px;
-    font-weight: 500;
-    font-size: 16px !important;
+    padding: 5px 20px;
+    font-weight: 700;
+    font-size: 15px !important;
+    font-family: 'Urbanist', sans-serif;
+    min-width: 98px;
 }
 
 .btn__link {

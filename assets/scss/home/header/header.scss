@@ -123,9 +123,9 @@
             @include mq(xl) {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: flex-start;
                 padding-inline:50px 35px;
+                padding-top: 70px;
             }
             
         }
@@ -181,8 +181,7 @@
 .offcanvas-header {
     @include mq(xl) {
         padding-inline: 25px;
-        padding-top: 30px;
-
+        padding-top:30px;
         .header-logo--mobile {
             display: block !important;
         }

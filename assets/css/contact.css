@@ -33,7 +33,7 @@
   border: 0;
   background: transparent;
   color: #F2F2F2;
-  border-bottom: 1px solid #6E6E6E;
+  border-bottom: 2px solid #6E6E6E;
   border-radius: 0;
   padding-left: 0;
   font-size: 30px;
@@ -92,4 +92,8 @@
 }
 .contact textarea {
   resize: none;
+}
+.contact__form {
+  max-width: 782px;
+  margin-left: auto;
 }/*# sourceMappingURL=contact.css.map */

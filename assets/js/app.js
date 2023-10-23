@@ -8,25 +8,25 @@ $( ".job__item" ).hover(
   }
 );
 
-const banner = document.querySelector('.banner');
-const header =  document.querySelector('.header')
+// const banner = document.querySelector('.banner');
+// const header =  document.querySelector('.header')
 
-if(banner) {
-  function scrollFunction(scollHeight) {
-    if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
-      header.classList.add('active')
-    } else {
-      header.classList.remove('active')
-    }
-  }
-  window.onscroll = function() {scrollFunction(banner.offsetHeight)};
-}
+// if(banner) {
+//   function scrollFunction(scollHeight) {
+//     if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
+//       header.classList.add('active')
+//     } else {
+//       header.classList.remove('active')
+//     }
+//   }
+//   window.onscroll = function() {scrollFunction(banner.offsetHeight)};
+// }
 
 
 $(document).ready(function() {
-  if($(window).width() < 993) {
-    window.onscroll = function() {scrollFunction(0)};
-  }
+  // if($(window).width() < 993) {
+  //   window.onscroll = function() {scrollFunction(0)};
+  // }
 
   $('.callback-link').on('click',function(){
     $('.callback-popup').toggle();
@@ -51,39 +51,40 @@ $(document).ready(function() {
     $('.offer-wrapper').toggleClass('fade');
     $('body').addClass("overflow-hidden");
     $(document).on('click', function(e){
-    if($(e.target).closest(".offer-wrapper").length) {
-      console.log('click');
+      if(!$(e.target).closest(".offer-item").length) {
         $('.offer-wrapper').hide();
         $('body').removeClass("overflow-hidden");
     }
   })
   })
-  $(' .offer-wrapper  .popup-close-btn').on('click', function(){
+  
+  $('.offer-wrapper  .popup-close-btn').on('click', function(){
     $('.offer-wrapper').hide();
     $('body').removeClass("overflow-hidden");
   })
 });
 
-let faces = document.querySelector('.faces')
-if(faces) {
-  gsap.registerPlugin(ScrollTrigger)
-  const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.faces',
-        start: '300px top',
-        end: 'center top',
-        scrub: 1,
-        ease: 'linear',
-      }
-  })
-  gsap.set('.scroll-text',{
-    x:"20vw",
-  })
-  tl.to('.scroll-text', {
-   duration:2,
-    x:"-20vw",
-  })
-}
+// let faces = document.querySelector('.faces')
+// if(faces) {
+//   gsap.registerPlugin(ScrollTrigger)
+//   const tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '.faces',
+//         start: '30% top',
+//         end: '100% end',
+//         scrub: 1,
+//         ease: 'linear',
+//       }
+//   })
+//   gsap.set('.scroll-text',{
+//     x:"80vw",
+//   })
+//   tl.to('.scroll-text', {
+//    duration:2,
+//     x:"-80vw",
+//   })
+// }
+
 
 
 if (typeof Swiper !== 'undefined') {
@@ -110,6 +111,9 @@ if (typeof Swiper !== 'undefined') {
   const reviewSwiper = new Swiper('.review-swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
+    autoplay: {
+      delay: 1000,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable:true,
@@ -149,3 +153,35 @@ if(target) {
 
 
 
+let mm = gsap.matchMedia(),
+    breakPoint = 576;
+
+mm.add({
+
+  // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+  isDesktop: `(min-width: ${breakPoint}px)`,
+  isMobile: `(max-width: ${breakPoint - 1}px)`,
+  reduceMotion: "(prefers-reduced-motion: reduce)"
+
+}, (context) => {
+
+  // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+  let { isDesktop, isMobile, reduceMotion } = context.conditions;
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger:'.faces',
+        start:isDesktop ? '30% top' : '80% top' ,
+        end:isDesktop ? '100% end' : '100% end',
+        scrub:1,
+        ease: 'linear',
+    }
+});
+gsap.set('.scroll-text',{
+  x:isDesktop ? "100vw" : "80vw",
+})
+tl.to('.scroll-text', {
+ duration:2,
+  x:isDesktop ? "-100vw" : "-200vw",
+})
+})
