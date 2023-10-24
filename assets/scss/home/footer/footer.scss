@@ -57,7 +57,11 @@
             &:focus {
                 background: $clr-accent;
             }
-        }        
+            &:first-child svg {
+                height: initial;
+            }
+        }  
+
     }
     .list--hover {
         .list__link {

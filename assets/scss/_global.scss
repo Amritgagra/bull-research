@@ -21,10 +21,10 @@ ul {
     max-width: 780px;
 }
 
-.pt-117 {
-    padding-top: 117px;
+.pt-245 {
+    padding-top: 245px;
     @include mq(lg){
-        padding-top: 105px;
+        padding-top: 157px;
      }
 }
 .pb-200 {
@@ -145,7 +145,7 @@ ul {
     }
 }
 .mb-90 {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     @include mq(md) {
         margin-bottom: 40px;
     }
@@ -307,7 +307,7 @@ ul {
     &-wrapper {
         position: absolute;
         right: 22px;
-        height: 100%;
+        max-height: 100vh;
         display: block;
         top: 40px;
         z-index: 9999;
@@ -317,13 +317,13 @@ ul {
         background: #fff;
         min-width: 391px;
         border-radius: 5px;
-        // max-height: calc(100% - 110px);
         display: flex;
         flex-direction: column;
+        height: 100%;
         @include mq(xl) {
             max-width: 95%;
             margin: 0 auto;
-            max-height: calc(100% - 140px);
+            // max-height: calc(100% - 140px);
         }
         &-content {
             padding: 0px 44px 30px;
@@ -421,36 +421,45 @@ ul {
         opacity: 0;
         transform: translateY(180px);
         transition: transform .5s ease ,opacity .5s ease;
+        @include mq(sm) { 
+            opacity: 1;
+            transform: translateY(0);
+         }
     }
     .face-link {
         color: $clr-dark;
         display: block;
     }
     .list--social {
-        .list__item {
-            background:  $clr-dark;;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
+
+         
             .list__link  {
+                background:  $clr-dark;;
+                width: 30px;
+                height: 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-radius: 50%;
+                &:hover,
+                &:focus
+                 {
+                    background: #303030;
+                }
             }
             svg {
                 fill:$clr-accent;
                 width: 16px;
                 height: 16px;
             }
-        }
     }
     .img-container {
         position: relative;
         overflow: hidden;
         margin-bottom: 0;
+        @include mq(lg) {  
+            margin-bottom: 10px;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -485,13 +494,8 @@ ul {
 .nav-tabs {
     border: 0;
     gap: 30px;
-
-    @include mq(sm) {
-        flex-wrap: nowrap;
-        overflow: auto;
-        &::-webkit-scrollbar {
-            display: none;
-          }
+    @include mq(lg) {
+        gap: 10px;
     }
     .nav-link {
         background: transparent;
@@ -503,6 +507,8 @@ ul {
         padding: 6px 16px;
         @include mq(sm) {
           margin-bottom: 10px;
+          min-width: initial;
+          padding: 7px 10px;
         }
         &.active {
             background: $clr-accent;
@@ -523,10 +529,22 @@ ul {
        flex: 0 0 calc(50% - 1rem);
     }
     @include mq(lg) {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     @include mq(sm) {
         flex: 0 0 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-text {
+        @include mq(sm) {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        } 
     }
     
     &-title {
@@ -536,9 +554,10 @@ ul {
         min-height: 77px;
         @include mq(sm) {
             min-height: initial;
+            line-height: 30px;
         }
     }
-    &-img {
+    .img-container {
         margin-bottom: 71px;
         @include mq(lg) {
             margin-bottom: 30px;
@@ -570,8 +589,8 @@ ul {
                 margin-bottom: 15px;
             }
             @include mq(sm) {
-                max-height:initial;
-                min-height:initial;
+                max-height: 183px;
+                min-height: 183px;
                 padding: 40px;
             }
             
@@ -605,11 +624,14 @@ ul {
     }
     &-title {
         margin-top: -28px;
+        @include mq(lg) { 
+            margin-top: initial;  
+        }
     }
 }
 
 .contact-page {
-    padding-block:125px 175px;
+    padding-block:253px 175px;
     @include mq(lg) {
         padding-block:105px 175px;
     }

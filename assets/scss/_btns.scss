@@ -1,11 +1,12 @@
 @import './variables';
+@import './mixins';
 
 .btn__outline-accent {
     border:2px solid $clr-accent;
     color: $clr-white;
     background: transparent;
     border-radius: 5px;
-    padding: 8px 30px;
+    padding: 8px 20px;
     font-weight: 500 !important;
     min-width: 188px;
     &:hover,

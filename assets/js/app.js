@@ -8,19 +8,19 @@ $( ".job__item" ).hover(
   }
 );
 
-// const banner = document.querySelector('.banner');
-// const header =  document.querySelector('.header')
+const banner = document.querySelector('.banner');
+const header =  document.querySelector('.header')
 
-// if(banner) {
-//   function scrollFunction(scollHeight) {
-//     if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
-//       header.classList.add('active')
-//     } else {
-//       header.classList.remove('active')
-//     }
-//   }
-//   window.onscroll = function() {scrollFunction(banner.offsetHeight)};
-// }
+if(banner) {
+  function scrollFunction(scollHeight) {
+    if (document.body.scrollTop > scollHeight  || document.documentElement.scrollTop > scollHeight ) {
+      header.classList.add('active')
+    } else {
+      header.classList.remove('active')
+    }
+  }
+  window.onscroll = function() {scrollFunction(banner.offsetHeight)};
+}
 
 
 $(document).ready(function() {
@@ -91,7 +91,6 @@ if (typeof Swiper !== 'undefined') {
   const blogSwiper = new Swiper('.blog-swiper', {
     slidesPerView: 3,
     spaceBetween: 100,
-    // loop:true, 
     breakpoints: {
       0: {
         slidesPerView: 1.5,
@@ -112,7 +111,7 @@ if (typeof Swiper !== 'undefined') {
     slidesPerView: 1,
     spaceBetween: 20,
     autoplay: {
-      delay: 1000,
+      delay: 5000,
     },
     pagination: {
       el: ".swiper-pagination",
@@ -151,37 +150,43 @@ if(target) {
 
 
 
+let faces = document.querySelector('.faces')
 
 
-let mm = gsap.matchMedia(),
-    breakPoint = 576;
+if(faces) {
+  gsap.registerPlugin(ScrollTrigger)
+  let mm = gsap.matchMedia(),
+  breakPoint = 576;
 
 mm.add({
 
-  // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
-  isDesktop: `(min-width: ${breakPoint}px)`,
-  isMobile: `(max-width: ${breakPoint - 1}px)`,
-  reduceMotion: "(prefers-reduced-motion: reduce)"
+// set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+isDesktop: `(min-width: ${breakPoint}px)`,
+isMobile: `(max-width: ${breakPoint - 1}px)`,
+reduceMotion: "(prefers-reduced-motion: reduce)"
 
 }, (context) => {
 
-  // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
-  let { isDesktop, isMobile, reduceMotion } = context.conditions;
+// context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+let { isDesktop, isMobile, reduceMotion } = context.conditions;
 
 let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger:'.faces',
-        start:isDesktop ? '30% top' : '80% top' ,
-        end:isDesktop ? '100% end' : '100% end',
-        scrub:1,
-        ease: 'linear',
-    }
+  scrollTrigger: {
+      trigger:'.faces',
+      start:isDesktop ? '30% top' : '73% top' ,
+      end:isDesktop ? '100% end' : '100% end',
+      scrub:true,
+      ease: 'linear',
+      pin:true,
+  }
 });
 gsap.set('.scroll-text',{
-  x:isDesktop ? "100vw" : "80vw",
+x:isDesktop ? "100vw" : "80vw",
 })
 tl.to('.scroll-text', {
- duration:2,
-  x:isDesktop ? "-100vw" : "-200vw",
+duration:2,
+x:isDesktop ? "-100vw" : "-200vw",
 })
 })
+
+  }

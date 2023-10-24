@@ -71,7 +71,7 @@ a, button {
   color: #fff;
   background: transparent;
   border-radius: 5px;
-  padding: 8px 30px;
+  padding: 8px 20px;
   font-weight: 500 !important;
   min-width: 188px;
 }
@@ -151,12 +151,12 @@ ul {
   max-width: 780px;
 }
 
-.pt-117 {
-  padding-top: 117px;
+.pt-245 {
+  padding-top: 245px;
 }
 @media screen and (max-width: 992px) {
-  .pt-117 {
-    padding-top: 105px;
+  .pt-245 {
+    padding-top: 157px;
   }
 }
 
@@ -307,7 +307,7 @@ ul {
 }
 
 .mb-90 {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 @media screen and (max-width: 768px) {
   .mb-90 {
@@ -495,7 +495,7 @@ ul {
 .offer-wrapper {
   position: absolute;
   right: 22px;
-  height: 100%;
+  max-height: 100vh;
   display: block;
   top: 40px;
   z-index: 9999;
@@ -512,12 +512,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 @media screen and (max-width: 1200px) {
   .offer-popup {
     max-width: 95%;
     margin: 0 auto;
-    max-height: calc(100% - 140px);
   }
 }
 .offer-popup-content {
@@ -631,11 +631,18 @@ ul {
   transition: transform 0.5s ease, opacity 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
 }
+@media screen and (max-width: 576px) {
+  .face__card-img-content {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .face__card .face-link {
   color: #161616;
   display: block;
 }
-.face__card .list--social .list__item {
+.face__card .list--social .list__link {
   background: #161616;
   width: 30px;
   height: 30px;
@@ -650,18 +657,10 @@ ul {
           align-items: center;
   border-radius: 50%;
 }
-.face__card .list--social .list__item .list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.face__card .list--social .list__link:hover, .face__card .list--social .list__link:focus {
+  background: #303030;
 }
-.face__card .list--social .list__item svg {
+.face__card .list--social svg {
   fill: #DAFF00;
   width: 16px;
   height: 16px;
@@ -670,6 +669,11 @@ ul {
   position: relative;
   overflow: hidden;
   margin-bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  .face__card .img-container {
+    margin-bottom: 10px;
+  }
 }
 .face__card .img-container::after {
   content: "";
@@ -707,14 +711,9 @@ ul {
   border: 0;
   gap: 30px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .nav-tabs {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow: auto;
-  }
-  .nav-tabs::-webkit-scrollbar {
-    display: none;
+    gap: 10px;
   }
 }
 .nav-tabs .nav-link {
@@ -729,6 +728,8 @@ ul {
 @media screen and (max-width: 576px) {
   .nav-tabs .nav-link {
     margin-bottom: 10px;
+    min-width: initial;
+    padding: 7px 10px;
   }
 }
 .nav-tabs .nav-link.active {
@@ -761,7 +762,7 @@ ul {
 }
 @media screen and (max-width: 992px) {
   .news-card {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -769,6 +770,17 @@ ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+  .news-card:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .news-card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 .news-card-title {
@@ -780,13 +792,14 @@ ul {
 @media screen and (max-width: 576px) {
   .news-card-title {
     min-height: initial;
+    line-height: 30px;
   }
 }
-.news-card-img {
+.news-card .img-container {
   margin-bottom: 71px;
 }
 @media screen and (max-width: 992px) {
-  .news-card-img {
+  .news-card .img-container {
     margin-bottom: 30px;
   }
 }
@@ -829,8 +842,8 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .industry__grid .img-container {
-    max-height: initial;
-    min-height: initial;
+    max-height: 183px;
+    min-height: 183px;
     padding: 40px;
   }
 }
@@ -861,9 +874,14 @@ ul {
 .blog-detail-title {
   margin-top: -28px;
 }
+@media screen and (max-width: 992px) {
+  .blog-detail-title {
+    margin-top: initial;
+  }
+}
 
 .contact-page {
-  padding-block: 125px 175px;
+  padding-block: 253px 175px;
 }
 @media screen and (max-width: 992px) {
   .contact-page {

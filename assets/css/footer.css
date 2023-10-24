@@ -60,6 +60,9 @@
 .footer .list--social .list__item:hover, .footer .list--social .list__item:focus {
   background: #DAFF00;
 }
+.footer .list--social .list__item:first-child svg {
+  height: initial;
+}
 .footer .list--hover .list__link {
   position: relative;
   -webkit-transition: padding-left 0.3s ease-out;

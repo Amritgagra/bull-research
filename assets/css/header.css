@@ -6,7 +6,7 @@
   z-index: 99;
 }
 .header--active {
-  position: initial;
+  position: fixed;
   background: #161616;
 }
 @media screen and (max-width: 992px) {

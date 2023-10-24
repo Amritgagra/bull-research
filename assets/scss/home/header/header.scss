@@ -8,12 +8,13 @@
         top: 0;
         z-index: 99;
         &--active {
-            position: initial;
+            position: fixed;
             background: $clr-dark;
         }
         @include mq(lg) {
           padding-block:25px;
          }
+        
         &-logo  {
             height:160px;  
             @include mq(xxxl) {
