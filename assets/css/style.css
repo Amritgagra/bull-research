@@ -307,7 +307,7 @@ ul {
 }
 
 .mb-90 {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 @media screen and (max-width: 768px) {
   .mb-90 {
@@ -495,11 +495,20 @@ ul {
 .offer-wrapper {
   position: absolute;
   right: 22px;
-  max-height: 100vh;
+  height: calc(100vh - 150px);
   display: block;
-  top: 40px;
+  top: 105%;
   z-index: 9999;
   display: none;
+}
+@media screen and (max-width: 1200px) {
+  .offer-wrapper {
+    position: fixed;
+    right: 10px;
+    height: calc(100vh - 20px);
+    top: 10px;
+    left: 10px;
+  }
 }
 .offer-popup {
   background: #fff;
@@ -520,6 +529,11 @@ ul {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 576px) {
+  .offer-popup {
+    min-width: initial;
+  }
+}
 .offer-popup-content {
   padding: 0px 44px 30px;
 }
@@ -535,7 +549,7 @@ ul {
 .offer-popup .popup-heading {
   font-size: 17px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 30px;
   margin-bottom: 10px;
 }
 .offer-popup .form-control {
@@ -885,7 +899,7 @@ ul {
 }
 @media screen and (max-width: 992px) {
   .contact-page {
-    padding-block: 105px 175px;
+    padding-block: 158px 175px;
   }
 }
 .contact-page .contact__form {

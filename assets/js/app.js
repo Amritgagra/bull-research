@@ -24,9 +24,6 @@ if(banner) {
 
 
 $(document).ready(function() {
-  // if($(window).width() < 993) {
-  //   window.onscroll = function() {scrollFunction(0)};
-  // }
 
   $('.callback-link').on('click',function(){
     $('.callback-popup').toggle();
@@ -63,28 +60,6 @@ $(document).ready(function() {
     $('body').removeClass("overflow-hidden");
   })
 });
-
-// let faces = document.querySelector('.faces')
-// if(faces) {
-//   gsap.registerPlugin(ScrollTrigger)
-//   const tl = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '.faces',
-//         start: '30% top',
-//         end: '100% end',
-//         scrub: 1,
-//         ease: 'linear',
-//       }
-//   })
-//   gsap.set('.scroll-text',{
-//     x:"80vw",
-//   })
-//   tl.to('.scroll-text', {
-//    duration:2,
-//     x:"-80vw",
-//   })
-// }
-
 
 
 if (typeof Swiper !== 'undefined') {
@@ -159,21 +134,17 @@ if(faces) {
   breakPoint = 576;
 
 mm.add({
-
-// set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
 isDesktop: `(min-width: ${breakPoint}px)`,
 isMobile: `(max-width: ${breakPoint - 1}px)`,
 reduceMotion: "(prefers-reduced-motion: reduce)"
 
 }, (context) => {
-
-// context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
 let { isDesktop, isMobile, reduceMotion } = context.conditions;
 
 let tl = gsap.timeline({
   scrollTrigger: {
       trigger:'.faces',
-      start:isDesktop ? '30% top' : '73% top' ,
+      start:isDesktop ? '30% top' : '70% top' ,
       end:isDesktop ? '100% end' : '100% end',
       scrub:true,
       ease: 'linear',
@@ -185,7 +156,7 @@ x:isDesktop ? "100vw" : "80vw",
 })
 tl.to('.scroll-text', {
 duration:2,
-x:isDesktop ? "-100vw" : "-200vw",
+x:isDesktop ? "-100vw" : "-213vw",
 })
 })
 
