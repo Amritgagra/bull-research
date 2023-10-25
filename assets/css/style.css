@@ -905,4 +905,8 @@ ul {
 .contact-page .contact__form {
   max-width: 800px;
   margin-left: auto;
+}
+
+.pin-spacer {
+  background: #161616;
 }/*# sourceMappingURL=style.css.map */
